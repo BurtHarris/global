@@ -1,0 +1,26 @@
+<Configuration>
+  <!--
+    Windows Sandbox config for safely test-driving D:\global\Setup.ps1
+    end-to-end (winget -> mise -> pwsh/Coreutils/node/python/uv) on a real,
+    disposable Windows 11 desktop before running it on actual machines.
+
+    Usage:
+      1. Restart Windows once (required after enabling the Sandbox feature).
+      2. Double-click this file (or: Start-Process D:\global\TestInSandbox.wsb).
+      3. A PowerShell window opens automatically inside the sandbox and runs
+         Setup.ps1 from the mapped, read-only copy of this repo.
+      4. Close the sandbox when done -- everything inside it (including any
+         installs) is discarded. Nothing here can affect the host.
+  -->
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>D:\global</HostFolder>
+      <SandboxFolder>C:\global</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <LogonCommand>
+    <Command>powershell.exe -NoExit -ExecutionPolicy Bypass -Command "Write-Host 'Running global\Setup.ps1 inside Windows Sandbox...' -ForegroundColor Cyan; C:\global\Setup.ps1"</Command>
+  </LogonCommand>
+  <MemoryInMB>4096</MemoryInMB>
+</Configuration>

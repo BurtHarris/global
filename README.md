@@ -43,6 +43,32 @@ D:\global\Setup.ps1
 (Or wherever you've cloned this repo — the script doesn't care.) Safe to
 re-run any time (e.g. after editing `mise.config.toml`).
 
+## Testing safely before running on a real machine
+`TestInSandbox.wsb` runs `Setup.ps1` end-to-end inside **Windows Sandbox** —
+a real, disposable Windows 11 desktop (not a container), reset from scratch
+every run. This gives full fidelity (including `winget`/App Installer, which
+Docker's Windows containers don't have) with zero risk to the host: the repo
+is mapped in read-only, and everything installed inside the sandbox vanishes
+when it's closed.
+
+```powershell
+# One-time (requires a restart afterwards):
+Dism /Online /Enable-Feature /FeatureName:Containers-DisposableClientVM /All
+
+# Each test run:
+Start-Process D:\global\TestInSandbox.wsb
+```
+
+Why not Docker for this: Docker's Windows containers only support Server
+Core/Nano Server base images, which don't include `winget`/App Installer at
+all (Nano Server can't run it; Server Core can only get it via unsupported
+manual sideloading) — that's precisely the piece of `Setup.ps1` most
+important to validate. Those images also ship under a separate Microsoft
+Container Images EULA to evaluate, whereas Windows Sandbox reuses the host's
+existing Windows 11 license with no extra terms. A container is also the
+wrong abstraction for testing a desktop/user-profile-oriented bootstrap
+script in the first place.
+
 ## Everyday use
 - `Ensure-Docker` — make sure Docker's engine is up before running docker/compose commands.
 - `Reset-DevTools` — wipe drift and restore python/node/uv to pinned versions.
