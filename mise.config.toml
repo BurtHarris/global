@@ -1,0 +1,16 @@
+# Source-of-truth global mise config for this machine.
+# Deployed to: $HOME\.config\mise\config.toml by Setup.ps1
+#
+# python/node use mise's default python-build-standalone "full" flavor binaries
+# (the pre-built distro with the standard add-ons: pip, sqlite, openssl, etc.)
+# since [settings.python] compile is left unset/false.
+#
+# NOTE: pwsh and coreutils are NOT managed through mise's community "winget"
+# backend plugin (github.com/Yuzu02/mise-winget) -- it panics/crashes the
+# current mise release (2026.9.1) on `mise install`. They're installed
+# directly via winget in Setup.ps1 instead, which is more idiomatic for
+# Windows system apps anyway (mise is best suited to language runtimes).
+[tools]
+node = "lts"
+python = "3.12"
+uv = "latest"
