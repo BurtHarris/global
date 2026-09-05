@@ -69,6 +69,16 @@ existing Windows 11 license with no extra terms. A container is also the
 wrong abstraction for testing a desktop/user-profile-oriented bootstrap
 script in the first place.
 
+### Rebooting to enable Windows Sandbox
+Enabling the Sandbox feature requires a restart. `Invoke-RebootAndResume.ps1`
+is a generic, reusable "reboot and auto-resume" utility: it registers a
+`RunOnce` command (fires once, automatically, right after you next log back
+in — no auto-logon/stored-password trickery involved) and then restarts.
+```powershell
+D:\global\Invoke-RebootAndResume.ps1 -Force -ResumeCommand `
+    'powershell.exe -NoProfile -Command "Start-Process ''D:\global\TestInSandbox.wsb''"'
+```
+
 ## Everyday use
 - `Ensure-Docker` — make sure Docker's engine is up before running docker/compose commands.
 - `Reset-DevTools` — wipe drift and restore python/node/uv to pinned versions.
