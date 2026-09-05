@@ -74,7 +74,7 @@ if (-not $Force) {
     }
 }
 
-if (-not $PSCmdlet.ShouldProcess("$env:COMPUTERNAME", "Restart-Computer")) {
+if (-not $Force -and -not $PSCmdlet.ShouldProcess("$env:COMPUTERNAME", "Restart-Computer")) {
     return
 }
 
