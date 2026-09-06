@@ -1,1 +1,5 @@
 *.bak
+
+# Raw coverage report is a regenerable build artifact; the tracked history
+# (coverage/history.csv) is what we keep for trend-over-time.
+coverage/coverage.xml

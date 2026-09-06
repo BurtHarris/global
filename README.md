@@ -154,6 +154,18 @@ Pester host process's coverage instrumentation even though its behavior is
 fully exercised by the tests. `RunspacePool.psm1` (the client, running
 in-process) is accurately covered.
 
+### Code coverage history
+`Invoke-CodeCoverage.ps1` (repo root) runs the suite with coverage enabled and
+appends one row per run to `coverage\history.csv` (timestamp, git commit/
+branch, pass/fail counts, commands analyzed/executed, coverage %) — a tracked
+file, so `git log -p coverage\history.csv` shows the coverage trend over time.
+The raw `coverage\coverage.xml` (JaCoCo) report is regenerated each run and
+gitignored.
+
+```powershell
+D:\global\Invoke-CodeCoverage.ps1
+```
+
 ## Known issues / lessons learned
 - **mise's community `winget` backend plugin crashes `mise install`.**
   Originally the plan was to have mise itself manage `pwsh`/`Coreutils` via
