@@ -87,10 +87,15 @@ D:\global\Invoke-RebootAndResume.ps1 -Force -ResumeCommand `
   (see `RunspacePool/`).
 
 ## RunspacePool — background runspace-pool server
-`RunspacePool/Server.ps1` is a hidden background `pwsh` process, started on
-first use, that hosts a `System.Management.Automation.Runspaces.RunspacePool`
-(min 1 / max 5) plus one dedicated persistent runspace, and listens on a
-per-user named pipe (`copilot-devdrive-pool-$env:USERNAME`).
+`RunspacePool/` is a PowerShell module (`RunspacePool.psd1` + `.psm1`) whose
+client functions talk to `Server.ps1`, a hidden background `pwsh` process
+started on first use. The server hosts a
+`System.Management.Automation.Runspaces.RunspacePool` (min 1 / max 5) plus one
+dedicated persistent runspace, and listens on a per-user named pipe
+(`copilot-devdrive-pool-$env:USERNAME`). Because the server process (and its
+runspaces) stays alive between calls, `Invoke-PooledScript` avoids the cost of
+spawning a new `pwsh.exe` process on every invocation — the main overhead this
+whole thing exists to eliminate on Windows.
 
 - `Invoke-PooledScript -Script '...' -Session pool` (default) — runs in a
   fresh, isolated runspace from the pool. Safe to fire several of these
@@ -102,6 +107,17 @@ per-user named pipe (`copilot-devdrive-pool-$env:USERNAME`).
   — manage the server directly if needed.
 - Auto-shuts down after 30 idle minutes. Logs to
   `~\.copilot\runspacepool\server.log`.
+
+### Seeding — spawned runspaces mimic the parent session
+When `Start-RunspacePoolServer` launches the server, it captures a snapshot of
+the *calling* session (`Get-RunspacePoolSeed`: currently-imported module names
++ current location) and passes it along as `-SeedModules`/`-SeedLocation`.
+The server uses that to pre-import those modules into every runspace's
+`InitialSessionState` (pool *and* primary) and to set their starting working
+directory — so a freshly spawned runspace already looks like the parent shell
+instead of PowerShell's blank default state, without each request having to
+redo that setup itself. Pass `-NoSeed` to `Start-RunspacePoolServer` to skip
+this and start from a bare default state instead.
 
 Known limitation: the server accepts pipe connections one at a time in a
 single loop (dispatch/execution is fully concurrent across the pool once
@@ -124,13 +140,13 @@ Invoke-Pester D:\global\RunspacePool\RunspacePool.Tests.ps1
 $c = New-PesterConfiguration
 $c.Run.Path = 'D:\global\RunspacePool\RunspacePool.Tests.ps1'
 $c.CodeCoverage.Enabled = $true
-$c.CodeCoverage.Path = @('D:\global\RunspacePool\RunspacePool.ps1', 'D:\global\RunspacePool\Server.ps1')
+$c.CodeCoverage.Path = @('D:\global\RunspacePool\RunspacePool.psm1', 'D:\global\RunspacePool\Server.ps1')
 Invoke-Pester -Configuration $c
 ```
 Note: coverage numbers under-report `Server.ps1` — it runs in its own
 background `pwsh` process (started via `Start-Process`), which is outside the
 Pester host process's coverage instrumentation even though its behavior is
-fully exercised by the tests. `RunspacePool.ps1` (the client, running
+fully exercised by the tests. `RunspacePool.psm1` (the client, running
 in-process) is accurately covered.
 
 ## Known issues / lessons learned

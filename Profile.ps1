@@ -28,4 +28,4 @@ if (Get-Command mise -ErrorAction SilentlyContinue) {
 # --- RunspacePool (Invoke-PooledScript / Start-RunspacePoolServer) -----------
 # Not started automatically (keeps shell start fast) — the server is launched
 # on demand the first time Invoke-PooledScript is called.
-. (Join-Path $script:DevProfileRoot 'RunspacePool\RunspacePool.ps1')
+Import-Module (Join-Path $script:DevProfileRoot 'RunspacePool\RunspacePool.psd1') -Force

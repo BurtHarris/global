@@ -14,22 +14,20 @@
 #>
 
 BeforeAll {
-    . $PSScriptRoot\RunspacePool.ps1
+    Import-Module $PSScriptRoot\RunspacePool.psd1 -Force
 
     # Isolate tests from any real/interactive server instance by overriding the
     # pipe name used for this test run.
     $script:TestPipeName = "copilot-devdrive-pool-test-$PID"
-    $script:RunspacePoolPipeName = $script:TestPipeName
+    Set-RunspacePoolPipeName $script:TestPipeName
 
     function Start-TestServer {
-        param([int]$IdleTimeoutMinutes = 30, [int]$MaxRunspaces = 5)
-        $serverScript = Join-Path $PSScriptRoot 'Server.ps1'
-        Start-Process -FilePath (Get-Process -Id $PID).Path `
-            -ArgumentList @('-NoProfile', '-WindowStyle', 'Hidden', '-File', "`"$serverScript`"",
-                            '-PipeName', $script:TestPipeName,
-                            '-MaxRunspaces', $MaxRunspaces,
-                            '-IdleTimeoutMinutes', $IdleTimeoutMinutes) `
-            -WindowStyle Hidden
+        param([int]$IdleTimeoutMinutes = 30, [int]$MaxRunspaces = 5, [switch]$NoSeed)
+        if ($NoSeed) {
+            Start-RunspacePoolServer -MaxRunspaces $MaxRunspaces -IdleTimeoutMinutes $IdleTimeoutMinutes -NoSeed
+        } else {
+            Start-RunspacePoolServer -MaxRunspaces $MaxRunspaces -IdleTimeoutMinutes $IdleTimeoutMinutes
+        }
         $deadline = (Get-Date).AddSeconds(10)
         while ((Get-Date) -lt $deadline) {
             if (Test-RunspacePoolServer) { return }
@@ -98,8 +96,8 @@ Describe 'RunspacePool server' {
                 $i = $_
                 Start-ThreadJob -ScriptBlock {
                     param($ScriptRoot, $PipeName, $Index)
-                    . (Join-Path $ScriptRoot 'RunspacePool.ps1')
-                    $script:RunspacePoolPipeName = $PipeName
+                    Import-Module (Join-Path $ScriptRoot 'RunspacePool.psd1') -Force
+                    Set-RunspacePoolPipeName $PipeName
                     Invoke-PooledScript -Session pool -Script "Start-Sleep -Seconds 1; 'job $Index done'"
                 } -ArgumentList $PSScriptRoot, $script:TestPipeName, $i
             }
@@ -124,6 +122,49 @@ Describe 'RunspacePool server' {
             Invoke-PooledScript -Session primary -Script 'Set-Location $env:WINDIR' | Out-Null
             $result = Invoke-PooledScript -Session primary -Script '(Get-Location).Path'
             $result | Should -Be $env:WINDIR
+        }
+    }
+
+    Context 'Seeding (spawned runspaces mimic the parent session)' {
+        BeforeAll {
+            # Own pipe/server so this doesn't disturb the shared lifecycle server above.
+            $script:SeedPipeName = "copilot-devdrive-pool-seedtest-$PID"
+            $script:PreviousPipeName = $script:TestPipeName
+            $script:SeedLocation = $env:TEMP.TrimEnd('\')
+            Push-Location $script:SeedLocation
+            try {
+                Import-Module Microsoft.PowerShell.ThreadJob -Force  # a non-default module to prove it gets seeded
+                Set-RunspacePoolPipeName $script:SeedPipeName
+                Start-TestServer
+            } finally {
+                Pop-Location
+            }
+        }
+
+        AfterAll {
+            Set-RunspacePoolPipeName $script:SeedPipeName
+            if (Test-RunspacePoolServer) { Stop-RunspacePoolServer }
+            Set-RunspacePoolPipeName $script:PreviousPipeName
+        }
+
+        It 'captures the calling session as a seed (modules + location)' {
+            $seed = Get-RunspacePoolSeed
+            $seed.Modules | Should -Contain 'Microsoft.PowerShell.ThreadJob'
+        }
+
+        It 'starts a fresh pool runspace already in the parent location, without an explicit cd' {
+            $result = Invoke-PooledScript -Session pool -Script '(Get-Location).Path'
+            $result | Should -Be $script:SeedLocation
+        }
+
+        It 'starts a fresh pool runspace with the parent''s modules already imported' {
+            $result = Invoke-PooledScript -Session pool -Script "[bool](Get-Module -Name Microsoft.PowerShell.ThreadJob)"
+            $result | Should -Be 'True'
+        }
+
+        It 'starts the primary runspace already in the parent location' {
+            $result = Invoke-PooledScript -Session primary -Script '(Get-Location).Path'
+            $result | Should -Be $script:SeedLocation
         }
     }
 

@@ -17,7 +17,13 @@
 param(
     [string]$PipeName = "copilot-devdrive-pool-$env:USERNAME",
     [int]$MaxRunspaces = 5,
-    [int]$IdleTimeoutMinutes = 30
+    [int]$IdleTimeoutMinutes = 30,
+    # Comma-separated module names to pre-import into every runspace (pool and
+    # primary), so requests don't pay Import-Module cost on first use — this is
+    # how spawned runspaces "mimic" the parent session's setup.
+    [string]$SeedModules = '',
+    # Working directory every new runspace (pool and primary) starts in.
+    [string]$SeedLocation = ''
 )
 
 $ErrorActionPreference = 'Stop'
@@ -30,17 +36,33 @@ function Write-Log([string]$Message) {
     "$(Get-Date -Format o) [$PID] $Message" | Add-Content -LiteralPath $LogPath
 }
 
-Write-Log "Starting. Pipe=$PipeName MaxRunspaces=$MaxRunspaces IdleTimeoutMinutes=$IdleTimeoutMinutes"
+Write-Log "Starting. Pipe=$PipeName MaxRunspaces=$MaxRunspaces IdleTimeoutMinutes=$IdleTimeoutMinutes SeedModules=$SeedModules SeedLocation=$SeedLocation"
 
 # --- Shared pool for isolated/parallel work ----------------------------------
-$iss = [System.Management.Automation.Runspaces.InitialSessionState]::CreateDefault()
-$pool = [System.Management.Automation.Runspaces.RunspaceFactory]::CreateRunspacePool(1, $MaxRunspaces, $iss, $Host)
-$pool.ThreadOptions = [System.Management.Automation.Runspaces.PSThreadOptions]::UseNewThread
-$pool.Open()
+# Import the seed modules into the InitialSessionState so every runspace the
+# pool creates (and the dedicated primary runspace below) starts with them
+# already loaded, instead of each request re-importing on demand.
+try {
+    $iss = [System.Management.Automation.Runspaces.InitialSessionState]::CreateDefault()
+    $seedModuleNames = @($SeedModules -split ',' | Where-Object { $_ })
+    foreach ($m in $seedModuleNames) {
+        try { $iss.ImportPSModule(@($m)) } catch { Write-Log "Seed module import failed for '$m': $_" }
+    }
+    $pool = [System.Management.Automation.Runspaces.RunspaceFactory]::CreateRunspacePool(1, $MaxRunspaces, $iss, $Host)
+    $pool.ThreadOptions = [System.Management.Automation.Runspaces.PSThreadOptions]::UseNewThread
+    $pool.Open()
 
-# --- Dedicated persistent runspace for stateful ("primary") requests --------
-$primaryRunspace = [System.Management.Automation.Runspaces.RunspaceFactory]::CreateRunspace($iss)
-$primaryRunspace.Open()
+    # --- Dedicated persistent runspace for stateful ("primary") requests ----
+    $primaryRunspace = [System.Management.Automation.Runspaces.RunspaceFactory]::CreateRunspace($iss)
+    $primaryRunspace.Open()
+    if ($SeedLocation) {
+        try { $primaryRunspace.SessionStateProxy.Path.SetLocation($SeedLocation) }
+        catch { Write-Log "SeedLocation failed: $_" }
+    }
+} catch {
+    Write-Log "Fatal error during startup: $_"
+    throw
+}
 $primaryPs = [PowerShell]::Create()
 $primaryPs.Runspace = $primaryRunspace
 $primaryLock = [object]::new()
@@ -51,7 +73,7 @@ $script:PendingHandlers = [System.Collections.Generic.List[object]]::new()
 
 # Script executed inside a pool runspace to service one already-connected pipe client.
 $HandlerScript = {
-    param($PipeServer, $PrimaryPs, $PrimaryLock, $Pool, $LogPath)
+    param($PipeServer, $PrimaryPs, $PrimaryLock, $Pool, $LogPath, $SeedLocation)
 
     function Write-HandlerLog([string]$Message) {
         "$(Get-Date -Format o) [$PID/handler] $Message" | Add-Content -LiteralPath $LogPath
@@ -107,6 +129,9 @@ $HandlerScript = {
             $ps = [PowerShell]::Create()
             try {
                 $ps.RunspacePool = $Pool
+                # Mimic the parent session's cwd for this fresh/borrowed pool
+                # runspace before running the requested script.
+                if ($SeedLocation) { $ps.AddScript("Set-Location -LiteralPath '$SeedLocation'") | Out-Null }
                 $ps.AddScript($req.Script) | Out-Null
                 try {
                     $ps.Invoke($null, $psOutput) | Out-Null
@@ -155,38 +180,63 @@ function Remove-CompletedHandlers {
 }
 
 try {
+    # Maintain several concurrently-outstanding pipe accepts (not just one) so a
+    # burst of near-simultaneous client connects doesn't serialize behind a
+    # single BeginWaitForConnection — this is what lets the pool "recycle
+    # rapidly" under concurrent load instead of queuing at the pipe itself.
+    $acceptBacklog = [Math]::Max(2, [Math]::Min($MaxRunspaces, 4))
+    $script:PendingAccepts = [System.Collections.Generic.List[object]]::new()
+
+    function New-PendingAccept {
+        $ps = [System.IO.Pipes.NamedPipeServerStream]::new(
+            $PipeName,
+            [System.IO.Pipes.PipeDirection]::InOut,
+            $MaxRunspaces + $acceptBacklog,
+            [System.IO.Pipes.PipeTransmissionMode]::Byte,
+            [System.IO.Pipes.PipeOptions]::Asynchronous)
+        $ar = $ps.BeginWaitForConnection($null, $null)
+        [PSCustomObject]@{ Pipe = $ps; Ar = $ar }
+    }
+
+    1..$acceptBacklog | ForEach-Object { $script:PendingAccepts.Add((New-PendingAccept)) }
+
     while (-not $script:ShouldStop) {
         if (((Get-Date) - $script:LastActivity).TotalMinutes -ge $IdleTimeoutMinutes) {
             Write-Log "Idle timeout ($IdleTimeoutMinutes min) reached. Stopping."
             break
         }
 
-        $pipeServer = [System.IO.Pipes.NamedPipeServerStream]::new(
-            $PipeName,
-            [System.IO.Pipes.PipeDirection]::InOut,
-            $MaxRunspaces + 2,
-            [System.IO.Pipes.PipeTransmissionMode]::Byte,
-            [System.IO.Pipes.PipeOptions]::Asynchronous)
+        $anyConnected = $false
+        for ($i = $script:PendingAccepts.Count - 1; $i -ge 0; $i--) {
+            $pa = $script:PendingAccepts[$i]
+            if (-not $pa.Ar.IsCompleted) { continue }
+            $script:PendingAccepts.RemoveAt($i)
+            $anyConnected = $true
+            try {
+                $pa.Pipe.EndWaitForConnection($pa.Ar)
+                $script:LastActivity = Get-Date
 
-        $ar = $pipeServer.BeginWaitForConnection($null, $null)
-        $connected = $ar.AsyncWaitHandle.WaitOne(15000)
-        if (-not $connected) {
-            $pipeServer.Dispose()
-            Remove-CompletedHandlers
-            continue
+                $handlerPs = [PowerShell]::Create()
+                $handlerPs.RunspacePool = $pool
+                $handlerPs.AddScript($HandlerScript).AddArgument($pa.Pipe).AddArgument($primaryPs).AddArgument($primaryLock).AddArgument($pool).AddArgument($LogPath).AddArgument($SeedLocation) | Out-Null
+                $asyncResult = $handlerPs.BeginInvoke()
+                $script:PendingHandlers.Add([PSCustomObject]@{ Ps = $handlerPs; AsyncResult = $asyncResult })
+            } catch {
+                Write-Log "Accept error: $_"
+                try { $pa.Pipe.Dispose() } catch {}
+            }
+            # Replenish so the backlog always has $acceptBacklog outstanding accepts.
+            $script:PendingAccepts.Add((New-PendingAccept))
         }
-        $pipeServer.EndWaitForConnection($ar)
-        $script:LastActivity = Get-Date
-
-        $handlerPs = [PowerShell]::Create()
-        $handlerPs.RunspacePool = $pool
-        $handlerPs.AddScript($HandlerScript).AddArgument($pipeServer).AddArgument($primaryPs).AddArgument($primaryLock).AddArgument($pool).AddArgument($LogPath) | Out-Null
-        $asyncResult = $handlerPs.BeginInvoke()
-        $script:PendingHandlers.Add([PSCustomObject]@{ Ps = $handlerPs; AsyncResult = $asyncResult })
 
         Remove-CompletedHandlers
+
+        if (-not $anyConnected) { Start-Sleep -Milliseconds 100 }
     }
 } finally {
+    foreach ($pa in $script:PendingAccepts) {
+        try { $pa.Pipe.Dispose() } catch {}
+    }
     foreach ($h in $script:PendingHandlers) {
         try { $h.Ps.EndInvoke($h.AsyncResult) | Out-Null } catch {}
         $h.Ps.Dispose()
