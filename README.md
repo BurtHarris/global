@@ -119,11 +119,12 @@ instead of PowerShell's blank default state, without each request having to
 redo that setup itself. Pass `-NoSeed` to `Start-RunspacePoolServer` to skip
 this and start from a bare default state instead.
 
-Known limitation: the server accepts pipe connections one at a time in a
-single loop (dispatch/execution is fully concurrent across the pool once
-accepted), so very bursty concurrent connects see a little extra latency —
-fine for personal, moderate-concurrency use; would need an async accept loop
-to scale further.
+Known limitation: the server keeps a small backlog (up to 4) of concurrently
+outstanding named-pipe accepts rather than one at a time, so bursts of
+near-simultaneous connects are handled without serializing behind a single
+accept — but under heavy host load (e.g. many other processes competing for
+CPU) a connect can still occasionally time out and a test can be flaky;
+retrying is safe. Fine for personal, moderate-concurrency use.
 
 ### Testing
 `RunspacePool.Tests.ps1` is a Pester (v6) suite covering server lifecycle,
