@@ -19,11 +19,8 @@ if (Get-Command mise -ErrorAction SilentlyContinue) {
     Write-Warning "mise not found on PATH. Run $script:DevProfileRoot\Setup.ps1 to bootstrap it."
 }
 
-# --- Docker helpers (Test-DockerReady / Ensure-Docker) -----------------------
-. (Join-Path $script:DevProfileRoot 'Docker.ps1')
-
-# --- Reset-DevTools -----------------------------------------------------------
-. (Join-Path $script:DevProfileRoot 'Reset-DevTools.ps1')
+# --- DevTools (Ensure-Docker / Test-DockerReady / Reset-DevTools) -----------
+Import-Module (Join-Path $script:DevProfileRoot 'DevTools\DevTools.psd1') -Force
 
 # --- RunspacePool (Invoke-PooledScript / Start-RunspacePoolServer) -----------
 # Not started automatically (keeps shell start fast) — the server is launched
