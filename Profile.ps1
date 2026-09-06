@@ -8,6 +8,10 @@ $script:DevProfileRoot = $PSScriptRoot
 
 $env:EDITOR = "code --wait"
 
+# --- Default working directory ----------------------------------------------
+# All projects live on D:\, so start every new shell there.
+Set-Location -LiteralPath 'D:\'
+
 # --- mise (tool version manager) --------------------------------------------
 if (Get-Command mise -ErrorAction SilentlyContinue) {
     mise activate pwsh | Out-String | Invoke-Expression
@@ -20,3 +24,8 @@ if (Get-Command mise -ErrorAction SilentlyContinue) {
 
 # --- Reset-DevTools -----------------------------------------------------------
 . (Join-Path $script:DevProfileRoot 'Reset-DevTools.ps1')
+
+# --- RunspacePool (Invoke-PooledScript / Start-RunspacePoolServer) -----------
+# Not started automatically (keeps shell start fast) — the server is launched
+# on demand the first time Invoke-PooledScript is called.
+. (Join-Path $script:DevProfileRoot 'RunspacePool\RunspacePool.ps1')

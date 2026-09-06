@@ -83,6 +83,55 @@ D:\global\Invoke-RebootAndResume.ps1 -Force -ResumeCommand `
 - `Ensure-Docker` — make sure Docker's engine is up before running docker/compose commands.
 - `Reset-DevTools` — wipe drift and restore python/node/uv to pinned versions.
 - `mise current` — see active tool versions.
+- `Invoke-PooledScript` — run a script via the background runspace-pool server
+  (see `RunspacePool/`).
+
+## RunspacePool — background runspace-pool server
+`RunspacePool/Server.ps1` is a hidden background `pwsh` process, started on
+first use, that hosts a `System.Management.Automation.Runspaces.RunspacePool`
+(min 1 / max 5) plus one dedicated persistent runspace, and listens on a
+per-user named pipe (`copilot-devdrive-pool-$env:USERNAME`).
+
+- `Invoke-PooledScript -Script '...' -Session pool` (default) — runs in a
+  fresh, isolated runspace from the pool. Safe to fire several of these
+  concurrently (e.g. via `Start-ThreadJob`) for parallel work.
+- `Invoke-PooledScript -Script '...' -Session primary` — always runs in the
+  one dedicated runspace, so variables/`cwd`/imported modules persist across
+  calls, like a normal interactive shell.
+- `Get-RunspacePoolStatus` / `Stop-RunspacePoolServer` / `Start-RunspacePoolServer`
+  — manage the server directly if needed.
+- Auto-shuts down after 30 idle minutes. Logs to
+  `~\.copilot\runspacepool\server.log`.
+
+Known limitation: the server accepts pipe connections one at a time in a
+single loop (dispatch/execution is fully concurrent across the pool once
+accepted), so very bursty concurrent connects see a little extra latency —
+fine for personal, moderate-concurrency use; would need an async accept loop
+to scale further.
+
+### Testing
+`RunspacePool.Tests.ps1` is a Pester (v6) suite covering server lifecycle,
+pool isolation, primary-session persistence, error resilience (a thrown error
+in one request doesn't crash the server or subsequent requests), and real
+concurrency (multiple sleeps completing in parallel, not serially). It starts
+its own server on a test-only pipe name, so it won't collide with an
+already-running interactive server.
+
+```powershell
+Invoke-Pester D:\global\RunspacePool\RunspacePool.Tests.ps1
+
+# With code coverage:
+$c = New-PesterConfiguration
+$c.Run.Path = 'D:\global\RunspacePool\RunspacePool.Tests.ps1'
+$c.CodeCoverage.Enabled = $true
+$c.CodeCoverage.Path = @('D:\global\RunspacePool\RunspacePool.ps1', 'D:\global\RunspacePool\Server.ps1')
+Invoke-Pester -Configuration $c
+```
+Note: coverage numbers under-report `Server.ps1` — it runs in its own
+background `pwsh` process (started via `Start-Process`), which is outside the
+Pester host process's coverage instrumentation even though its behavior is
+fully exercised by the tests. `RunspacePool.ps1` (the client, running
+in-process) is accurately covered.
 
 ## Known issues / lessons learned
 - **mise's community `winget` backend plugin crashes `mise install`.**
