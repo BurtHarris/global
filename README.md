@@ -92,8 +92,8 @@ D:\global\Invoke-RebootAndResume.ps1 -Force -ResumeCommand `
 
 ## RunspacePool — background runspace-pool server
 `RunspacePool/` is a PowerShell module (`RunspacePool.psd1` + `.psm1`) whose
-client functions talk to `Server.ps1`, a hidden background `pwsh` process
-started on first use. The server hosts a
+client functions talk to `Server.ps1`, a background `pwsh` process started on
+first use (hidden on Windows; standard detached process elsewhere). The server hosts a
 `System.Management.Automation.Runspaces.RunspacePool` (min 1 / max 5) plus one
 dedicated persistent runspace, and listens on a per-user named pipe
 (`copilot-devdrive-pool-$env:USERNAME`). Because the server process (and its
@@ -109,8 +109,8 @@ whole thing exists to eliminate on Windows.
   calls, like a normal interactive shell.
 - `Get-RunspacePoolStatus` / `Stop-RunspacePoolServer` / `Start-RunspacePoolServer`
   — manage the server directly if needed.
-- Auto-shuts down after 30 idle minutes. Logs to
-  `~\.copilot\runspacepool\server.log`.
+- Auto-shuts down after 30 idle minutes with no active handlers. Logs to
+  `~/.copilot/runspacepool/server.log`.
 
 ### Seeding — spawned runspaces mimic the parent session
 When `Start-RunspacePoolServer` launches the server, it captures a snapshot of
@@ -121,7 +121,8 @@ The server uses that to pre-import those modules into every runspace's
 directory — so a freshly spawned runspace already looks like the parent shell
 instead of PowerShell's blank default state, without each request having to
 redo that setup itself. Pass `-NoSeed` to `Start-RunspacePoolServer` to skip
-this and start from a bare default state instead.
+this and start from a bare default state instead. The pipe is also restricted
+to the current user so cloud and local runs stay isolated by account.
 
 Known limitation: the server keeps a small backlog (up to 4) of concurrently
 outstanding named-pipe accepts rather than one at a time, so bursts of

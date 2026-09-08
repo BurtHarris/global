@@ -28,7 +28,8 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$LogDir = Join-Path $env:USERPROFILE '.copilot\runspacepool'
+$UserProfilePath = [Environment]::GetFolderPath([Environment+SpecialFolder]::UserProfile)
+$LogDir = Join-Path $UserProfilePath '.copilot/runspacepool'
 New-Item -ItemType Directory -Path $LogDir -Force | Out-Null
 $LogPath = Join-Path $LogDir 'server.log'
 
@@ -129,10 +130,17 @@ $HandlerScript = {
             $ps = [PowerShell]::Create()
             try {
                 $ps.RunspacePool = $Pool
-                # Mimic the parent session's cwd for this fresh/borrowed pool
-                # runspace before running the requested script.
-                if ($SeedLocation) { $ps.AddScript("Set-Location -LiteralPath '$SeedLocation'") | Out-Null }
-                $ps.AddScript($req.Script) | Out-Null
+                $ps.AddScript(@'
+param($UserScript, $InitialLocation)
+$requestModule = New-Module -ArgumentList $InitialLocation -ScriptBlock {
+    param($InnerLocation)
+    if ($InnerLocation) {
+        Set-Location -LiteralPath $InnerLocation
+    }
+}
+$boundScript = $requestModule.NewBoundScriptBlock([ScriptBlock]::Create($UserScript))
+& $boundScript
+'@, $true).AddArgument($req.Script).AddArgument($SeedLocation) | Out-Null
                 try {
                     $ps.Invoke($null, $psOutput) | Out-Null
                 } catch {
@@ -191,9 +199,9 @@ try {
         $ps = [System.IO.Pipes.NamedPipeServerStream]::new(
             $PipeName,
             [System.IO.Pipes.PipeDirection]::InOut,
-            $MaxRunspaces + $acceptBacklog,
+            [System.IO.Pipes.NamedPipeServerStream]::MaxAllowedServerInstances,
             [System.IO.Pipes.PipeTransmissionMode]::Byte,
-            [System.IO.Pipes.PipeOptions]::Asynchronous)
+            ([System.IO.Pipes.PipeOptions]::Asynchronous -bor [System.IO.Pipes.PipeOptions]::CurrentUserOnly))
         $ar = $ps.BeginWaitForConnection($null, $null)
         [PSCustomObject]@{ Pipe = $ps; Ar = $ar }
     }
@@ -201,8 +209,8 @@ try {
     1..$acceptBacklog | ForEach-Object { $script:PendingAccepts.Add((New-PendingAccept)) }
 
     while (-not $script:ShouldStop) {
-        if (((Get-Date) - $script:LastActivity).TotalMinutes -ge $IdleTimeoutMinutes) {
-            Write-Log "Idle timeout ($IdleTimeoutMinutes min) reached. Stopping."
+        if ($script:PendingHandlers.Count -eq 0 -and ((Get-Date) - $script:LastActivity).TotalMinutes -ge $IdleTimeoutMinutes) {
+            Write-Log "Idle timeout ($IdleTimeoutMinutes min) reached with no active handlers. Stopping."
             break
         }
 
@@ -217,7 +225,6 @@ try {
                 $script:LastActivity = Get-Date
 
                 $handlerPs = [PowerShell]::Create()
-                $handlerPs.RunspacePool = $pool
                 $handlerPs.AddScript($HandlerScript).AddArgument($pa.Pipe).AddArgument($primaryPs).AddArgument($primaryLock).AddArgument($pool).AddArgument($LogPath).AddArgument($SeedLocation) | Out-Null
                 $asyncResult = $handlerPs.BeginInvoke()
                 $script:PendingHandlers.Add([PSCustomObject]@{ Ps = $handlerPs; AsyncResult = $asyncResult })

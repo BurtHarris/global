@@ -35,6 +35,10 @@ BeforeAll {
         }
         throw 'Test server did not start in time.'
     }
+
+    function Get-TestTempDirectory {
+        [System.IO.Path]::GetTempPath().TrimEnd([System.IO.Path]::DirectorySeparatorChar, [System.IO.Path]::AltDirectorySeparatorChar)
+    }
 }
 
 AfterAll {
@@ -119,9 +123,10 @@ Describe 'RunspacePool server' {
         }
 
         It 'persists working directory across separate calls' {
-            Invoke-PooledScript -Session primary -Script 'Set-Location $env:WINDIR' | Out-Null
+            $tempPath = Get-TestTempDirectory
+            Invoke-PooledScript -Session primary -Script "Set-Location -LiteralPath '$tempPath'" | Out-Null
             $result = Invoke-PooledScript -Session primary -Script '(Get-Location).Path'
-            $result | Should -Be $env:WINDIR
+            $result | Should -Be $tempPath
         }
     }
 
@@ -130,7 +135,7 @@ Describe 'RunspacePool server' {
             # Own pipe/server so this doesn't disturb the shared lifecycle server above.
             $script:SeedPipeName = "copilot-devdrive-pool-seedtest-$PID"
             $script:PreviousPipeName = $script:TestPipeName
-            $script:SeedLocation = $env:TEMP.TrimEnd('\')
+            $script:SeedLocation = Get-TestTempDirectory
             Push-Location $script:SeedLocation
             try {
                 Import-Module Microsoft.PowerShell.ThreadJob -Force  # a non-default module to prove it gets seeded
