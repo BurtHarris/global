@@ -1,0 +1,23 @@
+{
+  "name": "@pages/core",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Core AST parsing, deterministic patching, and CommonMark conversion engine for Copilot Pages",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test test/*.test.js || node --test --loader ts-node/esm test/*.test.ts || tsc && node --test dist/test/*.test.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

@@ -1,0 +1,24 @@
+[project]
+name = "copilot-pages"
+version = "0.1.0"
+description = "M365 Copilot Pages toolkit: AST conversion, deterministic editing, and FastMCP server"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.0.0",
+    "markdown-it-py>=3.0.0",
+    "pydantic>=2.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.4.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["python/tests"]

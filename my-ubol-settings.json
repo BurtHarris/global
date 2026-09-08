@@ -1,0 +1,29 @@
+{
+  "version": "2026.901.1442",
+  "developerMode": true,
+  "filteringModes": {
+    "none": [
+      "www.linkedin.com",
+      "ddkjiahejlhfcafbddmgiahcphecmpfh",
+      "chromewebstore.google.com",
+      "www.law.cornell.edu",
+      "contextual-tasks",
+      "accounts.google.com",
+      "www.internetweathermap.com",
+      "www.amazon.com",
+      "www.grammarly.com",
+      "app.grammarly.com"
+    ],
+    "basic": [
+      "github.com",
+      "www.supremecourt.gov",
+      "www.federalregister.gov",
+      "antigravity.google",
+      "credenceid.com"
+    ],
+    "optimal": [
+      "all-urls"
+    ],
+    "complete": []
+  }
+}
