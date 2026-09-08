@@ -127,21 +127,28 @@ $HandlerScript = {
                 [System.Threading.Monitor]::Exit($PrimaryLock)
             }
         } else {
-            $localPs = [PowerShell]::Create()
+            $ps = [PowerShell]::Create()
             try {
-                $localPs.Runspace = [System.Management.Automation.Runspaces.Runspace]::DefaultRunspace
-                if ($SeedLocation) {
-                    $localPs.AddCommand('Set-Location').AddParameter('LiteralPath', $SeedLocation) | Out-Null
-                }
-                $localPs.AddScript($req.Script) | Out-Null
+                $ps.RunspacePool = $Pool
+                $ps.AddScript(@'
+param($UserScript, $InitialLocation)
+$requestModule = New-Module -ArgumentList $InitialLocation -ScriptBlock {
+    param($InnerLocation)
+    if ($InnerLocation) {
+        Set-Location -LiteralPath $InnerLocation
+    }
+}
+$boundScript = $requestModule.NewBoundScriptBlock([ScriptBlock]::Create($UserScript))
+& $boundScript
+'@, $true).AddArgument($req.Script).AddArgument($SeedLocation) | Out-Null
                 try {
-                    $localPs.Invoke($null, $psOutput) | Out-Null
+                    $ps.Invoke($null, $psOutput) | Out-Null
                 } catch {
                     $terminatingError = $_.Exception.Message
                 }
-                $result = [PSCustomObject]@{ Output = $psOutput; Errors = $localPs.Streams.Error; HadErrors = ($localPs.HadErrors -or $terminatingError) }
+                $result = [PSCustomObject]@{ Output = $psOutput; Errors = $ps.Streams.Error; HadErrors = ($ps.HadErrors -or $terminatingError) }
             } finally {
-                $localPs.Dispose()
+                $ps.Dispose()
             }
         }
 
@@ -192,7 +199,7 @@ try {
         $ps = [System.IO.Pipes.NamedPipeServerStream]::new(
             $PipeName,
             [System.IO.Pipes.PipeDirection]::InOut,
-            $MaxRunspaces + $acceptBacklog,
+            [System.IO.Pipes.NamedPipeServerStream]::MaxAllowedServerInstances,
             [System.IO.Pipes.PipeTransmissionMode]::Byte,
             ([System.IO.Pipes.PipeOptions]::Asynchronous -bor [System.IO.Pipes.PipeOptions]::CurrentUserOnly))
         $ar = $ps.BeginWaitForConnection($null, $null)
@@ -218,7 +225,6 @@ try {
                 $script:LastActivity = Get-Date
 
                 $handlerPs = [PowerShell]::Create()
-                $handlerPs.RunspacePool = $pool
                 $handlerPs.AddScript($HandlerScript).AddArgument($pa.Pipe).AddArgument($primaryPs).AddArgument($primaryLock).AddArgument($pool).AddArgument($LogPath).AddArgument($SeedLocation) | Out-Null
                 $asyncResult = $handlerPs.BeginInvoke()
                 $script:PendingHandlers.Add([PSCustomObject]@{ Ps = $handlerPs; AsyncResult = $asyncResult })
