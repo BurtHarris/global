@@ -1,0 +1,20 @@
+{
+  "name": "@pages/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Command line interface for M365 Copilot Pages management and CommonMark conversion",
+  "main": "./dist/index.js",
+  "bin": {
+    "pages": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@pages/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

@@ -23,6 +23,7 @@ This document records the defects identified during the code review of the `glob
 | **[DEF-13](#def-13-artificially-low-coverage-metric)** | **P3 - Low** | `Invoke-CodeCoverage.ps1` | `DevTools` measured but has no tests | Distorts code coverage metrics (~22.7%) |
 | **[DEF-14](#def-14-hardcoded-drive-path-in-sandbox-config)** | **P3 - Low** | `TestInSandbox.wsb` | Hardcoded `D:\global` host mount | Portability failure if cloned elsewhere |
 | **[DEF-15](#def-15-loss-of-typed-objects-and-streams)** | **P3 - Low** | `RunspacePool` | Output stringified with `Out-String`; streams discarded | Caller cannot receive objects/warnings |
+| **[DEF-16](#def-16-stale-workspace-path-after-folder-rename)** | **P2 - Medium** | VS Code Copilot session/workspace integration | Folder rename leaves session bound to its former path | Repeated failed work/retry activity and an unresponsive session |
 
 ---
 
@@ -257,3 +258,22 @@ This document records the defects identified during the code review of the `glob
   Callers receive formatted text rather than structured objects, preventing object pipeline chaining.
 - **Fix:**
   Use `[System.Management.Automation.PSSerializer]::Serialize($o)` or structured JSON for `Stream = 'output'`.
+
+---
+
+### DEF-16: Stale Workspace Path After Folder Rename
+- **Component:** VS Code Copilot session/workspace integration
+- **Priority:** **P2 - Medium**
+- **Description:**
+  A session that was started with `D:\Nudge` as its workspace remained bound to that path after the folder was renamed. Copilot continued attempting operations against the removed path instead of detecting the rename or prompting to rebind the session.
+- **Impact:**
+  The app can appear stuck and repeatedly emit its background-work activity sound, despite there being no productive work to perform. The user must cancel the session and reload or restart VS Code to recover.
+- **Steps to reproduce:**
+  1. Open a folder in VS Code and start a Copilot agent session.
+  2. Rename or move that folder outside VS Code so its original path no longer exists.
+  3. Return to the session and request or resume work.
+  4. Observe that the agent continues targeting the former workspace path and may remain in a retrying or working state.
+- **Expected behavior:**
+  Detect that the workspace path is unavailable or has changed, stop background retries, silence activity feedback, and offer to rebind to the newly opened workspace or start a new session.
+- **Workaround:**
+  Cancel active agent work, run **Developer: Reload Window**, then reopen the renamed folder and start a fresh Copilot session.

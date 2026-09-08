@@ -1,0 +1,26 @@
+# Node / Workspaces
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+*.egg-info/
+
+# PowerShell / Testing
+*.coverage.xml
+TestResults/
+coverage/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
