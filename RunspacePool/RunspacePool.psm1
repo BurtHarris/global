@@ -16,6 +16,35 @@
 $script:RunspacePoolRoot = $PSScriptRoot
 $script:RunspacePoolPipeName = "copilot-devdrive-pool-$env:USERNAME"
 
+function Get-RunspacePoolPipeOptions {
+    [System.IO.Pipes.PipeOptions]::CurrentUserOnly
+}
+
+function Get-RunspacePoolServerArguments {
+    param(
+        [int]$MaxRunspaces,
+        [int]$IdleTimeoutMinutes,
+        [switch]$NoSeed
+    )
+
+    $serverScript = Join-Path $script:RunspacePoolRoot 'Server.ps1'
+    $argList = @('-NoProfile', '-File', $serverScript,
+        '-PipeName', $script:RunspacePoolPipeName,
+        '-MaxRunspaces', $MaxRunspaces, '-IdleTimeoutMinutes', $IdleTimeoutMinutes)
+    if (-not $NoSeed) {
+        # Mimic the parent (calling) runspace's setup: freshly created pool/primary
+        # runspaces on the server start with these modules already imported and
+        # this location already set, instead of a blank default state.
+        $seed = Get-RunspacePoolSeed
+        if ($seed.Modules.Count -gt 0) {
+            $argList += @('-SeedModules', ($seed.Modules -join ','))
+        }
+        $argList += @('-SeedLocation', $seed.Location)
+    }
+
+    $argList
+}
+
 function Set-RunspacePoolPipeName {
     <#
     .SYNOPSIS
@@ -49,7 +78,11 @@ function Get-RunspacePoolSeed {
 function Test-RunspacePoolServer {
     [CmdletBinding()]
     param([int]$TimeoutMs = 250)
-    $client = [System.IO.Pipes.NamedPipeClientStream]::new('.', $script:RunspacePoolPipeName, [System.IO.Pipes.PipeDirection]::InOut)
+    $client = [System.IO.Pipes.NamedPipeClientStream]::new(
+        '.',
+        $script:RunspacePoolPipeName,
+        [System.IO.Pipes.PipeDirection]::InOut,
+        (Get-RunspacePoolPipeOptions))
     try {
         $client.Connect($TimeoutMs)
         return $true
@@ -74,7 +107,12 @@ function Start-RunspacePoolServer {
     # the same pipe.
     $mutex = [System.Threading.Mutex]::new($false, "Local\RunspacePoolServer-$($script:RunspacePoolPipeName)")
     try {
-        if (-not $mutex.WaitOne([TimeSpan]::FromSeconds(15))) {
+        try {
+            $hasLock = $mutex.WaitOne([TimeSpan]::FromSeconds(15))
+        } catch [System.Threading.AbandonedMutexException] {
+            $hasLock = $true
+        }
+        if (-not $hasLock) {
             throw 'Timed out waiting to start runspace pool server (another process is starting it).'
         }
         try {
@@ -82,28 +120,22 @@ function Start-RunspacePoolServer {
                 Write-Verbose 'Runspace pool server already running.'
                 return
             }
-            $serverScript = Join-Path $script:RunspacePoolRoot 'Server.ps1'
-            $argList = @('-NoProfile', '-WindowStyle', 'Hidden', '-File', "`"$serverScript`"",
-                         '-PipeName', $script:RunspacePoolPipeName,
-                         '-MaxRunspaces', $MaxRunspaces, '-IdleTimeoutMinutes', $IdleTimeoutMinutes)
-            if (-not $NoSeed) {
-                # Mimic the parent (calling) runspace's setup: freshly created pool/primary
-                # runspaces on the server start with these modules already imported and
-                # this location already set, instead of a blank default state.
-                $seed = Get-RunspacePoolSeed
-                if ($seed.Modules.Count -gt 0) {
-                    $argList += @('-SeedModules', ($seed.Modules -join ','))
-                }
-                $argList += @('-SeedLocation', $seed.Location)
+            $argList = Get-RunspacePoolServerArguments -MaxRunspaces $MaxRunspaces -IdleTimeoutMinutes $IdleTimeoutMinutes -NoSeed:$NoSeed
+            $startProcessParams = @{
+                FilePath     = (Get-Process -Id $PID).Path
+                ArgumentList = $argList
             }
-            Start-Process -FilePath (Get-Process -Id $PID).Path -ArgumentList $argList -WindowStyle Hidden
+            if ($IsWindows) {
+                $startProcessParams.WindowStyle = 'Hidden'
+            }
+            Start-Process @startProcessParams | Out-Null
 
             $deadline = (Get-Date).AddSeconds(10)
             while ((Get-Date) -lt $deadline) {
                 if (Test-RunspacePoolServer) { return }
                 Start-Sleep -Milliseconds 200
             }
-            throw 'Runspace pool server did not start within 10 seconds. Check ~\.copilot\runspacepool\server.log'
+            throw 'Runspace pool server did not start within 10 seconds. Check ~/.copilot/runspacepool/server.log'
         } finally {
             $mutex.ReleaseMutex()
         }
@@ -118,7 +150,11 @@ function Send-RunspacePoolRequest {
         [Parameter(Mandatory)][hashtable]$Request,
         [int]$ConnectTimeoutMs = 3000
     )
-    $client = [System.IO.Pipes.NamedPipeClientStream]::new('.', $script:RunspacePoolPipeName, [System.IO.Pipes.PipeDirection]::InOut)
+    $client = [System.IO.Pipes.NamedPipeClientStream]::new(
+        '.',
+        $script:RunspacePoolPipeName,
+        [System.IO.Pipes.PipeDirection]::InOut,
+        (Get-RunspacePoolPipeOptions))
     try {
         $client.Connect($ConnectTimeoutMs)
         $writer = [System.IO.StreamWriter]::new($client)

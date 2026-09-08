@@ -28,7 +28,8 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$LogDir = Join-Path $env:USERPROFILE '.copilot\runspacepool'
+$UserProfilePath = [Environment]::GetFolderPath([Environment+SpecialFolder]::UserProfile)
+$LogDir = Join-Path $UserProfilePath '.copilot/runspacepool'
 New-Item -ItemType Directory -Path $LogDir -Force | Out-Null
 $LogPath = Join-Path $LogDir 'server.log'
 
@@ -126,21 +127,21 @@ $HandlerScript = {
                 [System.Threading.Monitor]::Exit($PrimaryLock)
             }
         } else {
-            $ps = [PowerShell]::Create()
+            $localPs = [PowerShell]::Create()
             try {
-                $ps.RunspacePool = $Pool
-                # Mimic the parent session's cwd for this fresh/borrowed pool
-                # runspace before running the requested script.
-                if ($SeedLocation) { $ps.AddScript("Set-Location -LiteralPath '$SeedLocation'") | Out-Null }
-                $ps.AddScript($req.Script) | Out-Null
+                $localPs.Runspace = [System.Management.Automation.Runspaces.Runspace]::DefaultRunspace
+                if ($SeedLocation) {
+                    $localPs.AddCommand('Set-Location').AddParameter('LiteralPath', $SeedLocation) | Out-Null
+                }
+                $localPs.AddScript($req.Script) | Out-Null
                 try {
-                    $ps.Invoke($null, $psOutput) | Out-Null
+                    $localPs.Invoke($null, $psOutput) | Out-Null
                 } catch {
                     $terminatingError = $_.Exception.Message
                 }
-                $result = [PSCustomObject]@{ Output = $psOutput; Errors = $ps.Streams.Error; HadErrors = ($ps.HadErrors -or $terminatingError) }
+                $result = [PSCustomObject]@{ Output = $psOutput; Errors = $localPs.Streams.Error; HadErrors = ($localPs.HadErrors -or $terminatingError) }
             } finally {
-                $ps.Dispose()
+                $localPs.Dispose()
             }
         }
 
@@ -193,7 +194,7 @@ try {
             [System.IO.Pipes.PipeDirection]::InOut,
             $MaxRunspaces + $acceptBacklog,
             [System.IO.Pipes.PipeTransmissionMode]::Byte,
-            [System.IO.Pipes.PipeOptions]::Asynchronous)
+            ([System.IO.Pipes.PipeOptions]::Asynchronous -bor [System.IO.Pipes.PipeOptions]::CurrentUserOnly))
         $ar = $ps.BeginWaitForConnection($null, $null)
         [PSCustomObject]@{ Pipe = $ps; Ar = $ar }
     }
@@ -201,8 +202,8 @@ try {
     1..$acceptBacklog | ForEach-Object { $script:PendingAccepts.Add((New-PendingAccept)) }
 
     while (-not $script:ShouldStop) {
-        if (((Get-Date) - $script:LastActivity).TotalMinutes -ge $IdleTimeoutMinutes) {
-            Write-Log "Idle timeout ($IdleTimeoutMinutes min) reached. Stopping."
+        if ($script:PendingHandlers.Count -eq 0 -and ((Get-Date) - $script:LastActivity).TotalMinutes -ge $IdleTimeoutMinutes) {
+            Write-Log "Idle timeout ($IdleTimeoutMinutes min) reached with no active handlers. Stopping."
             break
         }
 
