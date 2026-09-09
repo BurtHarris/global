@@ -22,7 +22,7 @@ if (Get-Command mise -ErrorAction SilentlyContinue) {
 # --- DevTools (Ensure-Docker / Test-DockerReady / Reset-DevTools) -----------
 Import-Module (Join-Path $script:DevProfileRoot 'DevTools\DevTools.psd1') -Force
 
-# --- RunspacePool (Invoke-PooledScript / Start-RunspacePoolServer) -----------
+# --- RunspacePool (Invoke-PooledScript / Start-PoolServer) -------------------
 # Not started automatically (keeps shell start fast) — the server is launched
 # on demand the first time Invoke-PooledScript is called.
 Import-Module (Join-Path $script:DevProfileRoot 'RunspacePool\RunspacePool.psd1') -Force
