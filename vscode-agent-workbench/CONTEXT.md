@@ -9,3 +9,6 @@
 - **Workbench run**: a locally persisted record of one instruction/debugging action taken through the extension.
 - **Workspace inventory**: the extension's scan of skills, agents, hooks, instructions, prompts, MCP configuration files, and agent-capable extension manifests in the open workspace.
 - **Debug surface**: an existing VS Code or Copilot UI used for inspection, such as Agent Debug Logs, Chat Debug View, or MCP server management.
+- **Instruction profile**: a scope-owned instruction layer (organization, team, repository, packaged skill, or user) that contributes to composed agent behavior.
+- **Canonical profile source**: the one authoritative location for an instruction profile; mirrors and exports are derived artifacts.
+- **Harness adapter**: projection logic that renders canonical instruction profiles into harness-specific prompt/configuration formats.
