@@ -20,6 +20,9 @@ from here.
     drift (e.g. pip/npm globals).
 - `RunspacePool/` — PowerShell module (`RunspacePool.psd1`/`.psm1` +
   `Server.ps1`); see below.
+- `vscode-agent-workbench/` — standalone VS Code extension MVP for running
+  instruction-oriented agent workflows, inspecting workspace agent assets, and
+  jumping into built-in AI debugging surfaces.
 - `mise.config.toml` — source of truth for the global mise config, deployed to
   `~/.config/mise/config.toml` by `Setup.ps1`.
 - `Setup.ps1` — idempotent bootstrap: winget -> mise, pwsh, Coreutils; registers
