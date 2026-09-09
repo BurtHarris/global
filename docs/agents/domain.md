@@ -6,13 +6,20 @@ How the engineering skills should consume this repo's domain documentation when 
 
 - **`CONTEXT.md`** at the repo root, or
 - **`CONTEXT-MAP.md`** at the repo root if it exists: it points at one `CONTEXT.md` per context. Read each one relevant to the topic.
-- **`docs/adr/`**: read ADRs that touch the area you're about to work in. In multi-context repos, also check `src/<context>/docs/adr/` for context-scoped decisions.
+- **`docs/adr/`**: read ADRs that touch the area you're about to work in. In multi-context repos, also check `<context>/docs/adr/` for context-scoped decisions.
 
 If any of these files don't exist, **proceed silently**. Don't flag their absence; don't suggest creating them upfront. The `/domain-modeling` skill (reached via `/grill-with-docs` and `/improve-codebase-architecture`) creates them lazily when terms or decisions actually get resolved.
 
-## File structure
+## Context → Package convention
 
-Multi-context repo:
+Contexts stay **flat until the 2nd package** appears. If a context has one package, point the context directly at that package path. Add a dedicated context directory only when that context grows into multiple packages.
+
+Worked examples:
+
+- **Pool** is still flat: it maps directly to `RunspacePool/CONTEXT.md` (single package today).
+- **`pages/`** has multiple packages (`lib/`, `mcp/`, `cli/`, `gui/`, `pwsh/`, `python/`), so `pages/` is the context directory and owns `pages/CONTEXT.md`.
+
+Typical multi-context layout in this repo:
 
 ```
 /
@@ -21,9 +28,12 @@ Multi-context repo:
 |- DevTools/
 |  |- CONTEXT.md
 |  `- docs/adr/                      <- DevTools decisions
-`- RunspacePool/
-	|- CONTEXT.md
-	`- docs/adr/                      <- RunspacePool decisions
+|- RunspacePool/
+|  |- CONTEXT.md                     <- Pool context (flat while single-package)
+|  `- docs/adr/
+`- pages/
+   |- CONTEXT.md                     <- Context directory (multi-package)
+   `- docs/adr/
 ```
 
 ## Use the glossary's vocabulary

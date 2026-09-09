@@ -7,7 +7,8 @@ bounded contexts:
 | Context | Location | Scope |
 | ------- | -------- | ----- |
 | DevTools | `DevTools/CONTEXT.md` | Developer-environment helper module. |
-| RunspacePool | `RunspacePool/CONTEXT.md` | Background PowerShell runspace-pool module. |
+| Pool | `RunspacePool/CONTEXT.md` | Background PowerShell runspace-pool module. |
+| Bootstrap | `CONTEXT.md` | Repository-root bootstrap/profile scripts and machine setup flow. |
 | Agent Workbench | `vscode-agent-workbench/CONTEXT.md` | VS Code extension prototype for instruction-oriented agent workflow execution and debugging. |
 | Pages | `pages/CONTEXT.md` | Polyglot toolkit for M365 Copilot Pages — itself a nested polyglot package layout (see `pages/docs/adr/0001-polyglot-workspace-architecture.md`). |
 
