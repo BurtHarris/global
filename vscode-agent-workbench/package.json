@@ -1,0 +1,159 @@
+{
+  "name": "vscode-agent-workbench",
+  "displayName": "Agent Workbench",
+  "description": "VS Code extension MVP for running instruction-oriented agent workflows and jumping into built-in debugging surfaces.",
+  "version": "0.1.0",
+  "publisher": "burtharris-local",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "AI",
+    "Chat",
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "agentWorkbench.runInstruction",
+        "title": "Agent Workbench: Run Instruction"
+      },
+      {
+        "command": "agentWorkbench.openCustomizations",
+        "title": "Agent Workbench: Open Customizations"
+      },
+      {
+        "command": "agentWorkbench.openAgentDebugLogs",
+        "title": "Agent Workbench: Open Agent Debug Logs"
+      },
+      {
+        "command": "agentWorkbench.openChatDebugView",
+        "title": "Agent Workbench: Open Chat Debug View"
+      },
+      {
+        "command": "agentWorkbench.listMcpServers",
+        "title": "Agent Workbench: List MCP Servers"
+      },
+      {
+        "command": "agentWorkbench.prepareWazaEval",
+        "title": "Agent Workbench: Prepare Waza Eval"
+      },
+      {
+        "command": "agentWorkbench.showRunDetails",
+        "title": "Agent Workbench: Show Run Details"
+      },
+      {
+        "command": "agentWorkbench.clearRunHistory",
+        "title": "Agent Workbench: Clear Run History"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "agentWorkbench.runs",
+          "name": "Agent Workbench Runs"
+        }
+      ]
+    },
+    "chatParticipants": [
+      {
+        "id": "agentWorkbench.participant",
+        "fullName": "Agent Workbench",
+        "name": "agent-workbench",
+        "description": "Run instruction-oriented workflows and jump into built-in debugging surfaces.",
+        "isSticky": true,
+        "commands": [
+          {
+            "name": "run-instruction",
+            "description": "Record an instruction-focused run and surface the next debugging actions."
+          },
+          {
+            "name": "debug-skill",
+            "description": "Inspect skills in the workspace and prepare a Waza-based debugging loop."
+          },
+          {
+            "name": "inspect-agent",
+            "description": "Inspect agent, plugin, and MCP inventory for the current workspace."
+          },
+          {
+            "name": "show-trace",
+            "description": "Show recent Agent Workbench run history and debugging links."
+          }
+        ]
+      }
+    ],
+    "languageModelTools": [
+      {
+        "name": "agent_workbench_workspace_inventory",
+        "tags": [
+          "agent-workbench",
+          "inventory",
+          "workspace"
+        ],
+        "toolReferenceName": "workspaceInventory",
+        "displayName": "Workspace Inventory",
+        "modelDescription": "Inspect the current workspace for skills, custom agents, hooks, instructions, prompts, MCP configurations, and agent-capable extension manifests.",
+        "userDescription": "Inspect AI customization and agent tooling files in the current workspace.",
+        "canBeReferencedInPrompt": true,
+        "icon": "$(symbol-folder)",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "description": "Optional inventory section to focus on: all, skills, agents, hooks, instructions, prompts, mcpServers, or pluginManifests.",
+              "default": "all"
+            },
+            "limit": {
+              "type": "number",
+              "description": "Optional maximum number of file paths to return per category.",
+              "default": 10
+            },
+            "query": {
+              "type": "string",
+              "description": "Optional case-insensitive substring filter that keeps only matching paths."
+            }
+          }
+        }
+      },
+      {
+        "name": "agent_workbench_debug_context",
+        "tags": [
+          "agent-workbench",
+          "debug"
+        ],
+        "toolReferenceName": "debugContext",
+        "displayName": "Debug Context",
+        "modelDescription": "Return the current debug state, active debug sessions tracked by the extension, and recent Agent Workbench runs for the workspace.",
+        "userDescription": "Inspect debug state and recent workbench traces.",
+        "canBeReferencedInPrompt": true,
+        "icon": "$(debug-alt)",
+        "when": "debugState == 'running'",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "includeRecentRuns": {
+              "type": "boolean",
+              "description": "Whether to include recent Agent Workbench runs in the response.",
+              "default": true
+            }
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "typecheck": "tsc --noEmit -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "@types/vscode": "^1.136.0",
+    "typescript": "^7.0.2"
+  }
+}

@@ -38,6 +38,9 @@ this one — see [`pages/README.md`](pages/README.md).
     drift (e.g. pip/npm globals).
 - `RunspacePool/` — PowerShell module (`RunspacePool.psd1`/`.psm1` +
   `Server.ps1`); see below.
+- `vscode-agent-workbench/` — standalone VS Code extension MVP for running
+  instruction-oriented agent workflows, inspecting workspace agent assets, and
+  jumping into built-in AI debugging surfaces.
 - `pages/` — polyglot toolkit for M365 Copilot Pages (TypeScript/Node,
   PowerShell, Python); see [`pages/README.md`](pages/README.md).
 - `mise.config.toml` — source of truth for the global mise config, deployed to
