@@ -126,10 +126,14 @@ function registerCommands(
 				return;
 			}
 
-			const terminal = vscode.window.createTerminal({
+			const terminalOptions: vscode.TerminalOptions = {
 				name: 'Agent Workbench Waza',
-				cwd: vscode.workspace.workspaceFolders?.[0]?.uri.fsPath,
-			});
+			};
+			const cwd = vscode.workspace.workspaceFolders?.[0]?.uri.fsPath;
+			if (cwd) {
+				terminalOptions.cwd = cwd;
+			}
+			const terminal = vscode.window.createTerminal(terminalOptions);
 			terminal.show();
 			terminal.sendText(`waza eval new "${picked.uri.fsPath}"`, true);
 		}),
@@ -314,7 +318,7 @@ async function respondWithInventoryRun(
 	stream: vscode.ChatResponseStream,
 	runStore: RunStore,
 	historyProvider: RunHistoryProvider,
-	run: { readonly kind: RunKind; readonly title: string; readonly input?: string },
+	run: { readonly kind: RunKind; readonly title: string; readonly input?: string | undefined },
 	inventory: WorkspaceInventory,
 	debugSessions: readonly string[],
 	kind: InventoryKind | 'all',
@@ -435,7 +439,7 @@ async function handleChoice(choice: string | undefined): Promise<void> {
 	}
 }
 
-function kindAndTitle(kind: RunKind, prompt: string, fallbackTitle: string): { readonly kind: RunKind; readonly title: string; readonly input?: string } {
+function kindAndTitle(kind: RunKind, prompt: string, fallbackTitle: string): { readonly kind: RunKind; readonly title: string; readonly input?: string | undefined } {
 	const trimmed = prompt.trim();
 	return {
 		kind,

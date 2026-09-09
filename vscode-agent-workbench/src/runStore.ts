@@ -6,7 +6,7 @@ export interface RunRecord {
 	readonly id: string;
 	readonly kind: RunKind;
 	readonly title: string;
-	readonly input?: string;
+	readonly input?: string | undefined;
 	readonly summary: string;
 	readonly createdAt: string;
 	readonly debugSessions: readonly string[];
