@@ -5,8 +5,8 @@
     client functions (RunspacePool.ps1).
 
 .DESCRIPTION
-    Run with: Invoke-Pester D:\global\RunspacePool\RunspacePool.Tests.ps1
-    For code coverage: Invoke-Pester -Path ... -CodeCoverage 'D:\global\RunspacePool\*.ps1'
+    Run with: Invoke-Pester D:\global\Pool\pwsh\RunspacePool.Tests.ps1
+    For code coverage: Invoke-Pester -Path ... -CodeCoverage 'D:\global\Pool\pwsh\*.ps1'
 
     Each test uses a dedicated pipe name (via -PipeNameOverride) so runs don't
     collide with any interactively-running server, and stops its own server

@@ -8,17 +8,17 @@
     Path(s) to Pester test file(s)/directories. Defaults to every *.Tests.ps1
     in this repo.
 .PARAMETER CoveragePaths
-    Path(s)/globs to measure coverage over. Defaults to the RunspacePool and
+    Path(s)/globs to measure coverage over. Defaults to the Pool/pwsh and
     DevTools module source files.
 .EXAMPLE
     D:\global\Invoke-CodeCoverage.ps1
 #>
 [CmdletBinding()]
 param(
-    [string[]]$TestPath = @((Join-Path $PSScriptRoot 'RunspacePool\RunspacePool.Tests.ps1')),
+    [string[]]$TestPath = @((Join-Path $PSScriptRoot 'Pool\pwsh\RunspacePool.Tests.ps1')),
     [string[]]$CoveragePaths = @(
-        (Join-Path $PSScriptRoot 'RunspacePool\RunspacePool.psm1'),
-        (Join-Path $PSScriptRoot 'RunspacePool\Server.ps1'),
+        (Join-Path $PSScriptRoot 'Pool\pwsh\RunspacePool.psm1'),
+        (Join-Path $PSScriptRoot 'Pool\pwsh\Server.ps1'),
         (Join-Path $PSScriptRoot 'DevTools\DevTools.psm1'),
         (Join-Path $PSScriptRoot 'DevTools\Docker.ps1'),
         (Join-Path $PSScriptRoot 'DevTools\Reset-DevTools.ps1')

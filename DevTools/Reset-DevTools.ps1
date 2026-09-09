@@ -25,7 +25,7 @@ function Reset-DevTools {
     )
 
     if (-not (Get-Command mise -ErrorAction SilentlyContinue)) {
-        Write-Warning "mise is not installed. Run Setup.ps1 first."
+        Write-Warning "mise is not installed. Run Bootstrap\\Setup.ps1 first."
         return
     }
 
