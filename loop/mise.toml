@@ -1,0 +1,14 @@
+[tools]
+node = "lts"
+
+[env]
+NODE_ENV = "development"
+
+[tasks.build]
+run = "npx tsc -p tsconfig.json"
+
+[tasks.dev]
+run = "npx tsx src/index.ts"
+
+[tasks.test]
+run = "npx tsc -p tsconfig.json"

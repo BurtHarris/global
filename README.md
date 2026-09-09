@@ -6,6 +6,24 @@ per convention; the real `$PROFILE` file (which must live under
 `Documents\PowerShell` for PowerShell to find it) just dot-sources `Profile.ps1`
 from here.
 
+## This is a monorepo
+
+This repository is a **monorepo**: one repository containing several
+independent projects instead of one project per repository (the more common
+default, sometimes called a "polyrepo"). Cloning `global` gets you the
+profile/bootstrap scripts *and* both PowerShell modules below *and* the
+`pages/` toolkit, all in a single `git clone` with one shared history — no
+submodules, no separate repos to keep in sync. Big companies (Google, Meta,
+Microsoft) run this pattern at huge scale, but it's not something most
+individual projects or tutorials default to, so if the term is new: it just
+means "more than one project, one repo." See
+[`docs/adr/0001-monorepo-structure.md`](docs/adr/0001-monorepo-structure.md)
+for the full rationale and trade-offs, and [`CONTEXT-MAP.md`](CONTEXT-MAP.md)
+for the index of every project (bounded context) this repo contains.
+
+Notably, `pages/` is itself a small polyglot monorepo nested one level inside
+this one — see [`pages/README.md`](pages/README.md).
+
 ## Layout
 - `Profile.ps1` — loaded by `$PROFILE` on every session start. Activates mise,
   and imports the modules below.
@@ -23,6 +41,8 @@ from here.
 - `vscode-agent-workbench/` — standalone VS Code extension MVP for running
   instruction-oriented agent workflows, inspecting workspace agent assets, and
   jumping into built-in AI debugging surfaces.
+- `pages/` — polyglot toolkit for M365 Copilot Pages (TypeScript/Node,
+  PowerShell, Python); see [`pages/README.md`](pages/README.md).
 - `mise.config.toml` — source of truth for the global mise config, deployed to
   `~/.config/mise/config.toml` by `Setup.ps1`.
 - `Setup.ps1` — idempotent bootstrap: winget -> mise, pwsh, Coreutils; registers
