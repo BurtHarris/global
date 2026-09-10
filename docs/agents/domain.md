@@ -18,12 +18,15 @@ Multi-context repo:
 /
 |- CONTEXT-MAP.md
 |- docs/adr/                         <- cross-context decisions
+|- Bootstrap/
+|  |- CONTEXT.md
+|  `- docs/adr/                      <- Bootstrap decisions
 |- DevTools/
 |  |- CONTEXT.md
 |  `- docs/adr/                      <- DevTools decisions
-`- RunspacePool/
-	|- CONTEXT.md
-	`- docs/adr/                      <- RunspacePool decisions
+`- Pool/
+   |- CONTEXT.md
+   `- docs/adr/                      <- Pool decisions
 ```
 
 ## Use the glossary's vocabulary

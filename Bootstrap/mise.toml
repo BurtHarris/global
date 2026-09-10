@@ -1,0 +1,8 @@
+[tasks.lint]
+run = "pwsh -NoProfile -Command \"$errs=$null; Get-ChildItem -LiteralPath . -File -Filter *.ps1 | ForEach-Object { [void][System.Management.Automation.Language.Parser]::ParseFile($_.FullName,[ref]$null,[ref]$errs) }; if($errs){ $errs; exit 1 }\""
+
+[tasks.build]
+run = "pwsh -NoProfile -File ./Setup.ps1 -SkipInstall"
+
+[tasks.test]
+run = "pwsh -NoProfile -Command \"[xml](Get-Content -Raw ./TestInSandbox.wsb) | Out-Null\""

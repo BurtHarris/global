@@ -4,7 +4,7 @@
 #
 # Wired up automatically by Setup.ps1.
 
-$script:DevProfileRoot = $PSScriptRoot
+$script:RepoRoot = Split-Path -Parent $PSScriptRoot
 
 $env:EDITOR = "code --wait"
 
@@ -16,13 +16,13 @@ Set-Location -LiteralPath 'D:\'
 if (Get-Command mise -ErrorAction SilentlyContinue) {
     mise activate pwsh | Out-String | Invoke-Expression
 } else {
-    Write-Warning "mise not found on PATH. Run $script:DevProfileRoot\Setup.ps1 to bootstrap it."
+    Write-Warning "mise not found on PATH. Run $script:RepoRoot\Bootstrap\Setup.ps1 to bootstrap it."
 }
 
 # --- DevTools (Ensure-Docker / Test-DockerReady / Reset-DevTools) -----------
-Import-Module (Join-Path $script:DevProfileRoot 'DevTools\DevTools.psd1') -Force
+Import-Module (Join-Path $script:RepoRoot 'DevTools\DevTools.psd1') -Force
 
 # --- RunspacePool (Invoke-PooledScript / Start-RunspacePoolServer) -----------
 # Not started automatically (keeps shell start fast) — the server is launched
 # on demand the first time Invoke-PooledScript is called.
-Import-Module (Join-Path $script:DevProfileRoot 'RunspacePool\RunspacePool.psd1') -Force
+Import-Module (Join-Path $script:RepoRoot 'Pool\pwsh\RunspacePool.psd1') -Force

@@ -1,0 +1,8 @@
+[tasks.lint]
+run = "dotnet format ./Pool.csproj --verify-no-changes"
+
+[tasks.build]
+run = "dotnet build ./Pool.csproj"
+
+[tasks.test]
+run = "dotnet test ./Pool.csproj"

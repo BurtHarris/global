@@ -3,7 +3,7 @@
 Source-controlled PowerShell profile + dev toolchain bootstrap, shared across
 all of my Windows machines (Intel/AMD x64 and Snapdragon arm64). Kept on `D:\`
 per convention; the real `$PROFILE` file (which must live under
-`Documents\PowerShell` for PowerShell to find it) just dot-sources `Profile.ps1`
+`Documents\PowerShell` for PowerShell to find it) just dot-sources `Bootstrap/Profile.ps1`
 from here.
 
 ## This is a monorepo
@@ -25,8 +25,14 @@ Notably, `pages/` is itself a small polyglot monorepo nested one level inside
 this one — see [`pages/README.md`](pages/README.md).
 
 ## Layout
-- `Profile.ps1` — loaded by `$PROFILE` on every session start. Activates mise,
-  and imports the modules below.
+- `Bootstrap/` — machine bootstrap package:
+  - `Setup.ps1` — idempotent bootstrap: winget -> mise, pwsh, Coreutils; registers
+    the mise config; wires `$PROFILE`. Prints detected OS architecture for diagnostics.
+  - `Profile.ps1` — loaded by `$PROFILE` on every session start. Activates mise,
+    and imports the modules below.
+  - `mise.config.toml` — source of truth for the global mise config, deployed to
+    `~/.config/mise/config.toml` by `Bootstrap/Setup.ps1`.
+  - `TestInSandbox.wsb` / `Invoke-RebootAndResume.ps1` — safe sandbox test harness.
 - `DevTools/` — PowerShell module (`DevTools.psd1`/`.psm1`) with misc
   dev-environment helpers:
   - `Test-DockerReady` / `Ensure-Docker` — adapts to Docker Desktop being not
@@ -34,21 +40,23 @@ this one — see [`pages/README.md`](pages/README.md).
     at shell startup (keeps shell start fast) — call `Ensure-Docker` yourself
     before anything that needs the engine.
   - `Reset-DevTools` — force-reinstalls mise-managed tools (python, node,
-    uv, ...) back to the versions pinned in `mise.config.toml`, discarding any
+    uv, ...) back to the versions pinned in `Bootstrap/mise.config.toml`, discarding any
     drift (e.g. pip/npm globals).
-- `RunspacePool/` — PowerShell module (`RunspacePool.psd1`/`.psm1` +
-  `Server.ps1`); see below.
+- `Pool/` — runspace execution context:
+  - `pwsh/` — legacy/prototype PowerShell module (`RunspacePool.psd1`/`.psm1` + `Server.ps1`).
+  - `csharp/` — production C# package.
 - `vscode-agent-workbench/` — standalone VS Code extension MVP for running
   instruction-oriented agent workflows, inspecting workspace agent assets, and
   jumping into built-in AI debugging surfaces.
 - `pages/` — polyglot toolkit for M365 Copilot Pages (TypeScript/Node,
   PowerShell, Python); see [`pages/README.md`](pages/README.md).
-- `mise.config.toml` — source of truth for the global mise config, deployed to
-  `~/.config/mise/config.toml` by `Setup.ps1`.
-- `Setup.ps1` — idempotent bootstrap: winget -> mise, pwsh, Coreutils; registers
-  the mise config; wires `$PROFILE`. Prints detected OS architecture for
-  diagnostics.
 
+### Package task convention (mise)
+Each package in contexts touched by this map exposes vetted `mise` tasks for
+common operations:
+- `Bootstrap/`: `mise run lint|build|test`
+- `Pool/pwsh/`: `mise run lint|build|test`
+- `Pool/csharp/`: `mise run lint|build|test`
 ## Portability (any machine, any architecture)
 Everything here is architecture-agnostic by construction:
 - All scripts resolve paths via `$PSScriptRoot` / `$PROFILE` / `$HOME` — never
@@ -60,18 +68,18 @@ Everything here is architecture-agnostic by construction:
   plugin (python-build-standalone has native arm64/aarch64 Windows builds for
   3.11+), and `uv`. winget/mise each auto-select the correct build for the
   host CPU — no manual arch branching is required.
-- `Setup.ps1` is safe to re-run on every machine after cloning; it only acts
+- `Bootstrap/Setup.ps1` is safe to re-run on every machine after cloning; it only acts
   when something is actually missing.
 
 ## First-time / re-run setup
 ```powershell
-D:\global\Setup.ps1
+D:\global\Bootstrap\Setup.ps1
 ```
 (Or wherever you've cloned this repo — the script doesn't care.) Safe to
-re-run any time (e.g. after editing `mise.config.toml`).
+re-run any time (e.g. after editing `Bootstrap/mise.config.toml`).
 
 ## Testing safely before running on a real machine
-`TestInSandbox.wsb` runs `Setup.ps1` end-to-end inside **Windows Sandbox** —
+`Bootstrap/TestInSandbox.wsb` runs `Bootstrap/Setup.ps1` end-to-end inside **Windows Sandbox** —
 a real, disposable Windows 11 desktop (not a container), reset from scratch
 every run. This gives full fidelity (including `winget`/App Installer, which
 Docker's Windows containers don't have) with zero risk to the host: the repo
@@ -83,13 +91,13 @@ when it's closed.
 Dism /Online /Enable-Feature /FeatureName:Containers-DisposableClientVM /All
 
 # Each test run:
-Start-Process D:\global\TestInSandbox.wsb
+Start-Process D:\global\Bootstrap\TestInSandbox.wsb
 ```
 
 Why not Docker for this: Docker's Windows containers only support Server
 Core/Nano Server base images, which don't include `winget`/App Installer at
 all (Nano Server can't run it; Server Core can only get it via unsupported
-manual sideloading) — that's precisely the piece of `Setup.ps1` most
+manual sideloading) — that's precisely the piece of `Bootstrap/Setup.ps1` most
 important to validate. Those images also ship under a separate Microsoft
 Container Images EULA to evaluate, whereas Windows Sandbox reuses the host's
 existing Windows 11 license with no extra terms. A container is also the
@@ -97,13 +105,13 @@ wrong abstraction for testing a desktop/user-profile-oriented bootstrap
 script in the first place.
 
 ### Rebooting to enable Windows Sandbox
-Enabling the Sandbox feature requires a restart. `Invoke-RebootAndResume.ps1`
+Enabling the Sandbox feature requires a restart. `Bootstrap/Invoke-RebootAndResume.ps1`
 is a generic, reusable "reboot and auto-resume" utility: it registers a
 `RunOnce` command (fires once, automatically, right after you next log back
 in — no auto-logon/stored-password trickery involved) and then restarts.
 ```powershell
-D:\global\Invoke-RebootAndResume.ps1 -Force -ResumeCommand `
-    'powershell.exe -NoProfile -Command "Start-Process ''D:\global\TestInSandbox.wsb''"'
+D:\global\Bootstrap\Invoke-RebootAndResume.ps1 -Force -ResumeCommand `
+    'powershell.exe -NoProfile -Command "Start-Process ''D:\global\Bootstrap\TestInSandbox.wsb''"'
 ```
 
 ## Everyday use
@@ -111,10 +119,10 @@ D:\global\Invoke-RebootAndResume.ps1 -Force -ResumeCommand `
 - `Reset-DevTools` — wipe drift and restore python/node/uv to pinned versions.
 - `mise current` — see active tool versions.
 - `Invoke-PooledScript` — run a script via the background runspace-pool server
-  (see `RunspacePool/`).
+  (see `Pool/pwsh/`).
 
-## RunspacePool — background runspace-pool server
-`RunspacePool/` is a PowerShell module (`RunspacePool.psd1` + `.psm1`) whose
+## Pool (PowerShell package) — background runspace-pool server
+`Pool/pwsh/` is the legacy/prototype PowerShell package (`RunspacePool.psd1` + `.psm1`) whose
 client functions talk to `Server.ps1`, a background `pwsh` process started on
 first use (hidden on Windows; standard detached process elsewhere). The server hosts a
 `System.Management.Automation.Runspaces.RunspacePool` (min 1 / max 5) plus one
@@ -163,13 +171,13 @@ its own server on a test-only pipe name, so it won't collide with an
 already-running interactive server.
 
 ```powershell
-Invoke-Pester D:\global\RunspacePool\RunspacePool.Tests.ps1
+Invoke-Pester D:\global\Pool\pwsh\RunspacePool.Tests.ps1
 
 # With code coverage:
 $c = New-PesterConfiguration
-$c.Run.Path = 'D:\global\RunspacePool\RunspacePool.Tests.ps1'
+$c.Run.Path = 'D:\global\Pool\pwsh\RunspacePool.Tests.ps1'
 $c.CodeCoverage.Enabled = $true
-$c.CodeCoverage.Path = @('D:\global\RunspacePool\RunspacePool.psm1', 'D:\global\RunspacePool\Server.ps1')
+$c.CodeCoverage.Path = @('D:\global\Pool\pwsh\RunspacePool.psm1', 'D:\global\Pool\pwsh\Server.ps1')
 Invoke-Pester -Configuration $c
 ```
 Note: coverage numbers under-report `Server.ps1` — it runs in its own
@@ -204,6 +212,6 @@ D:\global\Invoke-CodeCoverage.ps1
   just `upgrade`) as a comment on the existing bug report:
   <https://github.com/jdx/mise/discussions/12646#discussioncomment-18308195>.
   **Takeaway:** `pwsh` and `Coreutils` are installed directly via `winget` in
-  `Setup.ps1` instead of through mise, which is also more idiomatic anyway —
+  `Bootstrap/Setup.ps1` instead of through mise, which is also more idiomatic anyway —
   mise is best suited to language runtimes (node/python/uv), while Windows
   system apps are more reliably handled by winget directly.

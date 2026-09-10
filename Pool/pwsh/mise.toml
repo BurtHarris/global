@@ -1,0 +1,8 @@
+[tasks.lint]
+run = "pwsh -NoProfile -Command \"$errs=$null; Get-ChildItem -LiteralPath . -File | Where-Object { $_.Extension -in '.ps1','.psm1' } | ForEach-Object { [void][System.Management.Automation.Language.Parser]::ParseFile($_.FullName,[ref]$null,[ref]$errs) }; if($errs){ $errs; exit 1 }\""
+
+[tasks.build]
+run = "pwsh -NoProfile -Command \"Import-Module ./RunspacePool.psd1 -Force\""
+
+[tasks.test]
+run = "pwsh -NoProfile -Command \"Invoke-Pester ./RunspacePool.Tests.ps1\""

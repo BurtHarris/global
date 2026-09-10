@@ -37,7 +37,7 @@
 .EXAMPLE
     # Reboot and reopen the Windows Sandbox test-harness once logged back in.
     .\Invoke-RebootAndResume.ps1 -Force -ResumeCommand `
-        'powershell.exe -NoProfile -Command "Start-Process ''D:\global\TestInSandbox.wsb''"'
+        'powershell.exe -NoProfile -Command "Start-Process ''D:\global\Bootstrap\TestInSandbox.wsb''"'
 .EXAMPLE
     # Reboot and resume a build script.
     .\Invoke-RebootAndResume.ps1 -ResumeCommand 'powershell.exe -NoProfile -File D:\myproject\continue-build.ps1'

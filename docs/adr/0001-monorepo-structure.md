@@ -7,9 +7,10 @@ Accepted
 ## Context
 
 This repo (`global`) holds several things that could each have been their own
-repository: a PowerShell profile and dev-toolchain bootstrap, two independent
-PowerShell modules (`DevTools/`, `RunspacePool/`), and a polyglot toolkit
-(`pages/`) with its own TypeScript, PowerShell, and Python packages.
+repository: a machine-bootstrap context (`Bootstrap/`), developer tools
+(`DevTools/`), a multi-package runspace execution context (`Pool/`), and a
+polyglot toolkit (`pages/`) with its own TypeScript, PowerShell, and Python
+packages.
 
 If you haven't worked in one before: a **monorepo** ("mono" = single, "repo" =
 repository) is a single version-control repository that holds multiple
@@ -27,9 +28,8 @@ project, each cloned, versioned, and released independently.
 
 We organize `global` as a monorepo:
 
-- The repo root holds machine-bootstrap scripts (`Setup.ps1`, `Profile.ps1`,
-  `mise.config.toml`) plus two PowerShell modules (`DevTools/`,
-  `RunspacePool/`) and the `pages/` toolkit, each documented in its own
+- The repo root holds multiple bounded contexts (`Bootstrap/`, `DevTools/`,
+  `Pool/`, `pages/`, `vscode-agent-workbench/`), each documented in its own
   `CONTEXT.md` and indexed from the root [`CONTEXT-MAP.md`](../../CONTEXT-MAP.md).
 - Nothing here is split via git submodules or subtrees — every file lives
   directly in this one repository's history. `pages/` is a directory, not a
@@ -50,11 +50,11 @@ We organize `global` as a monorepo:
   one shared commit history — no submodule init step, no version-matrix to
   keep in sync across repos.
 - **Cross-cutting changes are one commit.** A change that touches, say, both
-  `RunspacePool/` and how `Profile.ps1` imports it lands as a single atomic
+  `Pool/` and how `Bootstrap/Profile.ps1` imports it lands as a single atomic
   commit, reviewable and revertable as one unit — this is the main practical
   advantage a monorepo has over a polyrepo.
 - **Independent projects still need independent boundaries.** Each context
-  (`DevTools/`, `RunspacePool/`, `pages/`) keeps its own `CONTEXT.md`
+  (`Bootstrap/`, `DevTools/`, `Pool/`, `pages/`) keeps its own `CONTEXT.md`
   glossary, its own tests, and (where relevant) its own `docs/adr/` for
   context-scoped decisions — the monorepo doesn't mean "one undifferentiated
   pile of files," see [`docs/agents/domain.md`](../agents/domain.md).

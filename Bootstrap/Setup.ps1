@@ -13,7 +13,7 @@
         [System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture
     Run manually after cloning this repo anywhere on any machine, or after a
     fresh Windows/user setup:
-        <path-to-this-repo>\Setup.ps1
+        <path-to-this-repo>\Bootstrap\Setup.ps1
 #>
 [CmdletBinding()]
 param(
@@ -21,7 +21,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$repoRoot = $PSScriptRoot
+$bootstrapRoot = $PSScriptRoot
 
 function Write-Step($msg) { Write-Host "==> $msg" -ForegroundColor Cyan }
 
@@ -78,7 +78,7 @@ if (-not $SkipInstall) {
 $miseConfigDir = Join-Path $HOME '.config\mise'
 $miseConfigPath = Join-Path $miseConfigDir 'config.toml'
 New-Item -ItemType Directory -Path $miseConfigDir -Force | Out-Null
-Copy-Item -Path (Join-Path $repoRoot 'mise.config.toml') -Destination $miseConfigPath -Force
+Copy-Item -Path (Join-Path $bootstrapRoot 'mise.config.toml') -Destination $miseConfigPath -Force
 Write-Step "Deployed mise global config -> $miseConfigPath"
 
 # 6. Install/update all mise-managed tools to match the config (node, python, uv).
@@ -88,7 +88,7 @@ if (-not $SkipInstall) {
 }
 
 # 7. Wire up the real PowerShell $PROFILE to dot-source this repo's Profile.ps1.
-$loaderLine = ". `"$repoRoot\Profile.ps1`""
+$loaderLine = ". `"$bootstrapRoot\Profile.ps1`""
 $profileDir = Split-Path $PROFILE -Parent
 New-Item -ItemType Directory -Path $profileDir -Force | Out-Null
 if (-not (Test-Path $PROFILE)) {
