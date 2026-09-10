@@ -10,7 +10,7 @@
                        normal interactive shell).
 
     Not meant to be run directly by a human — started on-demand by
-    RunspacePool.ps1's Start-PoolServer. Exits automatically after
+    RunspacePool.ps1's Start-Pool. Exits automatically after
     -IdleTimeoutMinutes of no requests.
 #>
 [CmdletBinding()]

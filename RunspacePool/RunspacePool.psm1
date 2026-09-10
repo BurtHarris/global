@@ -1,14 +1,14 @@
 # RunspacePool.psm1 — client functions for the background runspace-pool server
 # (Server.ps1 in this same folder). Imported by Profile.ps1 via RunspacePool.psd1.
 #
-#   Start-PoolServer           — launch the background server if not already running
-#   Stop-PoolServer            — ask it to shut down
-#   Test-PoolServer            — is it listening?
-#   Get-PoolStatus             — query pool utilization
+#   Start-Pool                 — launch the background server if not already running
+#   Stop-Pool                  — ask it to shut down
+#   Test-Pool                  — is it listening?
+#   Get-Pool                   — query the current pool configuration and utilization
 #   Invoke-PooledScript        — run a script in the pool (parallel-safe) or the
 #                                persistent "primary" session (keeps variables/cwd)
-#   Set-PoolPipeName           — override the pipe name (mainly for test isolation)
-#   Get-PoolSeed               — snapshot of this session's modules/location, used
+#   Set-Pool                   — update pool properties such as the pipe name
+#   (private) Get-PoolSeed     — snapshot of this session's modules/location, used
 #                                to seed freshly spawned runspaces so they start
 #                                out already looking like the parent session
 #                                instead of a blank default state.
@@ -45,17 +45,6 @@ function Get-RunspacePoolServerArguments {
     $argList
 }
 
-function Set-PoolPipeName {
-    <#
-    .SYNOPSIS
-        Overrides the named pipe used to talk to the pool server. Mainly for
-        test isolation (each test run gets its own pipe/server).
-    #>
-    [CmdletBinding()]
-    param([Parameter(Mandatory)][string]$Name)
-    $script:RunspacePoolPipeName = $Name
-}
-
 function Get-PoolSeed {
     <#
     .SYNOPSIS
@@ -75,7 +64,7 @@ function Get-PoolSeed {
     }
 }
 
-function Test-PoolServer {
+function Test-Pool {
     [CmdletBinding()]
     param([int]$TimeoutMs = 250)
     $client = [System.IO.Pipes.NamedPipeClientStream]::new(
@@ -93,7 +82,7 @@ function Test-PoolServer {
     }
 }
 
-function Start-PoolServer {
+function Start-Pool {
     [CmdletBinding()]
     param(
         [int]$MaxRunspaces = 5,
@@ -116,7 +105,7 @@ function Start-PoolServer {
             throw 'Timed out waiting to start runspace pool server (another process is starting it).'
         }
         try {
-            if (-not $Force -and (Test-PoolServer)) {
+            if (-not $Force -and (Test-Pool)) {
                 Write-Verbose 'Runspace pool server already running.'
                 return
             }
@@ -132,7 +121,7 @@ function Start-PoolServer {
 
             $deadline = (Get-Date).AddSeconds(10)
             while ((Get-Date) -lt $deadline) {
-                if (Test-PoolServer) { return }
+                if (Test-Pool) { return }
                 Start-Sleep -Milliseconds 200
             }
             throw 'Runspace pool server did not start within 10 seconds. Check ~/.copilot/runspacepool/server.log'
@@ -194,52 +183,61 @@ function Invoke-PooledScript {
         [ValidateSet('pool', 'primary')][string]$Session = 'pool',
         [switch]$AutoStart = $true
     )
-    if ($AutoStart -and -not (Test-PoolServer)) {
-        Start-PoolServer
+    if ($AutoStart -and -not (Test-Pool)) {
+        Start-Pool
     }
     Send-RunspacePoolRequest -Request @{ Script = $Script; Session = $Session }
 }
 
-function Get-PoolStatus {
+function Get-Pool {
     [CmdletBinding()]
     param()
-    if (-not (Test-PoolServer)) {
-        Write-Warning 'Runspace pool server is not running.'
-        return
+
+    $isRunning = Test-Pool
+    $pool = [ordered]@{
+        PipeName  = $script:RunspacePoolPipeName
+        IsRunning = $isRunning
     }
-    Send-RunspacePoolRequest -Request @{ Cmd = 'status' }
+
+    if ($isRunning) {
+        $status = Send-RunspacePoolRequest -Request @{ Cmd = 'status' }
+        foreach ($property in $status.PSObject.Properties) {
+            $pool[$property.Name] = $property.Value
+        }
+    }
+
+    [PSCustomObject]$pool
 }
 
-function Stop-PoolServer {
+function Set-Pool {
+    <#
+    .SYNOPSIS
+        Updates pool properties. Currently supports overriding the named pipe
+        used to talk to the pool server, mainly for test isolation.
+    #>
+    [CmdletBinding()]
+    param([string]$PipeName)
+
+    if ($PSBoundParameters.ContainsKey('PipeName')) {
+        $script:RunspacePoolPipeName = $PipeName
+    }
+}
+
+function Stop-Pool {
     [CmdletBinding()]
     param()
-    if (-not (Test-PoolServer)) {
+    if (-not (Test-Pool)) {
         Write-Verbose 'Runspace pool server is not running.'
         return
     }
     Send-RunspacePoolRequest -Request @{ Cmd = 'shutdown' } | Out-Null
 }
 
-Set-Alias -Name Test-RunspacePoolServer -Value Test-PoolServer
-Set-Alias -Name Start-RunspacePoolServer -Value Start-PoolServer
-Set-Alias -Name Get-RunspacePoolStatus -Value Get-PoolStatus
-Set-Alias -Name Stop-RunspacePoolServer -Value Stop-PoolServer
-Set-Alias -Name Set-RunspacePoolPipeName -Value Set-PoolPipeName
-Set-Alias -Name Get-RunspacePoolSeed -Value Get-PoolSeed
-
 Export-ModuleMember -Function @(
-    'Test-PoolServer',
-    'Start-PoolServer',
+    'Test-Pool',
+    'Start-Pool',
     'Invoke-PooledScript',
-    'Get-PoolStatus',
-    'Stop-PoolServer',
-    'Set-PoolPipeName',
-    'Get-PoolSeed'
-) -Alias @(
-    'Test-RunspacePoolServer',
-    'Start-RunspacePoolServer',
-    'Get-RunspacePoolStatus',
-    'Stop-RunspacePoolServer',
-    'Set-RunspacePoolPipeName',
-    'Get-RunspacePoolSeed'
+    'Get-Pool',
+    'Set-Pool',
+    'Stop-Pool'
 )

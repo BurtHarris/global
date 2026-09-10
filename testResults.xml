@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="16" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2026-09-10" time="22:04:35">
+  <environment nunit-version="2.5.8.0" machine-name="runnervmejwal" os-version="6.17.0-1022-azure" user="runner" user-domain="" clr-version="10.0.11" platform="Linux" cwd="/home/runner/work/global/global" />
+  <culture-info current-culture="" current-uiculture="" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Success" success="True" time="10.6395" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="/home/runner/work/global/global/RunspacePool/RunspacePool.Tests.ps1" executed="True" result="Success" success="True" time="10.6395" asserts="0" description="/home/runner/work/global/global/RunspacePool/RunspacePool.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="RunspacePool server" executed="True" result="Success" success="True" time="10.0106" asserts="0" description="RunspacePool server">
+            <results>
+              <test-suite type="TestFixture" name="RunspacePool server.Lifecycle" executed="True" result="Success" success="True" time="3.6895" asserts="0" description="RunspacePool server.Lifecycle">
+                <results>
+                  <test-case description="is not running before Start-TestServer is called" name="RunspacePool server.Lifecycle.is not running before Start-TestServer is called" time="0.6428" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="starts and responds to Test-Pool" name="RunspacePool server.Lifecycle.starts and responds to Test-Pool" time="1.8982" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="returns pool configuration and status" name="RunspacePool server.Lifecycle.returns pool configuration and status" time="0.2097" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="does not export the legacy or compound-noun management commands" name="RunspacePool server.Lifecycle.does not export the legacy or compound-noun management commands" time="0.9065" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="RunspacePool server.Pool session (isolated, parallel-safe)" executed="True" result="Success" success="True" time="6.1998" asserts="0" description="RunspacePool server.Pool session (isolated, parallel-safe)">
+                <results>
+                  <test-case description="runs a simple script and returns output" name="RunspacePool server.Pool session (isolated, parallel-safe).runs a simple script and returns output" time="0.0746" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="does not share state between separate pool calls" name="RunspacePool server.Pool session (isolated, parallel-safe).does not share state between separate pool calls" time="0.1797" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="does not see primary session state" name="RunspacePool server.Pool session (isolated, parallel-safe).does not see primary session state" time="0.2218" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="surfaces script output before a thrown error, without crashing the server" name="RunspacePool server.Pool session (isolated, parallel-safe).surfaces script output before a thrown error, without crashing the server" time="0.1199" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="keeps serving requests after a script throws" name="RunspacePool server.Pool session (isolated, parallel-safe).keeps serving requests after a script throws" time="0.1068" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="runs concurrently: 4 sleeps of 1s each complete well under 4s serial time" name="RunspacePool server.Pool session (isolated, parallel-safe).runs concurrently: 4 sleeps of 1s each complete well under 4s serial time" time="1.7909" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="RunspacePool server.Primary session (persistent state)" executed="True" result="Success" success="True" time="6.6307" asserts="0" description="RunspacePool server.Primary session (persistent state)">
+                <results>
+                  <test-case description="persists variables across separate calls" name="RunspacePool server.Primary session (persistent state).persists variables across separate calls" time="0.2276" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="persists working directory across separate calls" name="RunspacePool server.Primary session (persistent state).persists working directory across separate calls" time="0.1985" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="RunspacePool server.Seeding (spawned runspaces mimic the parent session)" executed="True" result="Success" success="True" time="9.205" asserts="0" description="RunspacePool server.Seeding (spawned runspaces mimic the parent session)">
+                <results>
+                  <test-case description="starts a fresh pool runspace already in the parent location, without an explicit cd" name="RunspacePool server.Seeding (spawned runspaces mimic the parent session).starts a fresh pool runspace already in the parent location, without an explicit cd" time="0.1326" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="starts a fresh pool runspace with the parent's modules already imported" name="RunspacePool server.Seeding (spawned runspaces mimic the parent session).starts a fresh pool runspace with the parent's modules already imported" time="0.053" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="starts the primary runspace already in the parent location" name="RunspacePool server.Seeding (spawned runspaces mimic the parent session).starts the primary runspace already in the parent location" time="0.1452" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="RunspacePool server.Shutdown" executed="True" result="Success" success="True" time="9.9846" asserts="0" description="RunspacePool server.Shutdown">
+                <results>
+                  <test-case description="stops the server on Stop-Pool" name="RunspacePool server.Shutdown.stops the server on Stop-Pool" time="0.7761" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

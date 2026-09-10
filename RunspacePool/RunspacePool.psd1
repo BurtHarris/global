@@ -69,10 +69,9 @@ PowerShellVersion = '7.0'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Test-PoolServer', 'Start-PoolServer',
-               'Invoke-PooledScript', 'Get-PoolStatus',
-               'Stop-PoolServer', 'Set-PoolPipeName',
-               'Get-PoolSeed'
+FunctionsToExport = 'Test-Pool', 'Start-Pool',
+               'Invoke-PooledScript', 'Get-Pool',
+               'Stop-Pool', 'Set-Pool'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
@@ -81,9 +80,7 @@ CmdletsToExport = @()
 # VariablesToExport = @()
 
 # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-AliasesToExport = 'Test-RunspacePoolServer', 'Start-RunspacePoolServer',
-               'Get-RunspacePoolStatus', 'Stop-RunspacePoolServer',
-               'Set-RunspacePoolPipeName', 'Get-RunspacePoolSeed'
+AliasesToExport = @()
 
 # DSC resources to export from this module
 # DscResourcesToExport = @()
