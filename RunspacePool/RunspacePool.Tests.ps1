@@ -19,18 +19,18 @@ BeforeAll {
     # Isolate tests from any real/interactive server instance by overriding the
     # pipe name used for this test run.
     $script:TestPipeName = "copilot-devdrive-pool-test-$PID"
-    Set-RunspacePoolPipeName $script:TestPipeName
+    Set-Pool -PipeName $script:TestPipeName
 
     function Start-TestServer {
         param([int]$IdleTimeoutMinutes = 30, [int]$MaxRunspaces = 5, [switch]$NoSeed)
         if ($NoSeed) {
-            Start-RunspacePoolServer -MaxRunspaces $MaxRunspaces -IdleTimeoutMinutes $IdleTimeoutMinutes -NoSeed
+            Start-Pool -MaxRunspaces $MaxRunspaces -IdleTimeoutMinutes $IdleTimeoutMinutes -NoSeed
         } else {
-            Start-RunspacePoolServer -MaxRunspaces $MaxRunspaces -IdleTimeoutMinutes $IdleTimeoutMinutes
+            Start-Pool -MaxRunspaces $MaxRunspaces -IdleTimeoutMinutes $IdleTimeoutMinutes
         }
         $deadline = (Get-Date).AddSeconds(10)
         while ((Get-Date) -lt $deadline) {
-            if (Test-RunspacePoolServer) { return }
+            if (Test-Pool) { return }
             Start-Sleep -Milliseconds 200
         }
         throw 'Test server did not start in time.'
@@ -42,8 +42,8 @@ BeforeAll {
 }
 
 AfterAll {
-    if (Test-RunspacePoolServer) {
-        Stop-RunspacePoolServer
+    if (Test-Pool) {
+        Stop-Pool
     }
 }
 
@@ -51,17 +51,32 @@ Describe 'RunspacePool server' {
 
     Context 'Lifecycle' {
         It 'is not running before Start-TestServer is called' {
-            Test-RunspacePoolServer | Should -BeFalse
+            Test-Pool | Should -BeFalse
+            $pool = Get-Pool
+            $pool.PipeName | Should -Be $script:TestPipeName
+            $pool.IsRunning | Should -BeFalse
         }
 
-        It 'starts and responds to Test-RunspacePoolServer' {
+        It 'starts and responds to Test-Pool' {
             Start-TestServer
-            Test-RunspacePoolServer | Should -BeTrue
+            Test-Pool | Should -BeTrue
         }
 
-        It 'reports pool status' {
-            $status = Get-RunspacePoolStatus
-            $status.AvailablePoolRunspaces | Should -BeGreaterOrEqual 0
+        It 'returns pool configuration and status' {
+            $pool = Get-Pool
+            $pool.PipeName | Should -Be $script:TestPipeName
+            $pool.IsRunning | Should -BeTrue
+            $pool.AvailablePoolRunspaces | Should -BeGreaterOrEqual 0
+        }
+
+        It 'does not export the legacy or compound-noun management commands' {
+            Get-Command Start-PoolServer -ErrorAction SilentlyContinue | Should -BeNullOrEmpty
+            Get-Command Get-PoolStatus -ErrorAction SilentlyContinue | Should -BeNullOrEmpty
+            Get-Command Stop-PoolServer -ErrorAction SilentlyContinue | Should -BeNullOrEmpty
+            Get-Command Set-PoolPipeName -ErrorAction SilentlyContinue | Should -BeNullOrEmpty
+            Get-Command Get-PoolSeed -ErrorAction SilentlyContinue | Should -BeNullOrEmpty
+            Get-Command Test-PoolServer -ErrorAction SilentlyContinue | Should -BeNullOrEmpty
+            Get-Command Start-RunspacePoolServer -ErrorAction SilentlyContinue | Should -BeNullOrEmpty
         }
     }
 
@@ -89,7 +104,7 @@ Describe 'RunspacePool server' {
         }
 
         It 'keeps serving requests after a script throws' {
-            Test-RunspacePoolServer | Should -BeTrue
+            Test-Pool | Should -BeTrue
             $result = Invoke-PooledScript -Session pool -Script "'still-alive'"
             $result | Should -Be 'still-alive'
         }
@@ -101,7 +116,7 @@ Describe 'RunspacePool server' {
                 Start-ThreadJob -ScriptBlock {
                     param($ScriptRoot, $PipeName, $Index)
                     Import-Module (Join-Path $ScriptRoot 'RunspacePool.psd1') -Force
-                    Set-RunspacePoolPipeName $PipeName
+                    Set-Pool -PipeName $PipeName
                     Invoke-PooledScript -Session pool -Script "Start-Sleep -Seconds 1; 'job $Index done'"
                 } -ArgumentList $PSScriptRoot, $script:TestPipeName, $i
             }
@@ -139,7 +154,7 @@ Describe 'RunspacePool server' {
             Push-Location $script:SeedLocation
             try {
                 Import-Module Microsoft.PowerShell.ThreadJob -Force  # a non-default module to prove it gets seeded
-                Set-RunspacePoolPipeName $script:SeedPipeName
+                Set-Pool -PipeName $script:SeedPipeName
                 Start-TestServer
             } finally {
                 Pop-Location
@@ -147,14 +162,9 @@ Describe 'RunspacePool server' {
         }
 
         AfterAll {
-            Set-RunspacePoolPipeName $script:SeedPipeName
-            if (Test-RunspacePoolServer) { Stop-RunspacePoolServer }
-            Set-RunspacePoolPipeName $script:PreviousPipeName
-        }
-
-        It 'captures the calling session as a seed (modules + location)' {
-            $seed = Get-RunspacePoolSeed
-            $seed.Modules | Should -Contain 'Microsoft.PowerShell.ThreadJob'
+            Set-Pool -PipeName $script:SeedPipeName
+            if (Test-Pool) { Stop-Pool }
+            Set-Pool -PipeName $script:PreviousPipeName
         }
 
         It 'starts a fresh pool runspace already in the parent location, without an explicit cd' {
@@ -174,13 +184,13 @@ Describe 'RunspacePool server' {
     }
 
     Context 'Shutdown' {
-        It 'stops the server on Stop-RunspacePoolServer' {
-            Stop-RunspacePoolServer
+        It 'stops the server on Stop-Pool' {
+            Stop-Pool
             $deadline = (Get-Date).AddSeconds(5)
-            while ((Get-Date) -lt $deadline -and (Test-RunspacePoolServer)) {
+            while ((Get-Date) -lt $deadline -and (Test-Pool)) {
                 Start-Sleep -Milliseconds 200
             }
-            Test-RunspacePoolServer | Should -BeFalse
+            Test-Pool | Should -BeFalse
         }
     }
 }

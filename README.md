@@ -130,21 +130,23 @@ whole thing exists to eliminate on Windows.
 - `Invoke-PooledScript -Script '...' -Session primary` — always runs in the
   one dedicated runspace, so variables/`cwd`/imported modules persist across
   calls, like a normal interactive shell.
-- `Get-RunspacePoolStatus` / `Stop-RunspacePoolServer` / `Start-RunspacePoolServer`
-  — manage the server directly if needed.
+- `Start-Pool` / `Stop-Pool` / `Test-Pool` — manage pool lifecycle directly if
+  needed.
+- `Get-Pool` / `Set-Pool -PipeName ...` — inspect or change pool properties
+  such as the pipe name.
 - Auto-shuts down after 30 idle minutes with no active handlers. Logs to
   `~/.copilot/runspacepool/server.log`.
 
 ### Seeding — spawned runspaces mimic the parent session
-When `Start-RunspacePoolServer` launches the server, it captures a snapshot of
-the *calling* session (`Get-RunspacePoolSeed`: currently-imported module names
-+ current location) and passes it along as `-SeedModules`/`-SeedLocation`.
+When `Start-Pool` launches the server, it captures a snapshot of the
+*calling* session (currently-imported module names + current location) and
+passes it along as `-SeedModules`/`-SeedLocation`.
 The server uses that to pre-import those modules into every runspace's
 `InitialSessionState` (pool *and* primary) and to set their starting working
 directory — so a freshly spawned runspace already looks like the parent shell
 instead of PowerShell's blank default state, without each request having to
-redo that setup itself. Pass `-NoSeed` to `Start-RunspacePoolServer` to skip
-this and start from a bare default state instead. The pipe is also restricted
+redo that setup itself. Pass `-NoSeed` to `Start-Pool` to skip this and start
+from a bare default state instead. The pipe is also restricted
 to the current user so cloud and local runs stay isolated by account.
 
 Known limitation: the server keeps a small backlog (up to 4) of concurrently
