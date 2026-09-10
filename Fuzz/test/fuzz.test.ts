@@ -1,64 +1,77 @@
-import { assertEquals } from "@std/assert";
+import { assertEquals, assertThrows } from "@std/assert";
 
-import { Fuzz } from "../src/index.ts";
+import { create16Vector, createVector, ff, from16Vector, rational } from "../src/index.ts";
 
-Deno.test("constructs and projects bounded Rat values", () => {
-  assertEquals(Fuzz.fromFloat(Number.NaN), Fuzz.ZERO);
-  assertEquals(Fuzz.fromFloat(-1), Fuzz.ZERO);
-  assertEquals(Fuzz.fromFloat(2), Fuzz.ONE);
-  assertEquals(Fuzz.fromRatio(1, 2), 0x80000000);
-  assertEquals(Fuzz.fromPercent(50), 0x80000000);
-  assertEquals(Fuzz.toFloat(Fuzz.ZERO), 0);
-  assertEquals(Fuzz.toFloat(Fuzz.ONE), 1);
-  assertEquals(Fuzz.toPercent(Fuzz.ONE), 100);
+Deno.test("constructs and projects bounded Degree values", () => {
+  assertEquals(ff.DENOMINATOR, 1_000_000_000_000_000);
+  assertEquals(ff.degree(0.5), ff.degree(rational(1, 2)));
+  assertEquals(ff.degree("0.5"), ff.degree("50%"));
+  assertEquals(ff.degree("1/2"), ff.degree("50%"));
+  assertEquals(ff.toFloat(ff.ZERO), 0);
+  assertEquals(ff.toFloat(ff.ONE), 1);
+  assertEquals(ff.toPercent(ff.ONE), 100);
+});
+
+Deno.test("normalizes Rational values", () => {
+  assertEquals(rational(2, 4), rational(1, 2));
+  assertEquals(rational(150, 100).numerator, 3);
+  assertEquals(rational(150, 100).denominator, 2);
+  assertThrows(() => ff.degree(rational(150, 100)), RangeError);
+  assertThrows(() => ff.degree("150%"), RangeError);
+  assertThrows(() => ff.degree(rational(-1, 2)), RangeError);
+  assertThrows(() => ff.degree(rational(2, 1)), RangeError);
 });
 
 Deno.test("satisfies complement and De Morgan lattice laws exactly", () => {
   const values = [
-    Fuzz.ZERO,
-    Fuzz.fromRatio(1, 4),
-    Fuzz.fromRatio(1, 2),
-    Fuzz.fromRatio(3, 4),
-    Fuzz.ONE,
+    ff.degree(0),
+    ff.degree("1/4"),
+    ff.degree("1/2"),
+    ff.degree("3/4"),
+    ff.degree(1),
   ];
 
   for (const left of values) {
-    assertEquals(Fuzz.not(Fuzz.not(left)), left);
+    assertEquals(ff.not(ff.not(left)), left);
     for (const right of values) {
       assertEquals(
-        Fuzz.not(Fuzz.and(left, right)),
-        Fuzz.or(Fuzz.not(left), Fuzz.not(right)),
+        ff.not(ff.and(left, right)),
+        ff.or(ff.not(left), ff.not(right)),
       );
       assertEquals(
-        Fuzz.not(Fuzz.or(left, right)),
-        Fuzz.and(Fuzz.not(left), Fuzz.not(right)),
+        ff.not(ff.or(left, right)),
+        ff.and(ff.not(left), ff.not(right)),
       );
     }
   }
 });
 
-Deno.test("implements product, blend, and Lukasiewicz norms", () => {
-  const half = Fuzz.fromRatio(1, 2);
-  const quarter = Fuzz.fromRatio(1, 4);
+Deno.test("implements product, blend, and Łukasiewicz norms", () => {
+  const half = ff.degree("1/2");
+  const quarter = ff.degree("1/4");
 
-  assertEquals(Fuzz.productAnd(half, half), quarter);
-  assertEquals(Fuzz.very(half), quarter);
-  assertEquals(Fuzz.blend(Fuzz.ZERO, half), half);
-  assertEquals(Fuzz.boundedAnd(half, half), 1);
-  assertEquals(Fuzz.boundedOr(half, half), Fuzz.ONE);
-  assertEquals(Fuzz.implies(quarter, half), quarter);
+  assertEquals(ff.productAnd(half, half), quarter);
+  assertEquals(ff.very(half), quarter);
+  assertEquals(ff.blend(ff.ZERO, half), half);
+  assertEquals(ff.boundedAnd(half, half), ff.ZERO);
+  assertEquals(ff.boundedOr(half, half), ff.ONE);
+  assertEquals(ff.implies(quarter, half), quarter);
 });
 
-Deno.test("supports thresholds, vectors, and exact 16-bit endpoint scaling", () => {
-  const half = Fuzz.fromRatio(1, 2);
+Deno.test("supports thresholds and branded fixed-size vectors", () => {
+  const half = ff.degree("1/2");
 
-  assertEquals(Fuzz.cut(half, half), true);
-  assertEquals(Fuzz.cut(Fuzz.ZERO, half), false);
+  assertEquals(ff.cut(half, half), true);
+  assertEquals(ff.cut(ff.ZERO, half), false);
   assertEquals(
-    Fuzz.createVector([Fuzz.ZERO, half, Fuzz.ONE]),
-    new Uint32Array([0, half, 0xffffffff]),
+    Array.from(createVector([ff.ZERO, half, ff.ONE])),
+    [0, half, 1_000_000_000_000_000],
   );
-  assertEquals(Fuzz.pack16(Fuzz.ONE), 0xffff);
-  assertEquals(Fuzz.unpack16(0xffff), Fuzz.ONE);
-  assertEquals(Fuzz.unpack16(0x1234), 0x12341234);
+  const compact = create16Vector([ff.ZERO, half, ff.ONE]);
+  assertEquals(Array.from(compact), [0, 0x8000, 0xffff]);
+  assertEquals(Array.from(from16Vector(compact)), [
+    0,
+    500007629510948.4,
+    1_000_000_000_000_000,
+  ]);
 });
