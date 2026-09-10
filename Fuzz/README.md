@@ -16,5 +16,12 @@ console.log(Fuzz.toPercent(active));
 The package is configured for the JavaScript Registry (JSR), a package registry that publishes
 TypeScript source directly for runtimes such as Deno. No build step is required.
 
-Run `deno task check` to type-check the package and `deno task test` to exercise the lattice laws
-and interop helpers.
+The package uses mise to install the pinned Deno runtime and run development tasks:
+
+```sh
+mise install
+mise run check
+mise run test
+```
+
+Run `mise run publish-check` to validate the package for publication without publishing it.

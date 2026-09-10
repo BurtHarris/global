@@ -1,0 +1,25 @@
+[tools]
+deno = "2.8.3"
+
+[tasks.format]
+run = "deno fmt"
+
+[tasks."format-check"]
+run = "deno fmt --check"
+
+[tasks.lint]
+run = "deno lint"
+
+[tasks.typecheck]
+run = "deno task check"
+
+[tasks.check]
+depends = ["format-check", "lint", "typecheck"]
+
+[tasks.test]
+depends = ["check"]
+run = "deno task test"
+
+[tasks."publish-check"]
+depends = ["test"]
+run = "deno publish --dry-run"
