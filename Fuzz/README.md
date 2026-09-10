@@ -4,6 +4,9 @@
 
 ## Degrees
 
+The public value API is the `ff` package facade. It is the single factory and operation surface for
+creating `Degree` and `Rational` values and applying fuzzy logic operations.
+
 The basic value in fuzzy logic is a **degree**. A degree is a number from `0` to `1`:
 
 - `0` means none or false.

@@ -8,6 +8,29 @@ const RATIO_PATTERN = /^([+-]?\d+)\s*\/\s*(\d+)$/;
 
 export type DegreeInput = number | string | Rational;
 
+export type Fuzz = {
+  readonly name: "Fuzz";
+  readonly version: "1.0.0";
+  readonly DENOMINATOR: number;
+  readonly ZERO: Degree;
+  readonly ONE: Degree;
+  readonly rational: typeof rational;
+  degree(value: DegreeInput): Degree;
+  toFloat(value: Degree): number;
+  toPercent(value: Degree): number;
+  not(value: Degree): Degree;
+  and(left: Degree, right: Degree): Degree;
+  or(left: Degree, right: Degree): Degree;
+  productAnd(left: Degree, right: Degree): Degree;
+  blend(left: Degree, right: Degree): Degree;
+  boundedAnd(left: Degree, right: Degree): Degree;
+  boundedOr(left: Degree, right: Degree): Degree;
+  very(value: Degree): Degree;
+  somewhat(value: Degree): Degree;
+  cut(value: Degree, alpha: Degree): boolean;
+  implies(antecedent: Degree, consequent: Degree): Degree;
+};
+
 function create(value: number): Degree {
   if (!Number.isFinite(value) || value < 0 || value > 1) {
     throw new RangeError("A Degree must be between 0 and 1");
@@ -38,7 +61,7 @@ function fromRational(value: Rational): Degree {
   return create(value.numerator / value.denominator);
 }
 
-export const ff = {
+export const ff: Fuzz = {
   name: "Fuzz",
   version: "1.0.0",
   DENOMINATOR,
