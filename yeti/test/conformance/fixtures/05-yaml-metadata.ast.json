@@ -1,0 +1,59 @@
+{
+  "pandoc-api-version": [
+    1,
+    23,
+    1
+  ],
+  "meta": {
+    "author": {
+      "t": "MetaString",
+      "c": "Burt Harris"
+    },
+    "title": {
+      "t": "MetaString",
+      "c": "Yeti Document"
+    }
+  },
+  "blocks": [
+    {
+      "t": "Header",
+      "c": [
+        1,
+        [
+          "introduction",
+          [],
+          []
+        ],
+        [
+          {
+            "t": "Str",
+            "c": "Introduction"
+          }
+        ]
+      ]
+    },
+    {
+      "t": "Para",
+      "c": [
+        {
+          "t": "Str",
+          "c": "Document"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "body"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "paragraph."
+        }
+      ]
+    }
+  ]
+}

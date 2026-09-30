@@ -1,0 +1,23 @@
+{
+  "pandoc-api-version": [
+    1,
+    23,
+    1
+  ],
+  "meta": {},
+  "blocks": [
+    {
+      "t": "CodeBlock",
+      "c": [
+        [
+          "",
+          [
+            "typescript"
+          ],
+          []
+        ],
+        "function hello(): string {\n  return \"world\";\n}"
+      ]
+    }
+  ]
+}

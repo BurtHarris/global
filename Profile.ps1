@@ -1,3 +1,7 @@
+# ----------------------------------------------------------------------------
+# 🪦 TOMBSTONE: /global is dead and no longer maintained.
+# Development and shell architecture have migrated to /guild (D:\guild).
+# ----------------------------------------------------------------------------
 # Profile.ps1 — canonical PowerShell profile source, version-controlled here.
 # The real $PROFILE (in Documents\PowerShell, which OneDrive syncs) just dot-sources
 # this file, so the actual logic lives in source control on D:\ instead of C:\Users.
@@ -7,6 +11,12 @@
 $script:DevProfileRoot = $PSScriptRoot
 
 $env:EDITOR = "code --wait"
+
+# --- UTF-8 Console Encoding -------------------------------------------------
+# Ensure full Unicode / Nerd Font glyph fidelity in terminal output.
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+[Console]::InputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.Encoding]::UTF8
 
 # --- Default working directory ----------------------------------------------
 # All projects live on D:\, so start every new shell there.

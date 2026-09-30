@@ -72,6 +72,15 @@ if (-not $SkipInstall) {
     } else {
         Write-Step "Coreutils already installed."
     }
+
+    # 5. Ensure JetBrainsMono Nerd Font is present for high-end TUI rendering.
+    $nerdFontInstalled = winget list --id DEVCOM.JetBrainsMonoNerdFont -e --accept-source-agreements 2>$null | Select-String 'DEVCOM.JetBrainsMonoNerdFont' -Quiet
+    if (-not $nerdFontInstalled) {
+        Write-Step "Installing JetBrainsMono Nerd Font via winget..."
+        Invoke-Winget -What 'JetBrainsMono Nerd Font' -WingetArgs @('install', '--id', 'DEVCOM.JetBrainsMonoNerdFont', '-e', '--silent', '--accept-package-agreements', '--accept-source-agreements')
+    } else {
+        Write-Step "JetBrainsMono Nerd Font already installed."
+    }
 }
 
 # 5. Deploy the global mise config (source of truth lives in this repo).

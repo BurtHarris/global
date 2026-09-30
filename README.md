@@ -1,4 +1,8 @@
-# global
+# 🪦 global (DEPRECATED)
+
+> [!CAUTION]
+> ### `/global` is dead and no longer maintained.
+> All active development, shell architecture, and platform components have migrated to **[`/guild`](https://github.com/BurtHarris/guild)** (local path: `D:\guild`). See [TOMBSTONE.md](TOMBSTONE.md).
 
 Source-controlled PowerShell profile + dev toolchain bootstrap, shared across
 all of my Windows machines (Intel/AMD x64 and Snapdragon arm64). Kept on `D:\`

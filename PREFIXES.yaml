@@ -1,0 +1,25 @@
+# Approved URI / URL Prefixes for Automated Web Reads
+version: 1
+
+prefixes:
+  # Runtimes, standard libraries, and registries
+  jsr: "https://jsr.io/"
+  deno: "https://deno.land/"
+  github: "https://github.com/"
+  mdn: "https://developer.mozilla.org/"
+
+  # Tooling & specifications
+  pandoc: "https://pandoc.org/"
+  hackage: "https://hackage.haskell.org/"
+  commonmark: "https://spec.commonmark.org/"
+  nerdfonts: "https://www.nerdfonts.com/"
+
+  # Public data, government, and legal
+  fec: "https://www.fec.gov/"
+  federal_register: "https://www.federalregister.gov/"
+  supremecourt: "https://www.supremecourt.gov/"
+
+  # Architecture, ontology, and schemas
+  schema_org: "https://schema.org/"
+  w3c: "https://www.w3.org/"
+  dogetech: "https://dogetech.co/ns/"
