@@ -7,14 +7,34 @@ any of it supports an actual claim is a legal judgment for counsel to make.
 
 > **Prepared for attorney review.** The user indicated this material is
 > intended for review by an attorney, **Kirk**, who heads the **2nd
-> Amendment Institute** (org name as given verbally; not yet independently
-> verified — see open questions below), in connection with a possible
-> countersuit under civil RICO and/or the False Claims Act (qui tam). Before
-> this report is sent to counsel, the remaining open questions below should
-> be answered so the report reflects the actual dispute rather than general
-> background.
+> Amendment Institute**. **This identity could not be confirmed** — see the
+> "Attorney identity — unresolved" note immediately below and open question
+> 1.
 
 > **Prepared by:** Ralph Burton Harris III.
+
+> **Attorney identity — confirmed.** The attorney is **William K. "Bill"
+> Kirk, President of Washington Gun Law** (Spokane, WA), a firm he leads and
+> hosts the associated "Washington Gun Law" YouTube channel for. Verified
+> via his firm bio:[^13]
+>
+> - 20-time recipient of Washington State's Super Lawyer award (top 1% of
+>   attorneys in the state).
+> - Graduate of Washington State University and Gonzaga University School of
+>   Law.
+> - Former Spokane County and King County Prosecuting Attorney; in private
+>   practice defending the accused, including self-defense/lawful-use-of-
+>   firearm cases, since 2000.
+> - Has taught attorneys in trial practice in 26 states and lectures
+>   nationally on Second Amendment issues.
+>
+> This resolves earlier uncertainty in this report (v3–v4) about whether
+> "Kirk" referred to Second Amendment Institute (SAI, led by Tyler
+> Yzaguirre — no connection found) or Cooper & Kirk, PLLC (Michael W. Kirk —
+> a different person). Neither of those was correct; **Washington Gun Law /
+> William K. Kirk is the confirmed match**, and fits the user's earlier
+> context clue ("Washington state executives") well, since Mr. Kirk
+> practices in Washington State.[^14]
 
 > **Correction note (v2):** v1 of this report searched for "RNC Services,
 > Inc." and found no matches anywhere. The user subsequently clarified the
@@ -37,11 +57,8 @@ those facts have not yet been supplied. A countersuit theory cannot be
 responsibly drafted without them. Before this goes to an attorney, please
 supply:
 
-1. **Attorney's firm/organization details** — full name and role at the 2nd
-   Amendment Institute confirmed (attorney "Kirk"); the institute's formal
-   legal name, address, and Mr. Kirk's bar admission(s) have not yet been
-   independently verified and should be confirmed before the cover material
-   cites him.
+1. ~~Attorney identity~~ — **resolved**: William K. "Bill" Kirk, President
+   of Washington Gun Law (Spokane, WA). See the confirmation note above.
 2. **Existing case** — is there a pending lawsuit in which the user is
    currently a defendant, making this a *counter*-suit? Case name, docket
    number, and court, if known. (Nothing found in this research connects the
@@ -441,3 +458,5 @@ Two things follow for this research question:
 [^9]: *Rotella v. Wood*, 528 U.S. 549 (2000) (civil RICO borrows the Clayton Act's four-year limitations period; discovery-of-injury accrual rule).
 [^10]: General background on state false-claims-act variation; Washington's principal state-level false-claims statute is the Medicaid Fraud False Claims Act (RCW 74.66), which is narrower in scope than the federal FCA — this is general legal background, not independently re-verified against current RCW text in this research pass.
 [^12]: Complaint, *State of California v. United States Postal Service*, No. 1:26-cv-13917 (D. Mass. filed Aug. 26, 2026), Document 1, 53 pages, retrieved via CourtListener RECAP storage (`https://storage.courtlistener.com/recap/gov.uscourts.mad.305406/gov.uscourts.mad.305406.1.0.pdf`) and read in full (text-extracted with `pypdf`). Full-text search of the extracted document for "DNC," "Democratic National Committee," "RICO," "racketeer," "qui tam," and "False Claims" returned zero matches.
+[^13]: Attorney bio, William K. Kirk, Washington Gun Law: https://www.washingtongunlaw.com/william-k-kirk-2 (retrieved 2026-09-30). Confirms: President of Washington Gun Law (Spokane, WA); host of the "Washington Gun Law" YouTube channel; 20-time Washington State Super Lawyer; J.D., Gonzaga University School of Law; B.A., Washington State University; former Spokane County and King County Prosecuting Attorney; in private practice since 2000.
+[^14]: Two other "Kirk" candidates were investigated and ruled out before the correct match was found: (1) Second Amendment Institute (SAI), a D.C.-based 501(c)(3) founded 2016 — its founder/president is Tyler Yzaguirre, not Kirk, per SAI's website, press releases, and attorneys of record in *Yzaguirre v. District of Columbia*, No. 1:24-cv-01828 (D.D.C.), retrieved via `https://www.courtlistener.com/api/rest/v4/search/?q=%22Yzaguirre%20v.%20District%20of%20Columbia%22&type=r&format=json`; (2) Cooper & Kirk, PLLC, a D.C. constitutional-litigation firm co-founded by Michael W. Kirk with a Second Amendment practice area (https://www.cooperkirk.com/practice-areas/constitution-second-amendment/) — a different person from William K. Kirk, and the firm is not called an "institute."
