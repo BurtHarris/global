@@ -1,22 +1,16 @@
 # Civil RICO, Qui Tam Suits, and the 2026 USPS Election-Mail Litigation
 
-Status: **Draft v3** — prepared as background material for attorney review.
+Status: **Draft v5** — prepared as background material for attorney review.
 **This document is NOT legal advice and does not assert that any specific
 countersuit is viable.** It summarizes public-record research only; whether
 any of it supports an actual claim is a legal judgment for counsel to make.
 
-> **Prepared for attorney review.** The user indicated this material is
-> intended for review by an attorney, **Kirk**, who heads the **2nd
-> Amendment Institute**. **This identity could not be confirmed** — see the
-> "Attorney identity — unresolved" note immediately below and open question
-> 1.
-
 > **Prepared by:** Ralph Burton Harris III.
 
-> **Attorney identity — confirmed.** The attorney is **William K. "Bill"
-> Kirk, President of Washington Gun Law** (Spokane, WA), a firm he leads and
-> hosts the associated "Washington Gun Law" YouTube channel for. Verified
-> via his firm bio:[^13]
+> **Prepared for attorney review — attorney identity confirmed.** This
+> material is intended for review by **William K. "Bill" Kirk, President of
+> Washington Gun Law** (Spokane, WA), who hosts the associated "Washington
+> Gun Law" YouTube channel. Confirmed directly via his firm bio:[^13]
 >
 > - 20-time recipient of Washington State's Super Lawyer award (top 1% of
 >   attorneys in the state).
@@ -28,13 +22,24 @@ any of it supports an actual claim is a legal judgment for counsel to make.
 > - Has taught attorneys in trial practice in 26 states and lectures
 >   nationally on Second Amendment issues.
 >
-> This resolves earlier uncertainty in this report (v3–v4) about whether
-> "Kirk" referred to Second Amendment Institute (SAI, led by Tyler
-> Yzaguirre — no connection found) or Cooper & Kirk, PLLC (Michael W. Kirk —
-> a different person). Neither of those was correct; **Washington Gun Law /
-> William K. Kirk is the confirmed match**, and fits the user's earlier
-> context clue ("Washington state executives") well, since Mr. Kirk
-> practices in Washington State.[^14]
+> Earlier drafts of this report (v3–v4) carried an unresolved identity
+> question, since the user's initial description ("Kirk, who heads the 2nd
+> Amendment Institute") did not match either of the two "Kirk" candidates
+> initially investigated: Second Amendment Institute (led by Tyler
+> Yzaguirre, not a Kirk) and Cooper & Kirk, PLLC (Michael W. Kirk, a
+> different attorney). The user then supplied the direct source link
+> (washingtongunlaw.com) that resolved it. **Washington Gun Law / William K.
+> Kirk is the confirmed, final match** — consistent with the user's earlier
+> context clue ("Washington state executives"), since Mr. Kirk practices in
+> Washington State. See [^14] for the full audit trail of ruled-out
+> candidates.
+>
+> *Assessment note (not independently verified):* Mr. Kirk's credentials
+> above come from his own firm's bio page, not yet cross-checked against an
+> independent source (e.g., the Washington State Bar Association's public
+> attorney lookup, or superlawyers.com's own listing page). Nothing found in
+> this research is a red flag, but independent confirmation of bar standing
+> would be a reasonable step before relying on this report in front of him.
 
 > **Correction note (v2):** v1 of this report searched for "RNC Services,
 > Inc." and found no matches anywhere. The user subsequently clarified the
