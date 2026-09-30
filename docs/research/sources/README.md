@@ -13,6 +13,9 @@ and are unmodified except for text extraction noted below.
 | `lwv-v-trump-complaint-doc1.pdf` | Complaint, *League of Women Voters of Massachusetts v. Trump*, No. 1:26-cv-11549 (D. Mass., filed Apr. 2, 2026), Document 1, 56 pp. Companion suit to *California v. Trump*, same judge (Talwani), also referenced in the active complaint's footnotes. Since appealed to the 1st Circuit (No. 26-2029). | CourtListener RECAP, `gov.uscourts.mad.298449.1.0_1.pdf` |
 | `fedreg-2026-17238-final-rule-ballot-mail.pdf` | USPS final rule "Ballot Mail for Federal Elections," 91 Fed. Reg. 54,966 (Aug. 26, 2026), Doc. No. 2026-17238 — the rule under challenge in the active complaint. | Federal Register API / govinfo.gov |
 | `fedreg-2026-10968-proposed-rule-ballot-mail.pdf` | USPS notice of proposed rulemaking (NPRM) for the same rule, 91 Fed. Reg. 32,915 (Jun. 2, 2026), Doc. No. 2026-10968. | Federal Register API / govinfo.gov |
+| `senate-letter-2026-01-29-doj-voter-rolls.pdf` | Letter from Sens. Padilla, Durbin, and 22 others to AG Bondi, Jan. 29, 2026, re: DOJ's campaign to obtain state voter rolls (24 states sued, including Washington; documents the Jan. 24, 2026 Bondi-to-Walz letter). | padilla.senate.gov |
+| `senate-letter-2026-01-29-doj-voter-rolls.txt` | Plaintext extraction of the above (via `pypdf`). | Derived locally |
+| `bondi-letter-2026-01-24-walz-voter-rolls.pdf` | AG Bondi's Jan. 24, 2026 letter to MN Gov. Tim Walz, conditioning an end to federal immigration enforcement in Minnesota partly on DOJ access to the state's voter rolls. Image-based PDF; no extractable text layer. | sos.mn.gov (Minnesota Secretary of State) |
 
 ## Not yet obtained
 

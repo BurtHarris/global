@@ -1,6 +1,6 @@
 # 2026 USPS election-mail litigation
 
-Status: **Draft v9** — prepared as background material for attorney review.
+Status: **Draft v10** — prepared as background material for attorney review.
 **This document is NOT legal advice and does not assert that any specific
 countersuit is viable.** It summarizes public-record research only; whether
 any of it supports an actual claim is a legal judgment for counsel to make.
@@ -539,6 +539,110 @@ elsewhere in this report:**
 
 ---
 
+## Part 7 — DOJ's 2025–2026 campaign to obtain state voter rolls (connects to Washington, and to the DNC)
+
+This section responds directly to the user's request to research "letters
+sent to blue state election officials by the US attorney general demanding
+access to elections records." This is confirmed, well-documented, and
+directly connects two previously "unverified" threads in this report:
+Washington State's involvement (Part 3a, Unverified Items) and a DNC
+connection (also Part 3a) — though not in the way originally guessed (see
+below).
+
+### What happened (confirmed from primary sources)
+
+- Beginning around **May–June 2025**, DOJ's Civil Rights Division (under
+  then-acting voting-section chief Maureen Riordan) sent letters to
+  numerous states — starting with Colorado, then Minnesota, Nevada,
+  Pennsylvania, New Hampshire, and others — demanding full state voter
+  registration lists (including, in some cases, partial/full Social
+  Security numbers, driver's license numbers, and dates of birth), citing
+  the Help America Vote Act (HAVA) and National Voter Registration Act
+  (NVRA).[^17]
+- By **late January 2026**, DOJ had escalated from letters to **lawsuits**:
+  it sued **24 states plus D.C.** for refusing to produce full voter
+  registration lists, including **Washington**, alongside California,
+  Colorado, Oregon, Minnesota, New York, Massachusetts, and 17 others.[^18]
+  Separately, **at least 8 states** (Arkansas, Indiana, Kansas, Louisiana,
+  Mississippi, Tennessee, Texas, Wyoming) had complied and handed over
+  complete voter lists.[^18]
+- **Directly on point for the user's question:** on **January 24, 2026**,
+  Attorney General **Pamela Bondi personally sent a letter to Minnesota
+  Governor Tim Walz** making three requests she said would "restore the
+  rule of law, support ICE officers, and bring an end to the chaos in
+  Minnesota" — with the third request being DOJ access to Minnesota's
+  voter rolls.[^19] Minnesota Secretary of State Steve Simon publicly
+  refused and characterized the letter as conditioning "our state's peace
+  and security" (i.e., an end to a contemporaneous federal immigration-
+  enforcement deployment in Minnesota) on handing over voter data, calling
+  it "an apparent ransom."[^19] **This is Secretary Simon's characterization
+  of the letter, not an adjudicated fact** — the underlying PDF of the
+  Bondi-to-Walz letter itself is saved locally at
+  [`sources/bondi-letter-2026-01-24-walz-voter-rolls.pdf`](./sources/bondi-letter-2026-01-24-walz-voter-rolls.pdf)
+  for direct review (it is an image/scan without a text layer in the copy
+  retrieved, so it could not be full-text-searched in this pass).
+- **Courts have repeatedly rejected DOJ's legal theory.** Federal judges in
+  Oregon (Jan. 14, 2026), California (Jan. 15, 2026), and Georgia (Jan. 23,
+  2026, dismissed on venue grounds) all rejected DOJ's voter-roll lawsuits
+  as of the most recent letter reviewed.[^19] The California ruling,
+  *United States v. Shirley Weber*, No. 2:25-cv-09149 (C.D. Cal., Judge
+  David O. Carter), confirmed via CourtListener docket metadata (filed
+  2025-09-25, terminated 2026-01-15, cause "42:1981 Civil Rights," DOJ as
+  plaintiff against California Secretary of State Shirley Weber and the
+  State of California) — the court reportedly found that DOJ's stated
+  purpose ("voter roll maintenance enforcement and compliance") was
+  contradicted by statements made elsewhere by DOJ officials.[^20]
+- **The DNC connection, found here rather than in the USPS case:** the
+  *Shirley Weber* docket's party list includes the **Democratic National
+  Committee**, alongside the ACLU, NAACP, League of Women Voters of
+  California, and America First Legal (the same advocacy group that also
+  appeared in the *California v. USPS* docket, Part 3).[^20] This is the
+  first concrete court record located in this research connecting the DNC
+  to a lawsuit involving DOJ/state-executive conduct over voter data — but
+  it is a **Civil Rights Act case, not a RICO or qui tam case**, and the
+  DNC's specific role (intervenor, amicus, or party-in-interest) was not
+  determined from docket metadata alone; the full docket would need to be
+  pulled to confirm.
+
+### Why this may matter for a RICO/ethics theory (flagged for counsel, not concluded here)
+
+- If the characterization of the Bondi-to-Walz letter as conditioning an
+  end to a federal law-enforcement deployment on a state's surrender of
+  private citizen data is accurate, that fact pattern — an official
+  using the power of federal office to extract a concession — is the kind
+  of conduct sometimes charged as **extortion under color of official
+  right** (Hobbs Act, 18 U.S.C. § 1951), one of civil RICO's enumerated
+  predicate acts (Part 1). This is **speculative and unconfirmed** —
+  Secretary Simon's press release is an advocacy statement by an opposing
+  political official, not a judicial finding, and the letter's actual text
+  has not been independently reviewed in this pass (see the image-PDF
+  caveat above).
+- This also intersects with Part 6 (RCW ch. 42.52): if any **Washington**
+  state officer or employee's use of office resources in responding to or
+  resisting this DOJ campaign is alleged to have crossed into "special
+  privileges" or partisan-campaign use under RCW 42.52.070/.180, that would
+  be a distinct, separately-pleadable Washington-state-law theory — but no
+  such specific Washington conduct has been identified yet; only
+  Washington's inclusion among the 24 states DOJ sued has been confirmed.
+- **Washington's own response** has not yet been retrieved in this pass
+  (the sources above document Minnesota's and California's responses in
+  detail; Washington is named as one of the 24 sued states but its
+  specific pleadings/public statements were not separately pulled). This,
+  and the full *Shirley Weber* docket/DNC's specific role in it, are the
+  natural next steps if this thread is to be developed further.
+- **Timing note:** the video evidence identified by the user in Part 5
+  (`https://www.youtube.com/watch?v=S1TR-rqMEwM`, WA AG's office press
+  conference with Gov. Ferguson and AG Brown) is dated **January 26,
+  2026** — two days after the Bondi-to-Walz letter (Jan. 24) and three
+  days after the Georgia venue dismissal (Jan. 23), squarely inside this
+  same national controversy's timeline. This is a plausible, but **not yet
+  confirmed**, reason the video may be relevant: it may well be Washington
+  officials' own public response to this same DOJ voter-roll campaign.
+  Confirming this still requires the video's actual content (a transcript
+  or timestamp/quote), which has not been obtained (see Part 5).
+
+---
+
 ## Unverified items — do not treat as fact
 
 1. **"DNC Services, Inc." / DNC Services Corporation tied to a RICO
@@ -604,3 +708,7 @@ elsewhere in this report:**
 [^14]: Two other "Kirk" candidates were investigated and ruled out before the correct match was found: (1) Second Amendment Institute (SAI), a D.C.-based 501(c)(3) founded 2016 — its founder/president is Tyler Yzaguirre, not Kirk, per SAI's website, press releases, and attorneys of record in *Yzaguirre v. District of Columbia*, No. 1:24-cv-01828 (D.D.C.), retrieved via `https://www.courtlistener.com/api/rest/v4/search/?q=%22Yzaguirre%20v.%20District%20of%20Columbia%22&type=r&format=json`; (2) Cooper & Kirk, PLLC, a D.C. constitutional-litigation firm co-founded by Michael W. Kirk with a Second Amendment practice area (https://www.cooperkirk.com/practice-areas/constitution-second-amendment/) — a different person from William K. Kirk, and the firm is not called an "institute."
 [^15]: Washington Revised Code of Washington (RCW) ch. 42.52, "Ethics in Public Service," retrieved directly from the Washington State Legislature's official site: RCW 42.52.010 (definitions, including "state officer"/"state employee"), https://app.leg.wa.gov/rcw/default.aspx?cite=42.52.010; RCW 42.52.020 (conflicts of interest), https://app.leg.wa.gov/rcw/default.aspx?cite=42.52.020; RCW 42.52.070 (special privileges), https://app.leg.wa.gov/rcw/default.aspx?cite=42.52.070; RCW 42.52.180 (use of public facilities for political campaigns), https://app.leg.wa.gov/rcw/default.aspx?cite=42.52.180; RCW 42.52.360 (enforcement by the executive ethics board, including complaints "by any person"), https://app.leg.wa.gov/rcw/default.aspx?cite=42.52.360. All retrieved 2026-09-30.
 [^16]: YouTube video "Press conference with Gov. Bob Ferguson and Attorney General Nick Brown, Jan. 26, 2026," https://www.youtube.com/watch?v=S1TR-rqMEwM, metadata retrieved via YouTube's oembed endpoint (`https://www.youtube.com/oembed?url=...&format=json`), which returned `"author_name":"Washington State Attorney General's Office"` and `"author_url":"https://www.youtube.com/@WashingtonAGO"`, confirming the video was published by the WA AG's own channel. Retrieved 2026-09-30. Video audio/visual content was not transcribed or reviewed in this pass; only title, channel, and publication metadata are confirmed.
+[^17]: Democracy Docket, "Explainer: Can DOJ Access States' Voter Data? It's Complicated," https://www.democracydocket.com/analysis/explainer-can-doj-access-states-voter-data-its-complicated/ (retrieved 2026-09-30), describing DOJ Civil Rights Division letters beginning ~May 2025 to Colorado, Minnesota, Nevada, Pennsylvania, New Hampshire, and others demanding state voter registration lists under HAVA/NVRA, and quoting election-law scholars' and state officials' Privacy Act and statutory-authority objections.
+[^18]: Letter from Sens. Alex Padilla, Richard J. Durbin, and 22 other U.S. Senators to Attorney General Pamela Bondi, Jan. 29, 2026, saved locally at [`sources/senate-letter-2026-01-29-doj-voter-rolls.pdf`](./sources/senate-letter-2026-01-29-doj-voter-rolls.pdf) (retrieved from https://www.padilla.senate.gov/wp-content/uploads/26.01.29-Follow-Up-Letter-to-DOJ-re-Voter-Rolls-Requests-FINAL.pdf, text extracted with `pypdf`). States listed as sued by DOJ as of Jan. 28, 2026 (24 total, citing the Brennan Center's tracker): Arizona, California, Colorado, Connecticut, Delaware, Georgia, Hawai'i, Illinois, Maine, Maryland, Massachusetts, Michigan, Minnesota, Nevada, New Hampshire, New Mexico, New York, Oregon, Pennsylvania, Rhode Island, Vermont, Virginia, Wisconsin, and **Washington**. States reported as having handed over complete voter lists as of Jan. 28, 2026: Arkansas, Indiana, Kansas, Louisiana, Mississippi, Tennessee, Texas, Wyoming.
+[^19]: Office of the Minnesota Secretary of State, press release/statement by Secretary Steve Simon, Jan. 25, 2026, https://sos.mn.gov/about-the-office/news-room/statement-from-secretary-simon/ (retrieved 2026-09-30), describing and linking AG Bondi's Jan. 24, 2026 letter to Gov. Tim Walz (saved locally at [`sources/bondi-letter-2026-01-24-walz-voter-rolls.pdf`](./sources/bondi-letter-2026-01-24-walz-voter-rolls.pdf); original at https://sos.mn.gov/media/wihf4a05/ag-bondi-gov-walz-letter-012426.pdf — an image-based PDF with no extractable text layer in the copy retrieved) and quoting Secretary Simon's "apparent ransom" characterization. Also cited in [^18] (Senate letter), which independently corroborates the same letter, date, and characterization.
+[^20]: CourtListener RECAP docket metadata for *United States v. Shirley Weber*, No. 2:25-cv-09149 (C.D. Cal.), docket ID 71452580, retrieved via `https://www.courtlistener.com/api/rest/v4/search/?q=United%20States%20v.%20Shirley%20Weber&type=r&format=json`: filed 2025-09-25, terminated 2026-01-15, Judge David O. Carter, cause "42:1981 Civil Rights," jurisdiction type "U.S. Government Plaintiff," parties include Shirley Weber, State of California, Nevada, Maryland (amici), the American Civil Liberties Union, NAACP, League of Women Voters of California, America First Legal, and the **Democratic National Committee**. The specific characterization of the court's reasoning ("voter roll maintenance enforcement and compliance" contradicted by DOJ officials' other statements) is quoted from the Senate letter, [^18], which cites the order directly (Order Granting Def.'s Mot. to Dismiss at 16, 19); the underlying order itself was not independently retrieved in this pass.
