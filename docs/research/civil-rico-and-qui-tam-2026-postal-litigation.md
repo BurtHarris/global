@@ -6,12 +6,15 @@ countersuit is viable.** It summarizes public-record research only; whether
 any of it supports an actual claim is a legal judgment for counsel to make.
 
 > **Prepared for attorney review.** The user indicated this material is
-> intended for review by an attorney (name given verbally as "Bill Kirk" —
-> **spelling/firm unconfirmed**, see open questions below) in connection with
-> a possible countersuit under civil RICO and/or the False Claims Act
-> (qui tam). Before this report is sent to counsel, the open questions below
-> should be answered so the report reflects the actual dispute rather than
-> general background.
+> intended for review by an attorney, **Kirk**, who heads the **2nd
+> Amendment Institute** (org name as given verbally; not yet independently
+> verified — see open questions below), in connection with a possible
+> countersuit under civil RICO and/or the False Claims Act (qui tam). Before
+> this report is sent to counsel, the remaining open questions below should
+> be answered so the report reflects the actual dispute rather than general
+> background.
+
+> **Prepared by:** Ralph Burton Harris III.
 
 > **Correction note (v2):** v1 of this report searched for "RNC Services,
 > Inc." and found no matches anywhere. The user subsequently clarified the
@@ -34,8 +37,11 @@ those facts have not yet been supplied. A countersuit theory cannot be
 responsibly drafted without them. Before this goes to an attorney, please
 supply:
 
-1. **Attorney confirmation** — full name and firm, so the cover material
-   cites him correctly (verbal "Bill Kirk" is unconfirmed spelling).
+1. **Attorney's firm/organization details** — full name and role at the 2nd
+   Amendment Institute confirmed (attorney "Kirk"); the institute's formal
+   legal name, address, and Mr. Kirk's bar admission(s) have not yet been
+   independently verified and should be confirmed before the cover material
+   cites him.
 2. **Existing case** — is there a pending lawsuit in which the user is
    currently a defendant, making this a *counter*-suit? Case name, docket
    number, and court, if known. (Nothing found in this research connects the
