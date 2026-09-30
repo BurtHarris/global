@@ -1,6 +1,6 @@
-# Civil RICO, Qui Tam Suits, and the 2026 USPS Election-Mail Litigation
+# 2026 USPS election-mail litigation
 
-Status: **Draft v6** — prepared as background material for attorney review.
+Status: **Draft v7** — prepared as background material for attorney review.
 **This document is NOT legal advice and does not assert that any specific
 countersuit is viable.** It summarizes public-record research only; whether
 any of it supports an actual claim is a legal judgment for counsel to make.
@@ -53,46 +53,6 @@ any of it supports an actual claim is a legal judgment for counsel to make.
 > full and are available locally in
 > [`sources/`](./sources/README.md), so this report and any future drafting
 > do not depend on the documents remaining available online.
-
-## Open questions — answer before sending to counsel
-
-This report was built from public-record research (court dockets, news
-search) only. It has **no facts about the user's own situation**, because
-those facts have not yet been supplied. A countersuit theory cannot be
-responsibly drafted without them. Before this goes to an attorney, please
-supply:
-
-1. ~~Attorney identity~~ — **resolved**: William K. "Bill" Kirk, President
-   of Washington Gun Law (Spokane, WA). See the confirmation note above.
-2. **Existing case** — is there a pending lawsuit in which the user is
-   currently a defendant, making this a *counter*-suit? Case name, docket
-   number, and court, if known. (Nothing found in this research connects the
-   user to *California v. USPS* or any DNC-related litigation located so
-   far.)
-3. ~~Underlying dispute/injury~~ — **partially answered**, directly by the
-   user (verbatim, unverified — see Part 5): (a) general dilution of votes;
-   (b) personally, alleged attempts to prevent the user's business,
-   **DOGEtech.co**, "from achieving needed success"; (c) 2+ years of the
-   user's own research into FEC (Federal Election Commission) violations by
-   Democratic candidates. **Still missing** before this is pleadable: who
-   specifically is alleged to have acted against DOGEtech.co, what they did
-   (specific predicate acts — see Part 1), when, how the user's FEC research
-   connects causally to the alleged business harm (e.g., is the theory that
-   named parties retaliated *because of* that research?), and what "vote
-   dilution against me in particular" means concretely (is the user a
-   candidate, election official, or voter in a specific jurisdiction?). See
-   Part 5 for the open legal-fit questions this raises.
-4. **2nd Amendment connection, if any** — is the underlying dispute actually
-   connected to firearms/2A issues, or is that simply Mr. Kirk's general
-   litigation background/specialty being brought to bear on an unrelated
-   matter? (Nothing in the answer to #3 above mentions firearms/2A directly
-   — still open.)
-
-Until these are fully answered, the sections below remain a mix of general
-legal background, public-record findings about one specific *unrelated*
-public case (*California v. USPS*), and — as of Part 5 — the user's own
-unverified, directly-stated factual narrative. None of this is yet a
-complete, pleadable case-specific brief.
 
 
 
@@ -387,11 +347,12 @@ complaint's characterizations side by side.
 
 ## Part 5 — User-supplied factual basis (unverified, stated directly by the user)
 
-In response to Open Question #3, the user provided the following, quoted
-here as close to verbatim as practical so nothing is lost or paraphrased
-into a different meaning. **None of the specific factual claims below have
-been independently verified by this research** (no name, date, filing, or
-document has been supplied yet to check against public records):
+In response to a request for the underlying injury, the user provided the
+following, quoted here as close to verbatim as practical so nothing is lost
+or paraphrased into a different meaning. **None of the specific factual
+claims below have been independently verified by this research** (no name,
+date, filing, or document has been supplied yet to check against public
+records):
 
 > "Underlying injury includes: dilution of votes, and against me in
 > particular, attempts to prevent my business, DOGEtech.co, to achieve
@@ -411,7 +372,7 @@ Kirk, not to this report):
    injury (18 U.S.C. § 1964(c)) — courts have generally held that a
    generalized grievance about the integrity or weight of one's vote,
    without more, is not a "business or property" injury RICO recognizes.
-   **Open question for counsel:** is there a specific, personal,
+   **Question for counsel:** is there a specific, personal,
    pleadable business-or-property harm flowing from the alleged vote
    dilution, distinct from the general public-policy harm already pled by
    the states in *California v. USPS*?
@@ -445,14 +406,13 @@ Kirk, not to this report):
    specific facts (who knew about the research, what they did in response,
    when).
 
-**Net effect on Open Question #3:** partially answered. The user has now
-supplied a *subject* (DOGEtech.co) and a *theme* (vote dilution + FEC
-research), but not yet the specific facts — who, what, when, and a
-traceable causal chain — that civil RICO pleading requires. This section
-records the user's statement for the record and for Mr. Kirk's direct
-review; it does not attempt to independently corroborate it, and it should
-not be read as this report endorsing any of the three theories above as
-legally viable.
+**Net effect:** the user has now supplied a *subject* (DOGEtech.co) and a
+*theme* (vote dilution + FEC research), but not yet the specific facts —
+who, what, when, and a traceable causal chain — that civil RICO pleading
+requires. This section records the user's statement for the record and for
+Mr. Kirk's direct review; it does not attempt to independently corroborate
+it, and it should not be read as this report endorsing any of the three
+theories above as legally viable.
 
 ---
 
