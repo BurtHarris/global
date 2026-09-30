@@ -1,6 +1,6 @@
 # 2026 USPS election-mail litigation
 
-Status: **Draft v11** — prepared as background material for attorney review.
+Status: **Draft v12** — prepared as background material for attorney review.
 **This document is NOT legal advice and does not assert that any specific
 countersuit is viable.** It summarizes public-record research only; whether
 any of it supports an actual claim is a legal judgment for counsel to make.
@@ -316,6 +316,17 @@ researching this matter further should pull those two dockets as well.
 
 ## Part 4 — Operational/technical claims suited for subject-matter review
 
+**Context (clarified by the user):** the user supports USPS and the Ballot
+Mail for Federal Elections rule as an election-security measure, and is
+**not** adverse to USPS in this matter — he is not a defendant in
+*California v. USPS* and does not intend to name USPS or its officials as
+defendants in his own prospective case (see Part 5). The purpose of this
+Part is therefore to help evaluate — and, if warranted, rebut — the
+*plaintiff states'* (i.e., the blue states') technical/operational claims
+*against* the rule, using the user's stated background (Y2K-era IT
+consulting for the U.S. Postal Inspection Service), not to build a claim
+against USPS.
+
 The user has indicated relevant background (Y2K-era IT consulting for the
 U.S. Postal Inspection Service) that may bear on evaluating the *technical
 and operational* claims in the complaint — as distinct from its legal
@@ -381,19 +392,27 @@ Kirk, not to this report):
    *if* it can be tied to specific predicate acts (e.g., mail fraud, wire
    fraud, extortion — the defined list in 18 U.S.C. § 1961(1)) committed by
    an identifiable "enterprise," and if proximate cause (not merely
-   "but-for" cause) can be shown per *Holmes* and *Anza* (see Part 1). The
-   user has stated, verbatim and unverified: **"All of the defendants have
-   interfered with DOGEtech.co."** This is recorded here as given, but it
-   is ambiguous as written — this report discusses several different sets
-   of "defendants" across several different cases (the six named USPS
-   Board of Governors officials in *California v. USPS*, Part 3; DOJ as
-   plaintiff — not defendant — against Shirley Weber/California in Part 7;
-   AG Bondi as the letter-writer, not a defendant, in the Bondi–Walz
-   matter). **Still needed, not yet supplied:** which specific set of
-   defendants the user means, what DOGEtech.co is/does, what actions each
-   alleged defendant took against it, when, and how those actions connect
-   factually to the alleged predicate acts. No public reporting connecting
-   a business called "DOGEtech.co" to this matter was located in this
+   "but-for" cause) can be shown per *Holmes* and *Anza* (see Part 1).
+   **Clarified by the user:** the defendants are **not** USPS or the USPS
+   Board of Governors officials named in *California v. USPS* — the user
+   has clarified he **supports** USPS and the Ballot Mail for Federal
+   Elections rule discussed in Part 3/Part 4 as an election-security
+   measure, and is not a party adverse to USPS. The user's stated
+   defendants for his own prospective case are: **(a) blue states, (b) the
+   DNC, and (c) "related 'compliance' companies involved in fundraising
+   for democrats."** This aligns the theory with Part 7 (blue states
+   resisting/being sued over voter rolls; the DNC's appearance as a party
+   in *United States v. Shirley Weber*) rather than with Part 3/Part 4's
+   case, which should now be read purely as **background on a case the
+   user is not a party to and does not oppose**, not as a source of
+   defendants. **Still needed, not yet supplied:** which specific blue
+   states, which specific "compliance" companies (a term not yet defined —
+   candidates that would fit this description, not yet confirmed as what
+   the user means, include payment-processing/compliance platforms used by
+   Democratic campaigns such as ActBlue), what DOGEtech.co is/does, what
+   actions each alleged defendant took against it, when, and how those
+   actions connect factually to the alleged predicate acts. No public
+   reporting connecting a business called "DOGEtech.co" to this matter was
    research pass (a targeted search was not run in this update; can be
    added on request if a specific incident, date, or counterparty is
    identified).
