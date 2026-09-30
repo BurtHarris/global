@@ -1,6 +1,6 @@
 # 2026 USPS election-mail litigation
 
-Status: **Draft v10** — prepared as background material for attorney review.
+Status: **Draft v11** — prepared as background material for attorney review.
 **This document is NOT legal advice and does not assert that any specific
 countersuit is viable.** It summarizes public-record research only; whether
 any of it supports an actual claim is a legal judgment for counsel to make.
@@ -381,14 +381,22 @@ Kirk, not to this report):
    *if* it can be tied to specific predicate acts (e.g., mail fraud, wire
    fraud, extortion — the defined list in 18 U.S.C. § 1961(1)) committed by
    an identifiable "enterprise," and if proximate cause (not merely
-   "but-for" cause) can be shown per *Holmes* and *Anza* (see Part 1).
-   **Still needed, not yet supplied:** what DOGEtech.co is/does, who
-   specifically is alleged to have acted against it, what actions they
-   took, when, and how those actions connect factually to the alleged
-   predicate acts. No public reporting connecting a business called
-   "DOGEtech.co" to this matter was located in this research pass (a
-   targeted search was not run in this update; can be added on request if
-   a specific incident, date, or counterparty is identified).
+   "but-for" cause) can be shown per *Holmes* and *Anza* (see Part 1). The
+   user has stated, verbatim and unverified: **"All of the defendants have
+   interfered with DOGEtech.co."** This is recorded here as given, but it
+   is ambiguous as written — this report discusses several different sets
+   of "defendants" across several different cases (the six named USPS
+   Board of Governors officials in *California v. USPS*, Part 3; DOJ as
+   plaintiff — not defendant — against Shirley Weber/California in Part 7;
+   AG Bondi as the letter-writer, not a defendant, in the Bondi–Walz
+   matter). **Still needed, not yet supplied:** which specific set of
+   defendants the user means, what DOGEtech.co is/does, what actions each
+   alleged defendant took against it, when, and how those actions connect
+   factually to the alleged predicate acts. No public reporting connecting
+   a business called "DOGEtech.co" to this matter was located in this
+   research pass (a targeted search was not run in this update; can be
+   added on request if a specific incident, date, or counterparty is
+   identified).
 3. **Two years of independent research into FEC violations by Democratic
    candidates.** This is described as the user's own investigative work,
    not itself an injury. Two open legal-fit questions for counsel: (a) FEC
