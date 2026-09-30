@@ -1,6 +1,6 @@
 # 2026 USPS election-mail litigation
 
-Status: **Draft v12** — prepared as background material for attorney review.
+Status: **Draft v13** — prepared as background material for attorney review.
 **This document is NOT legal advice and does not assert that any specific
 countersuit is viable.** It summarizes public-record research only; whether
 any of it supports an actual claim is a legal judgment for counsel to make.
@@ -209,6 +209,23 @@ original question).[^10]
 
 ## Part 3 — The 2026 USPS election-mail litigation
 
+### Case status update (reported, not yet independently confirmed via docket)
+
+A Sept. 10, 2026 local news report quotes King County (WA) Elections'
+communications manager stating that, "[m]ost recently, on Sept. 4, a
+federal judge handed down a preliminary injunction to the U.S. Postal
+Service, preventing it from enacting new rules that would tighten mail-in
+voting requirements across the country."[^21] **This is reported via a news
+source quoting a county election official, not yet independently confirmed
+against the docket's actual order** (CourtListener's search API did not
+surface the specific order text in this pass; the docket's `dateTerminated`
+field is still `null`, consistent with the case remaining active rather
+than fully resolved, which a preliminary injunction — as opposed to a final
+judgment — would be). If accurate, this means the rule discussed throughout
+this Part and Part 4 was preliminarily enjoined roughly two weeks after
+this report's Part 3 research pass, before final resolution on the merits.
+This should be confirmed directly against the docket before relying on it.
+
 ### Case identity (confirmed)
 
 - **Caption:** *State of California v. United States Postal Service*
@@ -416,6 +433,37 @@ Kirk, not to this report):
    research pass (a targeted search was not run in this update; can be
    added on request if a specific incident, date, or counterparty is
    identified).
+
+   **Additional defendant category supplied by the user: election-mail /
+   ballot-printing and political direct-mail vendors.** The user identified
+   the following as a further set of prospective defendants, sourced from
+   an AI-search-style summary he provided (verified here against each
+   company's own site or independent reporting where possible):[^22]
+
+   | Company | What it is (verified) | Confirmed connection to this matter |
+   |---|---|---|
+   | **K&H Printers** (Everett/Ferndale, WA) | A real commercial printer with a dedicated "election services" business line (ballot printing, database processing, barcode automation), per its own website. | Not independently confirmed beyond its own marketing claims of serving counties across the Western U.S.; no specific contract, county, or incident tying it to DOGEtech.co or to any defendant conduct was supplied or located. |
+   | **Runbeck Election Services** | A real, nationally known ballot-printing/election-mail vendor (independently known from public reporting, not solely the user's list). | Same as above — named as a general industry participant, not tied to a specific act. |
+   | **Proforma / Midwest Direct** | Listed as national ballot-printing players in the user's supplied summary. | Not independently verified in this pass. |
+   | **Mail King USA** (Seattle, WA) | A real regional direct-mail marketing/political-mail company, per its own website, serving Seattle/WA political campaigns. | Not independently confirmed beyond its own marketing claims; no specific political client, contract, or incident supplied. |
+   | **Lithtex Northwest** (WA) | A real regional direct-mail printing company, per its own website. | Same as above. |
+
+   **Important caveat directly from the user's own supplied source:** that
+   source itself states that "for official government voting materials,
+   actual ballot distribution and processing in Seattle are managed
+   directly by King County Elections in partnership with the USPS Election
+   Mail network **rather than commercial marketing entities**."[^22] In
+   other words, the user's own source distinguishes *official ballot*
+   printing/processing (K&H Printers, Runbeck, Proforma/Midwest Direct) from
+   *political campaign* direct mail (Mail King USA, Lithtex Northwest) —
+   two different categories of vendor serving two different customers
+   (county election offices vs. political campaigns/committees). **Still
+   needed, not yet supplied:** which of these companies (if any) the user
+   alleges actually did something wrongful, what that conduct was, when,
+   and its connection to DOGEtech.co or to the RICO "enterprise" theory —
+   being a commercial vendor in this industry is not, by itself, wrongdoing
+   or evidence of an "enterprise" under 18 U.S.C. § 1961(4).
+
 3. **Two years of independent research into FEC violations by Democratic
    candidates.** This is described as the user's own investigative work,
    not itself an injury. Two open legal-fit questions for counsel: (a) FEC
@@ -739,3 +787,5 @@ below).
 [^18]: Letter from Sens. Alex Padilla, Richard J. Durbin, and 22 other U.S. Senators to Attorney General Pamela Bondi, Jan. 29, 2026, saved locally at [`sources/senate-letter-2026-01-29-doj-voter-rolls.pdf`](./sources/senate-letter-2026-01-29-doj-voter-rolls.pdf) (retrieved from https://www.padilla.senate.gov/wp-content/uploads/26.01.29-Follow-Up-Letter-to-DOJ-re-Voter-Rolls-Requests-FINAL.pdf, text extracted with `pypdf`). States listed as sued by DOJ as of Jan. 28, 2026 (24 total, citing the Brennan Center's tracker): Arizona, California, Colorado, Connecticut, Delaware, Georgia, Hawai'i, Illinois, Maine, Maryland, Massachusetts, Michigan, Minnesota, Nevada, New Hampshire, New Mexico, New York, Oregon, Pennsylvania, Rhode Island, Vermont, Virginia, Wisconsin, and **Washington**. States reported as having handed over complete voter lists as of Jan. 28, 2026: Arkansas, Indiana, Kansas, Louisiana, Mississippi, Tennessee, Texas, Wyoming.
 [^19]: Office of the Minnesota Secretary of State, press release/statement by Secretary Steve Simon, Jan. 25, 2026, https://sos.mn.gov/about-the-office/news-room/statement-from-secretary-simon/ (retrieved 2026-09-30), describing and linking AG Bondi's Jan. 24, 2026 letter to Gov. Tim Walz (saved locally at [`sources/bondi-letter-2026-01-24-walz-voter-rolls.pdf`](./sources/bondi-letter-2026-01-24-walz-voter-rolls.pdf); original at https://sos.mn.gov/media/wihf4a05/ag-bondi-gov-walz-letter-012426.pdf — an image-based PDF with no extractable text layer in the copy retrieved) and quoting Secretary Simon's "apparent ransom" characterization. Also cited in [^18] (Senate letter), which independently corroborates the same letter, date, and characterization.
 [^20]: CourtListener RECAP docket metadata for *United States v. Shirley Weber*, No. 2:25-cv-09149 (C.D. Cal.), docket ID 71452580, retrieved via `https://www.courtlistener.com/api/rest/v4/search/?q=United%20States%20v.%20Shirley%20Weber&type=r&format=json`: filed 2025-09-25, terminated 2026-01-15, Judge David O. Carter, cause "42:1981 Civil Rights," jurisdiction type "U.S. Government Plaintiff," parties include Shirley Weber, State of California, Nevada, Maryland (amici), the American Civil Liberties Union, NAACP, League of Women Voters of California, America First Legal, and the **Democratic National Committee**. The specific characterization of the court's reasoning ("voter roll maintenance enforcement and compliance" contradicted by DOJ officials' other statements) is quoted from the Senate letter, [^18], which cites the order directly (Order Granting Def.'s Mot. to Dismiss at 16, 19); the underlying order itself was not independently retrieved in this pass.
+[^21]: Seattle Weekly, "Concerned About Mail-In Ballots? Here Are King County's Alternatives," Sept. 10, 2026, https://www.seattleweekly.com/2026/09/10/concerned-about-mail-in-ballots-here-are-king-countys-alternatives/ (retrieved 2026-09-30), quoting King County Elections Communications Manager Halei Watkins on a reported Sept. 4, 2026 federal preliminary injunction against USPS's rule, and noting an unidentified whistleblower's claims about the verification portal's design. Not cross-checked against the *California v. USPS* docket's actual order text in this pass.
+[^22]: Company information for K&H Printers (https://www.khprint.com/election-services/), Mail King USA (https://mailkingusa.com/direct-mail-services/seattle-wa/), and Lithtex Northwest (https://www.lithtexnw.com/servicecenter/directmail-services.html) retrieved directly from each company's own website, 2026-09-30, confirming each is a real, currently operating commercial printing/direct-mail business with the described service lines. Proforma, Midwest Direct, and Runbeck Election Services were named by the user's supplied summary but not independently re-verified in this pass. The distinction between official ballot-processing vendors and political-campaign direct-mail vendors, and the statement that King County's actual ballot distribution is handled directly with USPS rather than through commercial marketing entities, is drawn from the same user-supplied summary, which cited https://www.sos.wa.gov/usps-and-election-mail-resources and the Seattle Weekly article in [^21].
