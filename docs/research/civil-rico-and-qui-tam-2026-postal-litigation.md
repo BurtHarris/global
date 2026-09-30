@@ -1,6 +1,6 @@
 # 2026 USPS election-mail litigation
 
-Status: **Draft v13** — prepared as background material for attorney review.
+Status: **Draft v14** — prepared as background material for attorney review.
 **This document is NOT legal advice and does not assert that any specific
 countersuit is viable.** It summarizes public-record research only; whether
 any of it supports an actual claim is a legal judgment for counsel to make.
@@ -370,6 +370,61 @@ characterization of it was reviewed). If useful for Mr. Kirk, the next step
 would be to pull the actual Federal Register rule (91 Fed. Reg. 54,966) and
 the NPRM (91 Fed. Reg. 32,915) directly and compare their text against the
 complaint's characterizations side by side.
+
+### User's rebuttal theory: the alleged compliance costs (stated directly by the user)
+
+> "The DMM changes, associated with the Trump executive order, primarily
+> affect such companies as K&H. The claims by the blue states as to the
+> costs imposed by the USPS changes are BS. The existing DMM has most of
+> these, executed by the mailer (not the state), and saying it will cost
+> any significant costs to comply are the primary misrepresentation in the
+> California v. USPS case. The mailing vendors already do the needed
+> steps, if nothing else, to qualify for discounted mailing rates."
+
+Recorded here verbatim, as the user's own theory of the case — **not
+independently verified against the DMM text in this pass** (Postal
+Explorer's DMM pages at `pe.usps.com/text/dmm300/705.htm` and `708.htm`
+did not return machine-readable section text to the tools available this
+session; only page titles were retrievable). This theory has three
+separable parts, each of which would need document-level verification
+before it could be used to rebut the complaint:
+
+1. **Who bears the barcode/generation burden.** The user's claim is that
+   the *mailer* (i.e., the printing/mail-fulfillment vendor, such as
+   K&H Printers) — not the state or county election office — already
+   performs Intelligent Mail barcode (IMb) generation and application as a
+   routine, pre-existing step, because doing so is required to qualify for
+   USPS's existing automation/discounted-rate mail classes (USPS's
+   "Full-Service Intelligent Mail" program, in place since 2013, is
+   publicly known to condition automation discounts on mailer-generated
+   IMb barcodes). If accurate, this would directly undercut Complaint ¶105
+   and ¶123 (Part 4, item 2 above), which frame IMb/STID generation as a
+   *new* burden imposed on "state/local election officials." **Not yet
+   confirmed:** whether the complaint's specific Federal Ballot Mail STID
+   and "Delivery Point Zip Code" requirements are in fact just an
+   incremental configuration of an existing, already-automated mailer
+   workflow, or whether they require genuinely new steps beyond ordinary
+   Full-Service IMb compliance.
+2. **Who the Rule's costs actually fall on.** The user's claim is that the
+   Rule's practical burden lands on vendors like K&H Printers (who already
+   have the necessary systems) rather than on the plaintiff states
+   themselves — which, if true, would be relevant to the plaintiffs'
+   standing/injury theory in *California v. USPS*, since a cost borne by a
+   private vendor already compliant with existing USPS automation rules is
+   a different injury (and a different plaintiff) than a state-borne cost.
+   This is a legal-standing argument for counsel to evaluate, not a fact
+   this report can resolve.
+3. **Characterization of the complaint's cost estimates as "the primary
+   misrepresentation."** This is the user's characterization/opinion about
+   the complaint's litigation strategy, not an independently verified
+   fact. The complaint's own cost estimates (Part 4, item 3: "~23 million
+   minutes (~43 years)" aggregate processing time) are themselves framed
+   around *verification/rejection at the USPS counter*, which is a
+   different operation from *barcode generation by the mailer* — so even
+   if the user's mailer-side point is correct, it does not, by itself,
+   dispose of the complaint's separate counter-verification burden
+   argument. Both threads should be checked against the Federal Register
+   rule text side by side, as recommended above.
 
 ---
 
