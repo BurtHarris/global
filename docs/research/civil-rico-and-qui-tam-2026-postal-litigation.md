@@ -101,7 +101,7 @@ brief.
 | Civil RICO elements, remedies, statute of limitations | High | Direct statutory text and well-settled case law[^1] |
 | Qui tam / FCA mechanics | High | Direct statutory text[^2] |
 | Existence, docket number, filing date, judge, and parties of *California v. USPS* | High | CourtListener RECAP metadata, pulled directly from the docket record[^3][^4] |
-| That case is voting-rights/APA, not RICO | Medium-High | Docket `suitNature` field says "441 Civil Rights: Voting"; no RICO cause of action appears in the indexed metadata, but the full complaint text was not fetched line-by-line[^5] |
+| That case is voting-rights/APA, not RICO | **High (confirmed)** | Full 53-page complaint retrieved and read; pleads seven causes of action (separation of powers, APA, three ultra vires theories, Voting Rights Act, Privacy Act) — no RICO or FCA count, and the DNC is not a party in any capacity[^12] |
 | The DNC's formal legal name is "DNC Services Corporation" | High | Confirmed across multiple federal court captions (e.g., *Wilson v. DNC Services Corporation*, D.D.C.)[^6] |
 | DNC Services Corporation's connection to Washington state executives / a RICO complaint / the 2026 USPS case | **Unverified** | No hits in CourtListener full-text RECAP/opinion search or Google News combining these terms[^6a] |
 | Whether a *separate*, smaller state-court RICO or qui tam suit naming the DNC exists | **Unknown** | State trial court filings (including Washington Superior Courts) are generally not indexed by CourtListener/PACER and were not searched by state-specific tools in this pass |
@@ -246,26 +246,99 @@ Rule of Law, and the Arizona Students' Association — consistent with a
 politically contested case attracting outside advocacy-group intervention
 on one or both sides.[^4]
 
-### What the case appears to be about
+### What the case is about (confirmed from the complaint)
 
-Based on the "Civil Rights: Voting" classification, the large coalition of
-Democratic-leaning state AGs as plaintiffs, and named USPS Governors as
-defendants, this case is most plausibly a challenge to USPS operational or
-governance changes (e.g., Board of Governors composition, mail-ballot
-delivery standards or timelines) ahead of the 2026 midterm elections —
-consistent with broader post-2025 coverage of USPS governance fights
-discussed in contemporaneous commentary.[^11] **This is inference from
-docket metadata and secondary commentary, not a direct reading of the
-complaint**, and should be verified against the actual filed complaint
-before being relied upon.
+The case challenges **Executive Order No. 14399** (issued March 31, 2026)
+and the USPS rule implementing it, *Ballot Mail for Federal Elections*, 91
+Fed. Reg. 54,966 (Aug. 26, 2026). The rule requires states to enroll every
+mail voter in a new USPS-run "Federal Ballot Mail Portal," mandates
+USPS-approved envelope designs bearing a unique Intelligent Mail barcode
+(IMb) on both outbound and return ballots, and directs USPS to refuse
+delivery of noncompliant ballot mail. Plaintiff states allege this
+unconstitutionally federalizes control over mail voting weeks before the
+2026 midterms.[^12] (Superseding the earlier inference-only description
+below, which was based on docket metadata alone before the complaint text
+was retrieved.)
 
-### No RICO or qui tam claims found
+### Full complaint now reviewed — seven causes of action, no RICO/qui tam/DNC
 
-Nothing in the indexed docket metadata (nature-of-suit code, cause code, or
-docket-entry short descriptions retrieved) indicates a RICO or False Claims
-Act cause of action in this case.[^5] A full-text search of CourtListener's
-RECAP archive for "RICO" + "Postal Service" timed out during this research
-pass and should be retried (see Next Steps).
+The actual 53-page complaint (Document 1, filed 2026-08-26) was retrieved
+and read in full.[^12] It pleads exactly **seven causes of action**, all
+against USPS and the six named Board of Governors officials, **none of them
+RICO, False Claims Act, or naming the DNC in any capacity**:
+
+1. **Separation of Powers / Elections & Electors Clauses / Commandeering /
+   Ultra Vires** — the Rule usurps States' constitutional authority over
+   election "manner," commandeers state resources (*Printz v. United
+   States*), and exceeds USPS's Article I, § 8, cl. 7 postal authority.
+2. **APA — contrary to statute / arbitrary and capricious** — treating
+   ballot mail as de facto "nonmailable matter" outside the narrow
+   categories Congress defined in 39 U.S.C. §§ 3001–3018; failure to
+   consider reliance interests (*Regents* standard); effective date set
+   without the 30-day notice required by 5 U.S.C. § 553(d).
+3. **Ultra vires — unauthorized non-postal service** — creating the mail
+   voter enrollment/monitoring scheme exceeds USPS's 39 U.S.C. § 404(e)
+   authority to provide only services that existed pre-2006 or under a
+   qualifying interagency agreement.
+4. **Ultra vires — failure to seek a Postal Regulatory Commission advisory
+   opinion** under 39 U.S.C. § 3661(b) before a nationwide service change; a
+   PRC complaint was filed June 11, 2026 and never acted on.
+5. **Ultra vires — undue/unreasonable discrimination among mail users**
+   under 39 U.S.C. § 403(c) — identical ballots treated differently based on
+   whether a voter appears on USPS's list.
+6. **Voting Rights Act** — 52 U.S.C. §§ 10307(a), 10502 — USPS's refusal to
+   deliver noncompliant ballots is alleged to deny qualified voters the
+   right to vote "under color of law."
+7. **Privacy Act** — 5 U.S.C. § 552a(e)(1) & (e)(7) — the System of Records
+   Notice's collection of voter/mail-ballot data is alleged to exceed what
+   is "relevant and necessary" and to improperly record First Amendment
+   activity (choice to register/vote by mail).
+
+Relief sought is purely declaratory/injunctive (vacate the Rule, enjoin
+enforcement) plus fees/costs under the APA and Declaratory Judgment Act —
+**no damages, no treble damages, no whistleblower bounty.** This confirms,
+rather than merely infers, that the case has no RICO or qui tam dimension
+and does not involve the DNC.[^12]
+
+The complaint also reveals this filing sits inside a **larger, pre-existing
+litigation campaign** over the same executive order: it repeatedly cites
+*California v. Trump*, No. 1:26-cv-11581 (D. Mass.) and *League of Women
+Voters of Massachusetts v. Trump*, No. 1:26-cv-11549 (D. Mass.), both of
+which had already enjoined related USPS rulemaking before this complaint
+was filed — footnote 26 of the complaint alleges USPS submitted this Rule
+for public inspection *while already enjoined* from doing so.[^12] Anyone
+researching this matter further should pull those two dockets as well.
+
+---
+
+## Part 4 — Operational/technical claims suited for subject-matter review
+
+The user has indicated relevant background (Y2K-era IT consulting for the
+U.S. Postal Inspection Service) that may bear on evaluating the *technical
+and operational* claims in the complaint — as distinct from its legal
+theories, which are for counsel. The following paragraph-cited claims are
+the ones most likely to turn on operational/systems facts rather than pure
+law, listed here for independent evaluation rather than asserted as true or
+false by this report:
+
+| # | Complaint's claim | Citation |
+|---|---|---|
+| 1 | The "Federal Ballot Mail Portal" required by the Rule "does not currently exist," and commenters called rolling out "untested technology" to manage "tens of millions of entries" in a compressed timeframe "fraught with risk." | ¶108 |
+| 2 | State/local election officials — not USPS — are made responsible for generating the unique Intelligent Mail barcode (IMb), with the "Delivery Point Zip Code embedded and a Federal Ballot Mail STID," for each outbound and return ballot envelope. | ¶105, ¶123 (citing 91 Fed. Reg. 54,966, 54,990) |
+| 3 | USPS's own stated per-mailpiece verification estimate ("less than a minute per mailpiece," "no more than a few hours for larger mailings") is characterized by plaintiffs as implying ~23 million minutes (~43 years) of aggregate processing time for California alone, with election officials required to remain on-site at the USPS counter throughout. | ¶134 (citing 91 Fed. Reg. 54,966, 54,981) |
+| 4 | USPS commits to envelope-design feedback "within two business days" but the complaint says this doesn't account for "more than 10,000 election jurisdictions," each often designing its own envelopes. | ¶134 |
+| 5 | The verification/rejection process is alleged to apply asymmetrically — to outbound ballot mail but explicitly **not** to return ballot mail. | ¶121 (citing DMM 705.24.5.4) |
+| 6 | No stated mechanism exists to distinguish ballots for statutorily exempted groups (overseas citizens, active-duty military, merchant marine under UOCAVA) from ballots for voters simply missing from USPS's list. | ¶107 |
+| 7 | Voter registration and mail-ballot enrollment continue up to (and past) the 30-day pre-election data-submission deadline the Rule imposes, implying the Portal must support continuous late amendments the Rule's design does not clearly accommodate. | ¶104, ¶131 |
+| 8 | The System of Records Notice (SORN) describes collecting voter-specific data in part to "facilitate law enforcement efforts" and sharing it back with election officials, which the complaint frames as exceeding Privacy Act "relevant and necessary" limits. | ¶115–¶117 (citing 91 Fed. Reg. 44,880–81) |
+
+These are presented as a checklist of *plaintiffs' factual allegations*
+about USPS system design and capacity — not independently verified against
+the Federal Register rule text itself in this pass (only the complaint's
+characterization of it was reviewed). If useful for Mr. Kirk, the next step
+would be to pull the actual Federal Register rule (91 Fed. Reg. 54,966) and
+the NPRM (91 Fed. Reg. 32,915) directly and compare their text against the
+complaint's characterizations side by side.
 
 ---
 
@@ -317,29 +390,30 @@ Two things follow for this research question:
    *separate* racketeering complaint (possibly naming the DNC as a
    co-defendant), that complaint was not located.
 3. **Whether the *California v. USPS* case includes any RICO count, or
-   names the DNC as a party** — docket metadata says "Civil Rights: Voting"
-   and the retrieved party list does not include the DNC or DNC Services
-   Corporation, but the actual complaint text (which can run to 100+ pages
-   in multi-state actions like this) was not fetched and read in this
-   pass.[^4]
+   names the DNC as a party** — **resolved**: it does not. The full
+   complaint was read in this pass; it pleads seven non-RICO causes of
+   action and does not mention the DNC, RICO, qui tam, or the False Claims
+   Act anywhere in its 53 pages.[^12]
 
 ## Recommended next steps
 
-1. Retry the CourtListener full-text opinion/RECAP search for `"RICO"
-   "Postal Service"` and `"DNC Services Corporation" "Washington"` without
-   the timeout, and widen to `type=r` (RECAP), `type=o` (opinions), and
-   `type=d` (dockets) separately.
-2. Pull the actual complaint PDF for 1:26-cv-13917 (CourtListener docket
-   entry, via `docket_absolute_url` in the citations below) and check its
-   counts/causes of action and full party list directly rather than relying
-   on the `suitNature` code and the truncated party array retrieved here.
-3. Search the **Washington State Courts case index** (not covered by
+1. Search the **Washington State Courts case index** (not covered by
    CourtListener) and Washington-specific news outlets for a RICO complaint
    naming the DNC and Washington state executive-branch officials, since
-   state-level filings are outside the national tools used in this pass.
-4. If a specific complaint/case number for the DNC-related RICO claim can be
+   state-level filings are outside the national tools used in this pass —
+   this is now the main open thread, since *California v. USPS* itself has
+   been ruled out as the source of any RICO/DNC connection.
+2. If a specific complaint/case number for the DNC-related RICO claim can be
    supplied by the user, re-run a targeted CourtListener docket lookup by
    case number rather than by name search.
+3. If the goal is evaluating *California v. USPS* on the merits (per the
+   user's stated USPS Inspection Service background), pull the companion
+   dockets *California v. Trump* (1:26-cv-11581, D. Mass.) and *League of
+   Women Voters of Massachusetts v. Trump* (1:26-cv-11549, D. Mass.), both
+   cited repeatedly in this complaint as having already enjoined related
+   USPS rulemaking, plus the Federal Register rule itself (91 Fed. Reg.
+   54,966) and NPRM (91 Fed. Reg. 32,915), to verify the complaint's
+   characterizations against the primary sources.
 
 ## Footnotes
 
@@ -354,4 +428,4 @@ Two things follow for this research question:
 [^8]: *Holmes v. Securities Investor Protection Corp.*, 503 U.S. 258 (1992) (proximate cause requirement for civil RICO standing); *Anza v. Ideal Steel Supply Corp.*, 547 U.S. 451 (2006) (reaffirming direct-injury/proximate-cause requirement, rejecting derivative-injury RICO theories).
 [^9]: *Rotella v. Wood*, 528 U.S. 549 (2000) (civil RICO borrows the Clayton Act's four-year limitations period; discovery-of-injury accrual rule).
 [^10]: General background on state false-claims-act variation; Washington's principal state-level false-claims statute is the Medicaid Fraud False Claims Act (RCW 74.66), which is narrower in scope than the federal FCA — this is general legal background, not independently re-verified against current RCW text in this research pass.
-[^11]: Jack Goldsmith, "The Postal Service and the 2026 Elections," *Executive Functions*, Aug. 27, 2026 (contextual commentary on USPS governance disputes ahead of the 2026 elections, surfaced via Google News RSS; full article body was not successfully fetched in this pass — cited for topical context only, not for specific factual claims): https://www.execfunctions.org/
+[^12]: Complaint, *State of California v. United States Postal Service*, No. 1:26-cv-13917 (D. Mass. filed Aug. 26, 2026), Document 1, 53 pages, retrieved via CourtListener RECAP storage (`https://storage.courtlistener.com/recap/gov.uscourts.mad.305406/gov.uscourts.mad.305406.1.0.pdf`) and read in full (text-extracted with `pypdf`). Full-text search of the extracted document for "DNC," "Democratic National Committee," "RICO," "racketeer," "qui tam," and "False Claims" returned zero matches.
