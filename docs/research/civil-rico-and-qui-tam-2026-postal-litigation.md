@@ -1,10 +1,17 @@
 # Civil RICO, Qui Tam Suits, and the 2026 USPS Election-Mail Litigation
 
-Status: **Draft v2** — updated after the user corrected "RNC Services, Inc."
-to **"DNC Services, Inc."**, i.e. the Democratic National Committee. Several
-details requested by the originating question still could not be verified
-from public sources (see "Unverified items" below). Treat this as a starting
-point for further investigation, not a finished brief.
+Status: **Draft v3** — prepared as background material for attorney review.
+**This document is NOT legal advice and does not assert that any specific
+countersuit is viable.** It summarizes public-record research only; whether
+any of it supports an actual claim is a legal judgment for counsel to make.
+
+> **Prepared for attorney review.** The user indicated this material is
+> intended for review by an attorney (name given verbally as "Bill Kirk" —
+> **spelling/firm unconfirmed**, see open questions below) in connection with
+> a possible countersuit under civil RICO and/or the False Claims Act
+> (qui tam). Before this report is sent to counsel, the open questions below
+> should be answered so the report reflects the actual dispute rather than
+> general background.
 
 > **Correction note (v2):** v1 of this report searched for "RNC Services,
 > Inc." and found no matches anywhere. The user subsequently clarified the
@@ -13,7 +20,38 @@ point for further investigation, not a finished brief.
 > name. The DNC's actual, long-standing formal corporate name is **"DNC
 > Services Corporation"** (not "DNC Services, Inc.") — see Part 3a below.
 
-## Executive summary
+## Open questions — answer before sending to counsel
+
+This report was built from public-record research (court dockets, news
+search) only. It has **no facts about the user's own situation**, because
+those facts have not yet been supplied. A countersuit theory cannot be
+responsibly drafted without them. Before this goes to an attorney, please
+supply:
+
+1. **Attorney confirmation** — full name and firm, so the cover material
+   cites him correctly (verbal "Bill Kirk" is unconfirmed spelling).
+2. **Existing case** — is there a pending lawsuit in which the user is
+   currently a defendant, making this a *counter*-suit? Case name, docket
+   number, and court, if known. (Nothing found in this research connects the
+   user to *California v. USPS* or any DNC-related litigation located so
+   far.)
+3. **Underlying dispute/injury** — what happened, to whom, when, and what
+   harm resulted, that the user believes supports a RICO and/or qui tam
+   claim. This is the single most important gap: civil RICO and FCA claims
+   live or die on specific, pleadable facts (the "enterprise," the predicate
+   acts, the proximate injury — see Part 1), none of which can be inferred
+   from public sources.
+4. **2nd Amendment connection, if any** — is the underlying dispute actually
+   connected to firearms/2A issues, or is that simply Mr. Kirk's general
+   litigation background/specialty being brought to bear on an unrelated
+   matter?
+
+Until these are answered, the sections below remain general legal
+background and public-record findings about one specific *unrelated* public
+case (*California v. USPS*) — useful context, but not yet a case-specific
+brief.
+
+
 
 1. **Civil RICO** (18 U.S.C. §§ 1961–1968) lets a private plaintiff who was
    injured "in [their] business or property" by a pattern of racketeering
