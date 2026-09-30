@@ -1,6 +1,6 @@
 # 2026 USPS election-mail litigation
 
-Status: **Draft v8** — prepared as background material for attorney review.
+Status: **Draft v9** — prepared as background material for attorney review.
 **This document is NOT legal advice and does not assert that any specific
 countersuit is viable.** It summarizes public-record research only; whether
 any of it supports an actual claim is a legal judgment for counsel to make.
@@ -414,6 +414,25 @@ Mr. Kirk's direct review; it does not attempt to independently corroborate
 it, and it should not be read as this report endorsing any of the three
 theories above as legally viable.
 
+### Video evidence supplied by the user
+
+The user identified the following as evidence, with "other videos" indicated
+but not yet individually supplied:
+
+| # | URL | Confirmed metadata | What is / is not confirmed |
+|---|---|---|---|
+| 1 | https://www.youtube.com/watch?v=S1TR-rqMEwM | Title: "Press conference with Gov. Bob Ferguson and Attorney General Nick Brown, Jan. 26, 2026." Uploaded by channel `@WashingtonAGO` — i.e., the **Washington State Attorney General's Office's own official YouTube channel**.[^16] | **Confirmed:** this is an authentic, official recording (not a third-party clip) of a joint press conference by Washington's Governor and Attorney General — i.e., squarely "Washington state executives," directly relevant to the still-open thread in Part 3a/Unverified Items below. **Not confirmed:** this research tool cannot transcribe or watch video/audio content, so **no claim about what was actually said in the press conference is confirmed here** — only the fact that it exists, its date, its speakers, and its official source. |
+
+**To make this usable for a pleading or for Mr. Kirk's review, the specific
+claim(s) being relied on from this video still need to be supplied** — e.g.,
+a timestamp and a quote or paraphrase of the specific statement(s) by Gov.
+Ferguson or AG Brown that the user contends are evidence of the RCW 42.52
+violation, vote-dilution theory, or DOGEtech.co interference discussed
+above. Once supplied, this report can be updated to quote the specific
+statement and assess it against the RCW 42.52 / RICO framework in Parts 1
+and 6. The same applies to the "other videos" referenced but not yet
+linked.
+
 ---
 
 ## Part 3a — The DNC's corporate name, and why it matters here
@@ -584,3 +603,4 @@ elsewhere in this report:**
 [^13]: Attorney bio, William K. Kirk, Washington Gun Law: https://www.washingtongunlaw.com/william-k-kirk-2 (retrieved 2026-09-30). Confirms: President of Washington Gun Law (Spokane, WA); host of the "Washington Gun Law" YouTube channel; 20-time Washington State Super Lawyer; J.D., Gonzaga University School of Law; B.A., Washington State University; former Spokane County and King County Prosecuting Attorney; in private practice since 2000.
 [^14]: Two other "Kirk" candidates were investigated and ruled out before the correct match was found: (1) Second Amendment Institute (SAI), a D.C.-based 501(c)(3) founded 2016 — its founder/president is Tyler Yzaguirre, not Kirk, per SAI's website, press releases, and attorneys of record in *Yzaguirre v. District of Columbia*, No. 1:24-cv-01828 (D.D.C.), retrieved via `https://www.courtlistener.com/api/rest/v4/search/?q=%22Yzaguirre%20v.%20District%20of%20Columbia%22&type=r&format=json`; (2) Cooper & Kirk, PLLC, a D.C. constitutional-litigation firm co-founded by Michael W. Kirk with a Second Amendment practice area (https://www.cooperkirk.com/practice-areas/constitution-second-amendment/) — a different person from William K. Kirk, and the firm is not called an "institute."
 [^15]: Washington Revised Code of Washington (RCW) ch. 42.52, "Ethics in Public Service," retrieved directly from the Washington State Legislature's official site: RCW 42.52.010 (definitions, including "state officer"/"state employee"), https://app.leg.wa.gov/rcw/default.aspx?cite=42.52.010; RCW 42.52.020 (conflicts of interest), https://app.leg.wa.gov/rcw/default.aspx?cite=42.52.020; RCW 42.52.070 (special privileges), https://app.leg.wa.gov/rcw/default.aspx?cite=42.52.070; RCW 42.52.180 (use of public facilities for political campaigns), https://app.leg.wa.gov/rcw/default.aspx?cite=42.52.180; RCW 42.52.360 (enforcement by the executive ethics board, including complaints "by any person"), https://app.leg.wa.gov/rcw/default.aspx?cite=42.52.360. All retrieved 2026-09-30.
+[^16]: YouTube video "Press conference with Gov. Bob Ferguson and Attorney General Nick Brown, Jan. 26, 2026," https://www.youtube.com/watch?v=S1TR-rqMEwM, metadata retrieved via YouTube's oembed endpoint (`https://www.youtube.com/oembed?url=...&format=json`), which returned `"author_name":"Washington State Attorney General's Office"` and `"author_url":"https://www.youtube.com/@WashingtonAGO"`, confirming the video was published by the WA AG's own channel. Retrieved 2026-09-30. Video audio/visual content was not transcribed or reviewed in this pass; only title, channel, and publication metadata are confirmed.
