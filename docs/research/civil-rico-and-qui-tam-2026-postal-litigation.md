@@ -20,6 +20,12 @@ any of it supports an actual claim is a legal judgment for counsel to make.
 > name. The DNC's actual, long-standing formal corporate name is **"DNC
 > Services Corporation"** (not "DNC Services, Inc.") — see Part 3a below.
 
+> **Source documents.** The complaint, related-case complaints, and the
+> underlying Federal Register rule discussed below have been downloaded in
+> full and are available locally in
+> [`sources/`](./sources/README.md), so this report and any future drafting
+> do not depend on the documents remaining available online.
+
 ## Open questions — answer before sending to counsel
 
 This report was built from public-record research (court dockets, news

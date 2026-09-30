@@ -1,0 +1,1843 @@
+ 
+ 
+IN THE UNITED STATES DISTRICT COURT 
+FOR THE DISTRICT OF MASSACHUSETTS  
+ 
+STATE OF CALIFORNIA; COMMONWEALTH OF 
+MASSACHUSETTS; STATE OF NEVADA; STATE 
+OF WASHINGTON; STATE OF ARIZONA; STATE 
+OF COLORADO; STATE OF CONNECTICUT; 
+STATE OF DELAWARE; DISTRICT OF 
+COLUMBIA; STATE OF HAWAI‘I; STATE OF 
+ILLINOIS; STATE OF MAINE; STATE OF 
+MARYLAND; STATE OF MICHIGAN; STATE OF 
+MINNESOTA; STATE OF NEW JERSEY; STATE 
+OF NEW MEXICO; STATE OF NEW YORK; 
+STATE OF NORTH CAROLINA; STATE OF 
+OREGON; STATE OF RHODE ISLAND; STATE 
+OF VERMONT; COMMONWEALTH OF 
+VIRGINIA; STATE OF WISCONSIN; JOSH 
+SHAPIRO, in his official capacity as Governor of the 
+Commonwealth of Pennsylvania, 
+ 
+    Plaintiffs,  
+v.  
+ 
+UNITED STATES POSTAL SERVICE; DAVID 
+STEINER, in his official capacity as Postmaster 
+General, Chief Executive Officer of the Postal 
+Service, and Member of the Postal Service Board of 
+Governors; DOUG TULINO, in his official capacity 
+as Deputy Postmaster General, Chief Operating 
+Officer and Chief Human Resources Officer of the 
+Postal Service and Member of the Postal Service 
+Board of Governors; AMBER MCREYNOLDS, in 
+her official capacity as Chair of the Postal Service 
+Board of Governors; DEREK KAN, in his official 
+capacity as Vice Chairman of the Postal Service Board 
+of Governors; RONALD STROMAN, in his official 
+capacity as a Member of the Postal Service Board of 
+Governors; DANIEL TANGHERLINI, in his official 
+capacity as a Member of the Postal Service Board of 
+Governors, 
+ 
+    Defendants. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Case No. 1:26-cv-13917 
+ 
+COMPLAINT FOR DECLARATORY AND INJUNCTIVE RELIEF 
+1. With the publication of a new regulation, crafted at the President’s behest just 
+before the midterm elections, the United States Postal Service (“USPS”) has purportedly granted 
+itself the authority to regulate mail voting in federal elections.  That includes the authority to 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 1 of 53
+ 
+2 
+monitor and control which voters will receive a mail ballot from state and local election officials, 
+and to task those same officials with new election administration procedures.   
+2. Whether a qualified voter may vote by mail is a question of state law, as is the 
+question of whether a ballot will be accepted for processing and tabulation.  The Constitution is 
+clear that States have the primary responsibility for regulating and administering elections, 
+subject only to preemption by Congress—authority that expressly extends to the “manner” of 
+elections.  See THE FEDERALIST NO. 59 (Alexander Hamilton); U.S. Const. art. I, § 4, cl. 1; U.S. 
+Const. art. II, § 1, cl. 2, 4. 
+3. Congress has not afforded USPS any authority whatsoever to set rules for federal 
+elections or mail voting, even though Americans have cast ballots by mail for generations.   
+4. One need not look further than the White House to explain USPS’s unprecedented 
+and unlawful conduct.  President Trump has long opposed mail voting, expressing that it would 
+“LEAD TO THE END OF OUR GREAT REPUBLICAN PARTY.”1  Since reassuming office, 
+the President has aimed to—in his words— “get rid of MAIL-IN BALLOTS.” 2 
+5. On March 31, 2026, the President issued Executive Order No. 14399 (“EO”), 
+mandating that USPS undertake a rulemaking that would have USPS refuse to deliver ballot mail 
+for voters not on a USPS-maintained list.  The demanded rulemaking also encompassed certain 
+mail ballot envelope design and tracking standards, and USPS review and pre-approval. 
+6. USPS followed the President’s orders.  After a short comment period and without 
+referral to the Postal Regulatory Commission—a body required to  review major changes to 
+USPS’s policies or operations—USPS published a fi nal rule, Ballot Mail for Federal Elections, 
+91 Fed. Reg. 54,996 (to be codified at 39 C.F.R. pt. 111) on August 26, 2026 (“Rule”).3 
+ 
+1 Donald J. Trump (@realDonaldTrump), Twitter (May 29, 2020), 
+https://twitter.com/realDonaldTrump/status/1266172570983940101. 
+2 Donald J. Trump (@realDonaldTrump), Truth Social (Aug. 18, 2025), 
+https://truthsocial.com/@realDonaldTrump/posts/115049485680941254. 
+3 The Rule’s stated effective date was August 21, 2026, the day it was made available for public 
+inspection on the Federal Registers website. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 2 of 53
+ 
+3 
+7. The Rule requires States to enroll every eligible mail voter with USPS and tasks 
+USPS with compiling them into State-specific lists.  It further establishes design requirements for 
+ballot mail envelopes, including the requirement to use trackable Intelligent Mail barcodes, and 
+provides that USPS must pre-approve States’ ballot envelope designs.  When election officials 
+send ballot mail to voters missing from a State’s USPS list or use envelopes that do not comply 
+with the new standards, USPS will not deliver those ballots. 
+8. The Rule violates the Constitution and federal statutes many times over.  It 
+displaces state laws adopted pursuant to each State’s constitutional authority to administer 
+elections, erects new USPS functions and ballot mail constraints that are inconsistent with 
+USPS’s governing statutes, flouts USPS’s procedural requirements, violates the Privacy Act, and 
+cannot be reconciled with federal voting rights law.  Each of these defects would alone establish 
+the Rule’s unlawfulness.  Together, they demonstrate USPS’s utter disregard for the law in 
+carrying out the President’s policy preferences.   
+9. The Rule inflicts significant, imminent, and irreparable harm on Plaintiff States 
+by imposing new and burdensome mail voting requirements, enforced by USPS interception of 
+non-conforming ballot mail, and doing so mere months before a nationwide election.  If not 
+stayed or preliminarily enjoined, the Rule will frustrate or outright prevent Plaintiff States from 
+administering their mail voting programs in November and foreseeably disenfranchise voters 
+who vote by mail.  Indeed, this seems to be what the President prefers. 
+10. Though the deadline to submit mail voter lists to USPS is still several weeks 
+away, the Rule is already causing acute harm.  Plaintiff States or their subdivisions must 
+immediately redesign their ballot envelopes and seek USPS review at significant costs to States.  
+Plaintiff States’ election officials must also develop new systems at breakneck speed to convey 
+mail voter lists to USPS to ensure that every eligible voter who is entitled to a mail ballot 
+receives one, create new guidance for and train election officials, and educate the public about 
+changes to mail voting.  They must also prepare for the spillover effects from USPS’s new mail 
+ballot regime, including preparing for an influx of voters who ordinarily would vote by mail, but 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 3 of 53
+ 
+4 
+instead opt to do so in person because of USPS’s last-minute changes.  In short, they must 
+accomplish multiple Herculean tasks, each necessary to address the disruption caused by the 
+Rule, in a matter of weeks, with limited resources.   
+11. With the midterm elections rapidly approaching and USPS’s new Rule upending 
+mail voting programs upon which tens of millions of voters rely, Plaintiff States respectfully 
+request the urgent equitable and declaratory relief detailed below. 
+JURISDICTION & VENUE 
+12. This Court has subject-matter jurisdiction pursuant to 28 U.S.C. §§ 1331, 1339, 
+and 2201(a), and 39 U.S.C. § 409(a). 
+13. Venue is proper in this District pursuant to 28 U.S.C. §§ 1391(b)(2) and (e)(1).  
+Defendants are the United States Postal Service or United States officers sued in their official 
+capacities.   
+14. The Commonwealth of Massachusetts is a resident of this District, and a 
+substantial part of the events or omissions giving rise to this Complaint occurred and continue to 
+occur within the District of Massachusetts.  
+PARTIES 
+I. Plaintiffs 
+15. The State of California is a sovereign state of the United States.  California is 
+represented by Attorney General Rob Bonta, who is the State’s Chief Law Officer.  
+16. The Commonwealth of Massachusetts is a sovereign State of the United States.  
+Massachusetts is represented by Attorney General Andrea Joy Campbell, the Commonwealth’s 
+chief law enforcement officer. 
+17. The State of Nevada, represented by and through Attorney General Aaron D. 
+Ford, is a sovereign State within the United States of America.  The Attorney General is the chief 
+law enforcement officer of the State of Nevada and is authorized to pursue this action under Nev. 
+Rev. Stat. § 228.110 and Nev. Rev. Stat. § 228.170. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 4 of 53
+ 
+5 
+18. The State of Washington is a sovereign State of the United States of America.  
+Washington is represented by Attorney General Nicholas W. Brown, the State’s Chief Legal 
+Officer. 
+19. The State of Arizona is a sovereign State of the United States.  Arizona is 
+represented by Attorney General Kris Mayes, who is the State’s Chief Law Officer. 
+20. Plaintiff the State of Colorado is a sovereign State in the United States of 
+America.  Colorado is represented by Philip J. Weiser, the Attorney General of Colorado.  The 
+Attorney General acts as the chief legal representative of the State and is authorized by Colo. 
+Rev. Stat. § 24-31-101 to pursue this action. 
+21. The State of Connecticut is a sovereign State of the United States.  Connecticut is 
+represented by Attorney General William Tong, who is the State’s Chief Law Officer. 
+22. Plaintiff State of Delaware is a sovereign State of the United States of America.  
+This action is brought on behalf of the State of Delaware by Attorney General Kathleen 
+Jennings, the “chief law officer of the State.”  Darling Apartment Co. v. Springer, 22 A.2d 397, 
+403 (Del. 1941).  Attorney General Jennings also brings this action on behalf of the State of 
+Delaware pursuant to her statutory authority.  Del. Code Ann. tit. 29, § 2504. 
+23. Plaintiff the District of Columbia is a municipal corporation organized under the 
+Constitution of the United States.  It is empowered to sue and be sued, and it is the local 
+government for the territory constituting the permanent seat of the federal government.  The 
+District is represented by and through its chief legal officer, Attorney General Brian L. Schwalb, 
+who has general charge and conduct of all legal business of the District and all suits initiated by 
+and against the District.  D.C. Code. § 1-301.81. 
+24. The State of Hawai‘i, represented by and through its Attorney General Anne E. 
+Lopez, is a sovereign State of the United States of America.  The Attorney General is Hawai‘i’s 
+chief legal officer and chief law enforcement officer and is authorized by Hawai‘i Revised 
+Statutes § 28-1 to pursue this action.   
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 5 of 53
+ 
+6 
+25. The State of Illinois is a sovereign State of the United States.  Illinois is 
+represented by Attorney General Kwame Raoul, who is the State’s Chief Law Officer. 
+26. Plaintiff the State of Maine is a sovereign State of the United States of America. 
+Maine is represented by Aaron M. Frey, the Attorney General of Maine.  The Attorney General 
+is authorized to pursue this action pursuant to 5 Me. Rev. Stat. Ann. § 191. 
+27. The State of Maryland is a sovereign State of the United States.  Maryland is 
+represented by Attorney General Anthony G. Brown, who is the State’s Chief Legal Officer. 
+28. The State of Michigan is a sovereign State of the United States of America.  
+Michigan is represented by Attorney General Dana Nessel, who is the chief law enforcement 
+officer of Michigan. 
+29. The State of Minnesota is a sovereign State of the United States.  Minnesota is 
+represented by Attorney General Keith Ellison, who is the State’s Chief Law Officer. 
+30. The State of New Jersey is a sovereign State of the United States.  New Jersey is 
+represented by and through Attorney General Jennifer Davenport, who is the chief legal officer 
+of New Jersey. 
+31. The State of New Mexico is a sovereign State of the United States.  New Mexico 
+is represented by Attorney General Raúl Torrez, who is the State’s Chief Legal Officer. 
+32. The State of New York, represented by and through its Attorney General, Letitia 
+James, is a sovereign State of the United States.  The Attorney General is New York State’s chief 
+law enforcement officer and is authorized under N.Y. Executive Law § 63 to pursue this action. 
+33. The State of North Carolina is a sovereign State of the United States.  North 
+Carolina is represented by Attorney General Jeff Jackson, who is the State’s Chief Law Officer.  
+Attorney General Jackson brings this action on behalf of the State of North Carolina pursuant to 
+his statutory authority to appear for the State in any court in any civil matter in which the State 
+may be interested.  N.C. Gen. Stat. § 114-2(1). 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 6 of 53
+ 
+7 
+34. The State of Oregon, represented by and through its Attorney General Dan 
+Rayfield, is a sovereign State of the United States of America.  As the State’s chief legal officer, 
+the Attorney General is authorized to act on behalf of the State in this matter. 
+35. The State of Rhode Island is a sovereign State of the United States.  Rhode Island 
+is represented by Attorney General Peter F. Neronha, who is the chief law enforcement officer of 
+Rhode Island. 
+36. The State of Vermont is a sovereign State of the United States.  Vermont is 
+represented by Attorney General Charity R. Clark, who is the State’s Chief Law Officer. 
+37. The Commonwealth of Virginia is a sovereign State of the United States of 
+America.  Virginia is represented by Attorney General Jay Jones, the chief executive officer of 
+the Department of Law.  Va. Code § 2.2-500.  Attorney General Jones is authorized to represent 
+the Commonwealth and its interests in controversies with the federal government.  Id. § 2.2-513. 
+38. The State of Wisconsin is a sovereign State of the United States.  Wisconsin is 
+represented by Joshua L. Kaul, the Attorney General of Wisconsin.  Attorney General Kaul is 
+authorized to pursue this action. 
+39. Josh Shapiro brings this suit in his official capacity as Governor of the 
+Commonwealth of Pennsylvania.  The Pennsylvania Constitution vests “[t]he supreme executive 
+power” in the Governor, who “shall take care that the laws be faithfully executed.”  Pa. Const. 
+art. IV, § 2.  The Governor oversees all executive agencies in Pennsylvania, including the 
+Pennsylvania Department of State, and is authorized to bring suit on their behalf.  71 P.S. 
+§§ 732-204(c), 732-301(6), 732-303. 
+II. Defendants 
+40. Defendant United States Postal Service is “an independent establishment of the 
+executive branch of the Government of the United States.”  39 U.S.C. § 201.  Its basic function is 
+to provide postal services throughout the country. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 7 of 53
+ 
+8 
+41. Defendant David Steiner is the Postmaster General of the United States, Chief 
+Executive Officer of USPS, and Member of the USPS Board of Governors.  He is sued in his 
+official capacity. 
+42. Defendant Doug Tulino is the Deputy Postmaster General of the United States, 
+Chief Operating Officer and Chief Human Resources Officer of USPS, and Member of the USPS 
+Board of Governors.  He is sued in his official capacity. 
+43. Defendant Amber McReynolds is the Chair of the USPS Board of Governors.  
+She is sued in her official capacity. 
+44. Defendant Derek Kan is the Vice Chairman of the USPS Board of Governors.  He 
+is sued in his official capacity. 
+45. Defendant Ronald Stroman is a Member of the USPS Board of Governors.  He is 
+sued in his official capacity. 
+46. Defendant Daniel Tangherlini is a Member of the USPS Board of Governors.  He 
+is sued in his official capacity. 
+LEGAL BACKGROUND 
+I. Constitutional Provisions  
+47. States bear primary responsibility for elections under the U.S. Constitution.  The 
+Constitution’s Elections Clause provides that “[t]he Times, Places and Manner of holding 
+Elections for Senators and Representatives, shall be prescribed in each State by the Legislature 
+thereof; but the Congress may at any time by Law make or alter such Regulations, except as to 
+the Places of chusing Senators.”  U.S. Const. art. I, § 4, cl. 1.  Similarly, the Electors Clause 
+specifies that “[e]ach State shall appoint, in such Manner as the Legislature thereof may direct, a 
+Number of Electors, equal to the whole Number of Senators and Representatives to which the 
+State may be entitled in the Congress.”  Id. art. II, § 1, cl. 2.  The Constitution likewise gives 
+States the power to determine who may vote in federal elections, subject to other constitutional 
+constraints.  Id. art. I, § 2, cl. 1; id. amend. XVII. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 8 of 53
+ 
+9 
+48. The Constitution therefore “invests the States with responsibility” for the manner 
+of carrying out federal elections, unless Congress acts to preempt those choices.  Foster v. Love, 
+522 U.S. 67, 69 (1997).  Absent Congressional action, States have the authority “to provide a 
+complete code for [federal] elections, not only as to times and places, but in relation to notices, 
+registration, supervision of voting, protection of voters, [and] prevention of fraud and corrupt 
+practices.”  Smiley v. Holm, 285 U.S. 355, 366 (1932); see also Arizona v. Inter Tribal Council of 
+Ariz., Inc., 570 U.S. 1, 8–9 (2013).   
+49. Federal elections are administered in accordance with this constitutional 
+command.  State constitutions and statutes establish the right to vote and the eligibility 
+requirements to do so.  Some state constitutions guarantee voters particular methods of voting 
+(such as by mail and early voting), and other state constitutions expressly reference early and 
+mail voting.  See, e.g., Mich. Const. art. II, § 4(1)(h), (k), (m); see also Conn. Const. art. 6, § 7 
+(authorizing state legislature to provide for no-excuse mail voting); Nev. Const. art. 2, § 1A(4) 
+(voter’s bill of rights referencing early voting).  Plaintiff States’ legislatures have enacted statutes 
+that comprehensively structure federal (and state) elections, including detailed frameworks for 
+absentee and mail voting.   
+50. Neither the President nor USPS has the constitutional authority to make or alter 
+laws governing federal elections generally, nor voting by mail specifically.  In fact, the 
+Constitution grants the President no legislative power at all, “‘refut[ing] the idea that he is to be a 
+lawmaker.’”  Medellín v. Texas, 552 U.S. 491, 527 (2008) (quoting Youngstown Sheet & Tube 
+Co. v. Sawyer, 343 U.S. 579, 587 (1952) (“Youngstown”)); cf. U.S. Const. art. I, § 4.  Likewise, 
+as addressed further below, neither the Constitution nor Congress has afforded any authority to 
+USPS to control who may receive and cast absentee or mail ballots. 
+51. The Constitution also vests Congress with the power “[t]o establish Post Offices 
+and post Roads.”  U.S. Const., art. I, § 8, cl. 7.  This provision has long been construed to grant 
+Congress broad power over USPS, “‘embrac[ing] the regulation of the entire Postal System of 
+the country.’” USPS v. Council of Greenburgh Civic Ass’ns, 453 U.S. 114, 126 (1981) (quoting 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 9 of 53
+ 
+10 
+Ex parte Jackson, 96 U.S. 727, 732 (1878)).  Under this constitutional scheme, USPS is a 
+“creature[] of statute” that “possess[es] only the authority that Congress has provided.”  See 
+Nat’l Fed’n of Indep. Bus. v. Dept. of Lab., OSHA, 595 U.S. 109, 117 (2022) (per curiam).  
+USPS cannot authorize itself to take on new responsibilities and powers beyond those that 
+Congress has granted; nor can the President, in Congress’s stead.  
+II. State Election Laws 
+52. Plaintiff States’ constitutions and other laws entitle eligible and duly registered 
+voters to cast a ballot.  See, e.g., Cal. Const. art. II, §§ 2, 2.5; Cal. Elec. Code § 2000(a); Mass. 
+Const. Decl. Rights art. 9, amends. art. 3; Chelsea Collaborative, Inc. v. Sec’y of Commonwealth, 
+100 N.E.3d 326, 330 (Mass. 2018); Nev. Const. art. 2, § 1; Wash. Const. art. VI, § 1.  
+53. Every single State permits at least certain voters to cast ballots by mail.  See 
+Watson v. Republican Nat’l Comm., 146 S. Ct. 2165, 2171 (2026) (“Access to absentee voting 
+expanded throughout the 20th century, and today, every State lets at least some residents vote 
+absentee.”). 
+54. In Plaintiff States, registered voters are permitted to vote by mail if they meet the 
+state law requirements for doing so, which vary from State to State.  Each State has detailed 
+measures to ensure that only mail ballots which are validly cast may be counted.   
+55. California has adopted a universal mail voting system, wherein each active 
+registered voter is sent a mail ballot.  Cal. Elec. Code §§ 3000.5, 3003, 3010.  State law and 
+guidance cover the standards for mail envelope design and tracking.  See id. § 3011(a); Center 
+for Civic Design, Vote-by-Mail Envelope Design for California (Dec. 15, 2017), 
+https://perma.cc/PBF6-QPFP.  After voting their ballot, a voter places it in an envelope that is 
+signed under penalty of perjury to establish the validity of the vote.  Cal. Elec. Code 
+§ 3011(a)(1)–(2).  The envelope is then submitted to the appropriate election official via one of 
+several methods: sent through prepaid USPS mail, dropped in a designated ballot drop box, or 
+delivered to a polling location.  Cal. Elec. Code §§ 3016.7, 3017.  Election officials then 
+compare the signature on the mail ballot envelope to the signature on file for the voter.  Id. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 10 of 53
+ 
+11 
+§ 3019.  When the signatures compare and the ballot is otherwise validly cast (e.g., the voter has 
+not already cast a ballot), the ballot is tabulated.  Id. §§ 3019, 15101, 15109; Cal. Code Regs. tit. 
+2, § 20282.  When the signatures do not compare, election officials contact the voter to provide 
+the opportunity to correct the mistake.  Cal. Elec. Code § 3019(d)(1). 
+56. As reflected in the United States Election Assistance Commission’s most recent 
+biennial report analyzing state-by-state data on various topics related to the administration of 
+federal elections, 80.8% of Californians who voted in the 2024 general election did so by mail, 
+totaling more than 13 million people.  Elec. Assistance Comm’n, Election Administration and 
+Voting Survey 2024 Comprehensive Report (Jun. 2025), https://perma.cc/6CMS-AG82(“2024 
+EAVS Report”), at 34.   
+57. Washington is also a universal mail voting state.  Wash. Rev. Code § 29A.40.010.  
+The State mails each active Washington voter a ballot, a security envelope in which to conceal 
+the ballot, a larger envelope in which to return the security envelope, a declaration that the voter 
+must sign, and associated instructions.  Id. § 29A.40.091(1).  Voters may return ballots through 
+USPS or to a secure ballot drop box.  See id. §§ 29A.40.091, .170.  Voters must swear under 
+penalty of perjury that they meet the qualifications to vote and have not voted in any other 
+jurisdiction at that election.  Id. § 29A.40.091(2).  The declaration must clearly inform the voter, 
+among other things, that it is illegal to vote if he or she is not a U.S. citizen.  Id.  Washington 
+ensures that each returned ballot cast was by a registered voter by using a signature verification 
+process.  Id. § 29A.40.110(3).  Before accepting a ballot, elections officials must “verify that the 
+voter’s signature on the ballot declaration is the same as the signature of that voter in the 
+registration files of the county.”  Id. 
+58. As reflected in the 2024 EAVS Report, 98.5% of Washingtonians who voted in the 
+2024 general election did so by mail, totaling nearly 4 million people.  2024 EAVS Report at 35.  
+59. Massachusetts allows no-excuse early voting by mail, meaning any qualified 
+voter can request and cast a mail ballot.  See Mass. Gen. Laws ch. 54, § 25B(a)(1).  When voting 
+by mail, a voter places the completed ballot in an envelope on which an affidavit is printed which 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 11 of 53
+ 
+12 
+advises the voter of criminal penalties for illegal voting and must be signed under penalty of 
+perjury.  Mass. Gen. Laws ch. 54, §§ 25B(a)(10), 92; ch. 56, § 26.  The voter then places the 
+sealed affidavit envelope within an outer mailing envelope, which bears the USPS “official 
+election mail” logo and is marked “ballot enclosed,” and can either mail it to their local election 
+office, submit it at an early voting location or the office of the local election official, or deposit it 
+in a secure drop box.  Mass. Gen. Laws ch. 54, §§ 25B(a)(13), 92; 950 Mass. Code Regs. 47.06 
+(1)(b); 47.10 (2), (5).  Once received, the election official examines whether the affidavit is 
+properly executed and whether the voter’s signature matches the one on file.  Mass. Gen. Laws 
+ch. 54, §§ 25B(a)(10), (14), 94; 950 Mass. Code Regs. 47.10 (5)(a).  The ballot is rejected if the 
+affidavit or signature is defective, and the voter is notified and sent a new ballot, time permitting.  
+Mass. Gen. Laws c. 54, §§ 25B(a)(10), (14), 94; 950 Mass. Code Regs. 47.10 (5).  Once a mail 
+ballot is accepted, the ballot is considered cast, and a voter may not vote in-person either early or 
+on Election Day.  950 Mass. Code Regs. 47.10 (7).  Accepted mail ballots remain sealed and 
+secured until counted.  Id. 47.14; 47.15. 
+60. Massachusetts election officials have no discretion to refuse a mail-in ballot to a 
+qualified and registered voter who wishes to vote by mail.  Massachusetts law provides that 
+qualified, registered voters have a right to vote by mail and a right to request and thereafter 
+receive a mail ballot application.  Mass. Gen. Laws ch. 54, § 25B(a)(1)–(2); id. § 25B(a)(7) 
+(requiring the Secretary of the Commonwealth to mail registered voters a mail ballot application 
+upon request).  Upon receipt of a mail ballot application and verification of the voter’s 
+registration, mail ballots “shall be mailed” as soon as they are available.  Id. § 25B(a)(10). 
+61. According to the 2024 EAVS Report, 33.4% of Bay Staters who voted in the 2024 
+general election did so by mail, totaling nearly 1.2 million people.  2024 EAVS Report at 34.  
+62. Nevada has adopted a universal mail voting system in which each active 
+registered voter is sent a mail ballot.  See Nev. Rev. Stat. § 293.269911.  After voting their 
+ballot, a voter places it in a return envelope and must sign a declaration under penalty of perjury 
+to establish the residency and identity of the voter and the validity of the ballot.  See id. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 12 of 53
+ 
+13 
+§ 293.269917; Nev. Sec’y of State, Nevada Elections Procedures Manual at 53 (Mar. 2026), 
+https://www.nvsos.gov/home/showpublisheddocument/17254/639105657872870000 (“Elections 
+Procedures Manual”).  State law and guidance cover the standards for mail envelope design and 
+tracking.  See Nev. Rev. Stat. § 293.269913; Elections Procedures Manual at 52–54.  The 
+envelope and enclosed mail ballot are then returned to the appropriate election official via one of 
+several methods: sent through prepaid USPS mail, deposited in an official ballot drop box, or 
+hand delivered to a county clerk’s office.  See Nev. Rev. Stat. § 293.269921.  Election officials 
+then compare the signature on the mail ballot return envelope to the signature on file for the 
+voter. See id. § 293.269927; see also Elections Procedures Manual at 55–57.  When the 
+signatures match and the mail ballot is otherwise validly cast (e.g., the voter has not already cast 
+another ballot), election officials process and count the ballot.  See Elections Procedures Manual 
+at 55–57.  When the signatures do not match or the voter failed to affix their signature to the 
+return envelope, election officials contact the voter to provide the opportunity to correct the 
+mistake.  See id. 
+63. As reflected in the United States Election Assistance Commission’s Election 
+Administration and Voting Survey for 2024, 44.1% of Nevadans who voted in the 2024 general 
+election did so by mail, totaling more than 650,000 people.  2024 EAVS Report at 34. 
+64. Nationwide, 29 States offer “no-excuse” mail voting; eight States and Washington 
+D.C. conduct elections entirely by mail; and the remaining 13 States allow voters to obtain a mail 
+ballot if they meet certain requirements.4 
+III. Federal Election Laws 
+65.  Congress has established limited baseline requirements for federal elections, 
+most often leaving the States considerable discretion in how to meet those requirements.   
+ 
+4 National Conference of State Legislatures, Table 1: States with No-Excuse Absentee Voting, 
+(updated July 17, 2026), https://www.ncsl.org/elections-and-campaigns/table-1-states-with-no-
+excuse-absentee-voting; National Conference of State Legislators, Table 2: Excuses to Vote 
+Absentee (updated June 3, 2026), https://www.ncsl.org/elections-and-campaigns/table-2-excuses-
+to-vote-absentee. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 13 of 53
+ 
+14 
+66. For example, Congress has forbidden certain curtailments of the right to vote.  In 
+Section 11(a) of the Voting Rights Act, Congress provided that “[n]o person acting under color 
+of law shall fail or refuse to permit any person to vote who is entitled to vote under any provision 
+of chapters 103 to 107 of this title or is otherwise qualified to vote.”  52 U.S.C. § 10307(a).  This 
+provision prohibits public officials from denying any qualified person the right to vote.  United 
+States v. Post, 297 F. Supp. 46, 50 (W.D. La. 1969). 
+67. On the issue of voter registration, Congress has directed that each State 
+“maintain[]” and “administer[]” a “single . . . statewide voter registration list.”  52 U.S.C. 
+§ 21083(a)(1)(A) (emphasis added).  This “computerized list shall serve as the single system for 
+storing and managing the official list of registered voters throughout the State” and “shall serve 
+as the official voter registration list for the conduct of all elections for Federal office in the 
+State.”  Id. § 21083(a)(1)(A)(i), (viii) (emphasis added).  This requirement, among many other 
+aspects of American election administration, was meant to preserve decentralized control over 
+voter rolls and make it “impossible for a single centrally controlled authority to dictate how 
+elections will be run, and thereby be able to control the outcome,” by spreading control over the 
+lists among the States instead of placing it in one federal authority.  H.R. Rep. No. 107-329, pt. 
+1, at 31–32 (2001). 
+68. On the issue of absentee and mail voting, Congress has acted only narrowly to 
+ensure (1) that absentee voting is available to U.S. citizens for presidential elections, and (2) that 
+members of the military and citizens residing overseas may readily participate in federal 
+elections.  Congress has also set forth certain requirements for voter registration and prohibitions 
+concerning curtailing the right to vote. 
+69. In 1970, Congress enacted the Federal Voting Rights Amendment Act.  As 
+relevant here, Section 202 of the Act sought to remedy “the lack of sufficient opportunities for 
+absentee registration and absentee balloting in presidential elections.”  52 U.S.C. § 10502(a); see 
+also 116 Cong. Rec., pt. 5, at 6994 (1970) (reflecting purpose of ensuring that the “millions of 
+Americans” who move or travel in an election year are not disqualified from voting for that 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 14 of 53
+ 
+15 
+reason alone).   The Act eliminated durational residency requirements to vote for the offices of 
+President and Vice President, prohibited the denial of the right to vote on the basis of such 
+requirements or because a citizen is not physically present in a State at the time of an election, 
+and required States to provide by law for absentee voter registration not later than 30 days before 
+a presidential election as well as for the casting of absentee ballots in those elections.  Pub. L. 
+91-285, § 202, 84 Stat. 314, 316 (June 22, 1970) (codified at 52 U.S.C. § 10502).   
+70. The Voting Rights Amendments Act of 1970 secures absentee voting rights, 
+providing that no citizen shall be “denied the right to vote” in presidential elections if they have 
+complied with state law requirements for casting an absentee ballot.  52 U.S.C. § 10502(c).  The 
+Act does not authorize USPS to play any role in determining who receives a ballot or setting 
+conditions or requirements for mailing ballots.   
+71. In 1986, Congress enacted the Uniformed and Overseas Citizens Absentee Voting 
+Act (“UOCAVA”) to increase access to the franchise for absent military and overseas voters.  
+UOCAVA requires each State to permit those voters to use streamlined absentee registration 
+procedures and imposes certain obligations to facilitate their voting by absentee ballot in all 
+federal elections.  52 U.S.C. § 20302(a)(1), (f).   
+72. As the Supreme Court recently recognized, UOCAVA built atop and incorporated 
+the foundation laid by state law governing voting by mail; it did not displace that foundation.  
+See 52 U.S.C. § 20303(b)(3) (a mail ballot submitted by an eligible UOCAVA voter shall be 
+counted only “if [it] is received by the appropriate State election official not later than the 
+deadline for receipt of the State absentee ballot under State law”); Watson, 146 S. Ct. at 2173.  
+73. Over the past several decades, voting by mail has become more popular 
+throughout the States.  See Voting by Mail and Absentee Voting, MIT Election Data & Science 
+Lab (updated Jun. 24, 2026), https://perma.cc/4SML-ZNGY.  In 2014, a bipartisan Presidential 
+Commission—chaired by the respective counsel for the Obama for President and Romney for 
+President campaigns—recommended that St ates should expand voting by mail.  See Presidential 
+Commission on Election Administration, The American Voting Experience:  Report and 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 15 of 53
+ 
+16 
+Recommendations of the Presidential Commission on Election Administration (Jan. 2014) at 13 
+(“In order to limit congestion on Election Day and to respond to the demand for greater 
+opportunities to vote beyond the traditional Election Day polling place, states that have not 
+already done so should expand alternative ways of voting, such as mail balloting and in-person 
+early voting.”), https://perma.cc/UFU6-4Z4B.  Many States did just that. 
+74. In all this time—spanning from the advent of voting by mail, tied to the Civil 
+War, to its increased prevalence in more recent decades—Congress has never exercised its 
+Elections Clause authority to limit mail voting or authorize USPS to monitor or control the 
+transmission of mail ballots.  Rather, Congress has only expanded and protected mail voting for 
+military and overseas voters.   
+75. All told, neither the President nor USPS may control eligibility to vote by mail; 
+nor may either impose mandates on state and local election officials implementing state law 
+governing voting by mail.  Not even recent election measures pending before Congress would 
+give the President or USPS that authority.  See, e.g., SAVE Act, H.R. 8281, 118th Cong. (2024); 
+SAVE Act, H.R. 22, 119th Cong. (2025); SAVE America Act, H.R. 7296, 119th Cong. (2026); 
+SAVE America Act, S. 1383, 119th Cong. (2026).   
+IV. Laws Governing the United States Postal Service 
+76. The United States’ federal mail system started in 1775.5  It was created because a 
+reliable and secure means of exchanging information was critical to connecting the far reaches of 
+the then-fledgling nation.6 
+77. For more than 250 years, the federal postal service has provided reliable, vital 
+services to millions of Americans and served to “bind the Nation together through the personal, 
+educational, literary, and business correspondence of the people.”  39 U.S.C. § 101(a). 
+ 
+5 U.S. Postal Serv., The United States Postal Service: An American History 1 (2025), 
+https://perma.cc/2RXM-DA65. 
+6 Id. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 16 of 53
+ 
+17 
+78. Over its history, and particularly in recent decades, USPS has played an important 
+role in federal, state, and local elections through the delivery of critical election materials, such 
+as ballots, voter registration cards, absentee applications, polling place notifications, and voter 
+information guides.7  Despite this important role, Congress never granted any authority to USPS 
+to regulate elections or to attempt to administer them itself.  See Colorado v. DeJoy, No. 20-cv-
+2768, 2020 WL 5513567, at *2 (D. Colo. Sept. 14, 2020). 
+79. What is today known as USPS came into existence in 1970 when Congress passed 
+the Postal Reorganization Act (“PRA”), Pub. L. 91–375, 84 Stat. 719 (1970), pursuant to its 
+express constitutional authority, U.S. Const. art. I, § 8, cl. 7.  See 39 U.S.C. § 101 et seq.   
+80. In enacting the PRA, Congress provided that the Postmaster General would be 
+appointed by a Board of Governors, which directs USPS’s authority.  39 U.S.C. § 202.  The 
+Postmaster General is the “chief executive officer of the Postal Service,” id. § 203, and is 
+delegated authority to exercise the powers of USPS, unless that authority is reserved to the 
+Governors or the full Board, see id. §§ 401(2), 402; 39 C.F.R. § 3.5.   
+81. In 2006, Congress again reformed USPS with the passage of the Postal 
+Accountability and Enhancement Act (“PAEA”).  Pub. L. No. 109-435, 120 Stat. 3198 (Dec. 20, 
+2006) (codified at 39 U.S.C. § 3600 et seq.).  PAEA was designed to improve oversight and 
+accountability and focus USPS on its core postal responsibilities.   
+82. Through these enactments, found in Title 39 of the U.S. Code, Congress has 
+carefully circumscribed USPS’s duties and authority.   
+83. Title 39 affirms that USPS is “a basic and fundamental service provided to the 
+people by the Government of the United States, authorized by the Constitution, created by Act of 
+Congress, and supported by the people.”  39 U.S.C. § 101(a).  Its core “obligation [is] to provide 
+postal services to bind the Nation together through the personal, educational, literary, and 
+business correspondence of the people.”  Id. 
+ 
+7 See U.S. Postal Serv., Election Mail, https://perma.cc/49FW-HUFE. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 17 of 53
+ 
+18 
+84. Consistent with this function, USPS “shall provide prompt, reliable, and efficient 
+services to patrons in all areas and shall render postal services to all communities.”  39 U.S.C. 
+§ 101(a).  When “determining all policies for postal services,” USPS “shall give the highest 
+consideration to the requirement for the most expeditious collection, transportation, and delivery 
+of important letter mail,” id. § 101(e), such as ballot mail. 
+85. To effectuate this mandate, federal law imposes a universal service obligation on 
+USPS.  See id. § 403(a).  USPS must “serve as nearly as practicable the entire population of the 
+United States.”  Id.  The agency must “maintain an efficient system of collection, sorting, and 
+delivery of the mail nationwide;” “provide types of mail service to meet the needs of different 
+categories of mail and mail users;” and “establish and maintain postal facilities of such character 
+and in such locations, that postal patrons throughout the Nation will . . . have ready access to 
+essential postal services.”  Id. § 403(b).   
+86. Congress has defined the exclusive circumstances under which USPS may refuse 
+mail.  See Am. Sch. of Magnetic Healing v. McAnnulty, 187 U.S. 94, 109 (1902) (“[USPS’s] right 
+to exclude letters, or to refuse to permit their delivery to persons addressed, must depend upon 
+some law of Congress, and if no such law exists, then [it] cannot exclude or refuse to deliver 
+them.”).  In 39 U.S.C. §§ 3001–3018, Congress enumerated the specific and narrow categories of 
+“nonmailable matter”—including, for example, matter declared nonmailable by criminal statute, 
+certain hazardous materials, and specified fraudulent, obscene, or sweepstakes-related matter—
+and prescribed detailed procedures governing USPS’s treatment of these narrowly defined non-
+mailable matters.  Neither mail ballots nor mail ballot envelopes fall into any non-mailable 
+category outlined in statute. 
+87. Congress also prohibited USPS from “mak[ing] any undue or unreasonable 
+discrimination among users of the mails” or “grant[ing] any undue or unreasonable preferences 
+to any such user” unless “specifically authorized.”  39 U.S.C. § 403(c).  Nowhere did Congress 
+“specifically authorize[]” any discrimination or preference with respect to election officials or 
+voters.  Id. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 18 of 53
+ 
+19 
+88. Congress additionally limited USPS’s ability to take on new non-postal services.  
+Id. § 404(e).  Postal services include only “the delivery of letters, printed matter, or mailable 
+packages, including acceptance, collection, sorting, transportation, or other functions ancillary 
+thereto.”  Id. § 102(5).  USPS may only provide non-postal services if (1) it provided those 
+services prior to January 1, 2006 and their continuation was timely approved by the Postal 
+Regulatory Commission, or (2) the non-postal services are provided pursuant to a qualifying 
+agreement with a government agency under Title 39, Chapter 37 of the U.S. Code.  Id. 
+§ 404(e)(2)–(4).  On information and belief, no such qualifying agreement exists as to the Rule.  
+89. Finally, to further safeguard USPS and its essential services, Congress established 
+a new body to review changes to USPS’s operations and policies.  Specifically, the PAEA 
+expanded and transformed the former Postal Rate Commission into the Postal Regulatory 
+Commission (“PRC”), increasing the PRC’s oversight authority regarding USPS’s execution of 
+its duties and obligations.   
+90. For instance, USPS must seek an advisory opinion from the PRC before making 
+major policy or operational changes that “will generally affect service on a nationwide or 
+substantially nationwide basis.”  39 U.S.C. § 3661(b).  The PRC “shall not issue its opinion on 
+any proposal until an opportunity for hearing on the record under [the Administrative Procedure 
+Act] has been accorded to the Postal Service, users of the mail, and an officer of the Commission 
+who shall be required to represent the interests of the general public.”  Id. § 3661(c).  
+91. The PRC also has the power to hear complaints related to select statutory 
+requirements.  Id. § 3662.  However, the PRC lacks any established procedures to hear 
+emergency motions or order interim relief.  See 39 C.F.R. §§ 3010.150–3010.170 (rules 
+concerning notices, motions, and information requests), 3022.1–3022.30 (rules concerning 
+complaints), 3022.50 (remedies); see also 39 U.S.C. § 3662(c) (giving PRC authority to order 
+remedies only after it “finds the complaint to be justified”).  The PRC has 90 days after receiving 
+a complaint to either dismiss the complaint or, if it finds that a complaint “raises material issues 
+of fact or law, begin proceedings on such complaint.”  39 U.S.C. § 3662(b)(1)(A)(i).    
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 19 of 53
+ 
+20 
+92. In line with USPS’s unique role and status, Congress selectively exempted it from 
+other laws governing federal agencies.  For example, USPS is largely exempt from the 
+Administrative Procedure Act, id. § 410(a), except for several targeted areas such as the conduct 
+of PRC hearings under section 3661(c), or the conduct and judicial review of “proceedings 
+concerning the mailability of matter,” id. § 3001(m).  When the APA applies to USPS actions, 
+like those issuing rules determining certain matter unmailable, USPS must publish such a final 
+rule in the Federal Register at least 30 days before it becomes effective.  5 U.S.C. § 553(d).  In 
+contrast to these selective exemptions, Congress has subjected USPS to a suite of civil rights and 
+other citizen-protective laws, including the Privacy Act, 39 U.S.C. § 410(b)(1) (incorporating by 
+reference 5 U.S.C. § 552a).     
+FACTUAL ALLEGATIONS 
+I. The President’s Repeated Attempts to Usurp Control Over Elections 
+93. USPS’s Rule is part of a broader effort by the President and his Administration to 
+rewrite federal election law and usurp the authority of the States and Congress. 
+94.  On March 25, 2025, the President issued Executive Order No. 14248, Preserving 
+and Protecting the Integrity of American Elections, ordering sweeping changes to the rules for 
+administering federal elections.  Multiple courts have concluded that the executive order violated 
+the constitutional separation of powers and enjoined key provisions of the order. California v. 
+Trump, __ F. Supp. 3d __, 2026 WL 1826535 (D. Mass. June 24, 2026) (declaring multiple 
+sections unconstitutional and permanently enjoining their implementation); League of United 
+Latin Am. Citizens v. Exec. Off. of the President, 818 F. Supp. 3d 34 (D.D.C. 2026) (same), 
+appeal docketed, No. 26-5098 (D.C. Cir. Mar. 31, 2026); Washington v. Trump, 814 F. Supp. 3d 
+1173 (W.D. Wash. 2026) (same), appeal docketed, No. 26-1429 (9th Cir. Mar. 10, 2026).  
+95. Similarly, U.S. DOJ has pursued an unprecedented initiative to obtain access to 
+confidential state voter registration information in an apparent effort to commandeer States’ 
+constitutional authority to control voter registration.  U.S. DOJ has sued 30 States and the 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 20 of 53
+ 
+21 
+District of Columbia for declining to produce this sensitive information, but every court to 
+consider the federal government’s claims in those cases has dismissed them.8   
+96. The President has also made sweeping—and untrue—claims of presidential 
+authority in this area.  In one social media post, the President falsely claimed that “the States are 
+merely an ‘agent’ for the Federal Government in counting and tabulating the votes” and “must 
+do what the Federal Government, as represented by the President of the United States, tells 
+them . . . to do.”9  In another, the President insisted that he has authority to change the rules for 
+elections “whether approved by Congress or not[.]”10  And the President has continuously 
+pushed to “nationalize” the 2026 midterm elections.11 
+ 
+8 See United States v. Benson, 179 F.4th 470 (6th Cir. 2026); United States v. Evans, No. 25-
+4403, 2026 WL 2267774 (D.D.C. Aug. 6, 2026); United States v. Griswold, No. 25-cv-03967, 
+2026 WL 2235374 (D. Colo. Aug. 3, 2026); United States v. Matthews, __ F. Supp. 3d ___, 2026 
+WL 2212877 (C.D. Ill. July 31, 2026); United States v. Caldwell, No. 26-2025, 2026 WL 
+2186515 (D.N.J. July 29, 2026); United States v. Adams, __ F. Supp. 3d ___, 2026 WL 2123871 
+(E.D. Ky. July 23, 2026); United States v. Thomas, No. 3:26-CV-21, 2026 WL 2070437 (D. 
+Conn. July 17, 2026), appeal docketed, No. 26-2064 (2d Cir. July 28, 2026); United States v. 
+Oliver, No. 1:25-cv-01193, 2026 WL 2031479 (D.N.M. July 14, 2026), appeal docketed, No. 26-
+2126 (10th Cir. July 27, 2026); United States v. Koski, No. 3:26CV42, 2026 WL 2032532 (E.D. 
+Va. July 14, 2026); United States v. Warner, __ F. Supp. 3d __, 2026 WL 2018877 (S.D.W. Va. 
+July 13, 2026); United States v. Bd. of Elections of N.Y., 1:25-CV-1338, 2026 WL 1999921 
+(N.D.N.Y. July 10, 2026); United States v. Scanlan, __ F. Supp. 3d __, 2026 WL 1864054 
+(D.N.H. June 29, 2026), appeal docketed, No. 26-1783 (1st Cir. July 7, 2026); United States v. 
+Schmidt, __ F. Supp. 3d __, 2026 WL 1850016 (W.D. Penn. June 27, 2026); United States v. 
+DeMarinis, 1:25-cv-03934, 2026 WL 1780586 (D. Md. June 18, 2026), appeal docketed, No. 26-
+1878 (4th Cir. July 13, 2026); United States v. Wis. Elections Comm’n, __ F. Supp. 3d __, 2026 
+WL 1430354 (W.D. Wis. May 21, 2026); United States v. Bellows, __ F. Supp. 3d __, 2026 WL 
+1430481 (D. Me. May 21, 2026), appeal docketed, No. 26-1676 (1st Cir. June 15, 2026); United 
+States v. Fontes, 832 F. Supp. 3d 944 (D. Ariz. 2026); United States v. Amore, 831 F. Supp. 3d 
+149 (D.R.I. 2026), appeal docketed, No. 26-1665 (1st Cir. June 9, 2026); United States v. Galvin, 
+830 F. Supp. 3d 122 (D. Mass. 2026), appeal docketed, No. 26-1657 (1st Cir. June 9, 2026); 
+United States v. Oregon, 828 F. Supp. 3d 1092 (D. Or. 2026), appeal docketed, No. 26-1231 (9th 
+Cir. Mar. 3, 2026); United States v. Raffensperger, No. 5:25-cv-00548, 2026 WL 184233 (M.D. 
+Ga. Jan. 23, 2026); United States v. Weber, 816 F. Supp. 3d 1168 (C.D. Cal. Jan. 15, 2026), 
+appeal docketed, No. 26-1232 (9th Cir. Mar. 3, 2026). 
+9 Donald J. Trump (@realDonaldTrump), Truth Social (August 18, 2025), 
+https://truthsocial.com/@realDonaldTrump/posts/115049485680941254. 
+10 Donald J. Trump (@realDonaldTrump), Truth Social (February 13, 2026), 
+https://truthsocial.com/@realDonaldTrump/posts/116065471857020644. 
+11 See, e.g., Jacob Wendler, Trump says Republicans should ‘nationalize’ elections, POLITICO 
+(Feb. 2, 2026), https://www.politico.com/news/2026/02/02/trump-nationalize-elections-2026-
+midterms-00760015. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 21 of 53
+ 
+22 
+97. Congress has rejected the President’s calls to prohibit mail balloting, to require 
+documentary proof of citizenship to register to vote, to require government-issued identification 
+in order to cast a vote, and to nationalize elections.  For months, the President has relentlessly 
+urged Congress to pass the “Safeguard American Voter Eligibility Act” (the “SAVE America 
+Act”) S. 1383 (119th Cong.), which seeks to enact some of these goals.12  In addition, the 
+President has called on Congress to severely restrict the ability of voters to cast ballots by mail.13  
+Congress has declined to adopt the SAVE America Act, much less the other voting restrictions 
+for which the President has advocated. 
+98. Having failed to persuade Congress, the President has continued his efforts to 
+unilaterally impose federal control over elections.  On March 31, 2026, the President issued the 
+EO that led to the regulation at issue in this case. 
+99. Among other things, the EO directs USPS to pursue regulatory requirements that 
+would significantly disrupt state mail voting procedures, mere months before the 2026 general 
+election.  Under Section 3, those requirements direct States to submit lists of voters eligible to 
+vote by mail to USPS, which will compile and maintain State-specific lists of eligible mail 
+voters; mandate that States adopt certain ballot envelope design requirements, and undergo 
+USPS review and pre-approval of those envelopes; and prohibit USPS from transmitting ballot 
+mail to voters not included on USPS’s lists or that fail to conform to USPS’s design and review 
+standards.  EO, § 3(b).  The order pairs that regime with explicit threats of criminal prosecution 
+for States, election officials, and voters who make “unlawful use of the mail in connection with 
+elections.”  Id. § 3(a); see also id. §§ 3(c), 5.  
+100. After a coalition of States challenged these and other provisions of the EO, this 
+Court found the provisions unconstitutional.  Holding that “the Constitution reserves the power 
+ 
+12 The House passed the SAVE America Act on February 11, 2026, and the Senate began debate 
+on an updated version of the bill on March 17, 2026. S.1383, Congress.gov (last visited Aug. 25, 
+2026), https://www.congress.gov/bill/119th-congress/senate-bill/1383. 
+13 See, e.g., The SAVE America Act, Whitehouse.gov (last visited Aug. 25, 2026), 
+https://www.whitehouse.gov/saveamerica. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 22 of 53
+ 
+23 
+to determine voter eligibility to the States alone” and that “[n]either the Executive Branch nor 
+Congress may interfere with this power,” this Court enjoined USPS and other executive agencies 
+from implementing or enforcing Section 3 of the 2026 Executive Order, among other provisions, 
+for the November 2026 general election.  California v. Trump, __ F. Supp. 3d __, 2026 WL 
+1826490, at *15 (D. Mass. June 25, 2026), appeal docketed, No. 26-1779 (1st Cir. 2026), stay 
+granted, 609 U.S. ___, 2026 WL 2473573 (Aug. 24, 2026) (per curiam).  This Court held that 
+“no law enacted by Congress delegates authority to control mail-in voting to USPS,” and that the 
+President’s directives to USPS were ultra vires.  Id. at *15–16.  The Supreme Court subsequently 
+stayed the injunction—not because Plaintiff States ’ claims lacked merit, but because the States 
+“lack[ed] standing to bring” their claims as to the EO.  Trump v. California, 2026 WL 2473573, 
+at *1.  As the Court explained, USPS had not yet implemented the EO, but if USPS ultimately 
+adopts a final rule that “harms the States, they may challenge that rule.”  Id. at *4.  USPS then 
+published its final rule two days later.   
+101. The Administration has also continued its election interference by threatening 
+criminal prosecution of state and local election officials.  On July 7, 2026, Assistant Attorney 
+General Harmeet Dhillon sent a letter to the chief election officials of all 50 states.14  Under the 
+guise of providing “notice of the federal laws applicable to state and local election officials[,]” 
+the letter sets out thinly veiled threats of criminal prosecution six times in just the first two pages.  
+See, e.g., Letter from U.S. Dep’t of Justice, Civil Rights Div., to Jared DeMarinis, State 
+Elections Administrator, Md. State Bd. of Elections (July 7, 2026), https://perma.cc/QC3E-
+MUCQ. 
+102. On July 17, 2026, Secretary of Homeland Security Markwayne Mullin also 
+threatened criminal prosecution of state and local election officials.15  Secretary Mullin stated 
+ 
+14 Jessica Huseman, Department of Justice warns election officials they could be criminally 
+charged over noncitizen voters (July 7, 2026), VoteBeat, https://perma.cc/J2LQ-4BNL. 
+15 Mullin Threatens Local Election Officials With Jail Time, N.Y. Times (July 17, 2026), 
+https://www.nytimes.com/live/2026/07/17/us/trump-news. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 23 of 53
+ 
+24 
+that if election officials received information from the Department of Homeland Security and did 
+not act, they could face “prison time.” 
+II. USPS’s Rulemaking Implementing EO Section 3 
+103. On June 2, 2026, while the States’ challenge to the EO was pending, USPS began 
+implementing the order.  Expressly acknowledging Section 3 of the EO, USPS issued a notice of 
+proposed rulemaking (“NPRM”) that proposed to amend multiple sections of the Domestic Mail 
+Manual (“DMM”) pertaining to election mail.  Ballot Mail for Federal Elections, 91 Fed. Reg. 
+32,915 (proposed June 2, 2026) (to be codified at 39 C.F.R. pt. 111).  
+104. The NPRM sought to give USPS unprecedented control over election 
+administration and mail-in voting and effective veto authority over which individuals can return 
+a completed ballot to States.  It provided that USPS would create an electronic “Federal Ballot 
+Mail Portal.”  See Proposed DMM 705.24.4.1.  For voters to receive ballots through the mail, 
+state and local election officials would be required to provide voter-specific information through 
+the Portal, including each voter’s name and address, the original election office state, and a 
+unique Intelligent Mail barcode (“IMb”) on the outgoing and return envelopes.  Proposed DMM 
+705.24.4.2(a)–(b).  Election officials would be required to provide such information at least 30 
+days before the election.  Proposed DMM 705.24.4.2(d).  Supplemental submissions would be 
+permitted, though not necessarily accepted, and a separate submission was required for each 
+“Outbound Federal Ballot mailing, regardless of the number of mailpieces in the mailing.”  Id.  
+All of this information must meet as-yet-unidentified “technical specifications for the Federal 
+Ballot Mail Portal.”  Proposed DMM 705.24.4.2(e).  Voters would then be enrolled on a “Mail-
+In and Absentee Participation List.”  Proposed DMM 705.24.4.2(a)–(c).  
+105. The Proposed Rule also imposed detailed and mandatory envelope standards for 
+all ballot mail, including that ballot envelopes for both outbound and inbound mail must have a 
+“unique IMb . . . with the Delivery Point Zip Code embedded and a Federal Ballot Mail STID,” 
+bear an official election mail logo, and be automation compatible.  Proposed DMM 705.24.3.1–
+2.  Both outbound and inbound ballot mail would require review by USPS for both design and 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 24 of 53
+ 
+25 
+barcode placement.  Proposed DMM 705.24.3.1–2.  
+106. Under the NPRM, ballot mail that does not comply with the requirements of the 
+NPRM would not be accepted by USPS and will not be delivered to voters.  Proposed DMM 
+705.24.5.3.  The NPRM provided no procedures to cure administrative errors by USPS or local 
+election officials. 
+107. The NPRM proposed applying these rules inconsistently—only to general, 
+special, and runoff elections involving federal offices, but not to primary elections for federal 
+office.  Proposed DMM 705.24.1(f).  It also purportedly would not apply to ballot materials for 
+U.S. citizens residing overseas, members of the military in active service, or members of the U.S. 
+merchant marine.  Proposed DMM 705.24.1(c).  However, the NPRM provides no explanation as 
+to how USPS would distinguish between mail ballots sent to those recipients from other mail 
+ballots sent to persons who are not on USPS’s lists. 
+108. Many state and local election officials submitted comment letters opposing the 
+NPRM and identifying the many practical problems it would create, if adopted.  For example, 
+multiple commenters identified that the required infrastructure—the Federal Mail Ballot Portal—
+does not currently exist.  Rolling out a dramatically different, untested technology and process 
+that requires election officials and USPS to simultaneously input and manage tens of millions of 
+entries in the high-stakes elections context is fraught with risk.16  Any technological or process 
+failure could delay or prevent the mailing of ballots to voters at a massive scale.17   
+109. Commenters observed that the exceedingly short timeframe between the potential 
+final adoption of the NPRM and the deadlines for mailing ballots only compounded that risk, 
+ 
+16 Public Rights Project, Comment on Behalf of Local Election Officials on Notice of Proposed 
+Rulemaking on Ballot Mail for Federal Elections (July 2, 2026), https://perma.cc/CF37-K5G6. 
+17 Jefferson County Colorado Clerk and Recorder’s Office (June 18, 2026), 
+https://perma.cc/53WK-2R58 (“Jefferson County, CO Comment Letter”); King County 
+(Washington) Elections, King County Elections Public Comment on Proposed Rule, “Ballot 
+Mail for Federal Elections,” 39 C.F.R. Part 111, Federal Register Document No. 2026-10968 
+(July 2, 2026), https://kingcounty.gov/en/dept/elections/about-us/news-and-media-
+resources/news-releases/july-2-2026 (“King County, WA Comment Letter”). 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 25 of 53
+ 
+26 
+overburdening election officials at a time when they are already facing a “near-constant stream 
+of critical, time-sensitive tasks.”18 
+110. The NPRM also threatened to impose significant costs on state and local election 
+offices, which are already operating on tight budgets with no funding to spare.19  The additional 
+costs would include the costs of new envelopes bearing the required design, new machines for 
+applying IMbs, and expenditures for additional staffing and training.20 
+111. In particular, state and local election officials expressed alarm that the NPRM 
+would, if adopted, disenfranchise voters.21  As one group of commenters identified, voters would 
+be disenfranchised through no fault of their own but instead based on administrative errors or 
+technical failures.22 
+112. In addition to these practical obstacles, Attorneys General for 23 states and the 
+District of Columbia submitted a detailed comment letter, attached hereto as Exhibit 1, 
+identifying the NPRM’s “striking disregard of federal law.”23  As that comment letter identifies, 
+the NPRM is the product of the EO, which itself is unconstitutional and ultra vires, ignoring 
+basic separations of powers principles.  The letter also detailed how the NPRM violates USPS’s 
+governing statutes (including the PRA, Pub. L. No. 91-375, 84 Stat. 719 (1970), and the PAEA, 
+Pub. L. No. 109-435, 120 Stat. 3198 (2006)), as well as federal voting statutes (such as the Help 
+America Vote Act of 2002 and the Voting Rights Act Amendments of 1970). 
+113. The comment letter submitted by the Attorneys General further detailed the ways 
+in which the NPRM was arbitrary and capricious.  One major legal flaw was that “[t]he Proposed 
+ 
+18 See supra n.16. 
+19 See id.; supra n.17 Jefferson County, CO Comment Letter & King County, WA Comment 
+Letter; Secretary of State Steve Hobbs’ comments on USPS proposed ballot rule (July 2, 2026), 
+https://perma.cc/H58K-BZTC (“Secretary Hobbs’ Comments”). 
+20 See supra n.16; supra n.19 Secretary Hobbs’ Comments. 
+21 See supra n. 16; supra n.17 Jefferson County, CO Comment Letter & King County, WA 
+Comment Letter; supra n.19 Secretary Hobbs’ Comments. 
+22 See supra n.16. 
+23 Exhibit 1 at 1. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 26 of 53
+ 
+27 
+Rule’s requirements are . . . not rationally connected to the purported basis.”24  As one Secretary 
+of State’s comment letter observed, “[t]his rule represents a solution looking for a problem. It’s 
+unnecessary and does nothing to enhance the security of our elections.”25  In addition, the NPRM 
+failed to identify safeguards against misuse of USPS’s claimed authority to intercept ballots 
+mailed to voters. 
+114. Beyond the many comment letters, a complaint was filed with the PRC on June 
+11, 2026, to compel USPS to comply with the procedural requirements set out in 39 U.S.C. 
+§ 3661 as to the Proposed Rule, but to date the PRC has not acted on it. 
+115. On July 17, 2026, USPS published a proposed System of Records Notice 
+(“Proposed SORN”) providing for the collecting of voter data from the States and sharing the 
+approved voter lists back with state election officials.  General Privacy Act System of Records, 
+USPS 820.225 Federal Ballot Mail System of Records, 91 Fed. Reg. 44,880 (July 17, 2026).  
+The Proposed SORN closely tracks the requirements of the Rule, establishing USPS’s plans to 
+gather extensive voter data from election officials, to gather data about election officials 
+submitting voter information, to use this data to “facilitate law enforcement efforts,” and to share 
+the data with election officials.  91 Fed. Reg. 44,881.   
+116. USPS stated that the Proposed SORN would only go into effect if USPS 
+published a final mail ballot rule.  Id. at 44,880.  It further stated that “this System of Record will 
+become effective without further notice “on the latest of (1) 30 days from the publication date of 
+this Notice, if no comments are received; (2) the publication date of the Postal Service’s 
+responses to comments received (which will under no circumstances be published prior to 30 
+days from the publication date of this Notice); or (3) the effective date of any final rule in 
+connection with that rulemaking.”  Id.   
+ 
+24 Id. 
+25 See supra n.19 Secretary Hobbs’ Comments. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 27 of 53
+ 
+28 
+117. On August 14, 2026, Attorneys General for 23 States and the District of Columbia 
+submitted a detailed comment letter, attached hereto as Exhibit 2, outlining multiple serious 
+Privacy Act violations resulting from the vast, unprecedented collection and sharing of voter data 
+required by the Rule and disclosed by the Proposed SORN.  The letter explained that the 
+proposed collection of data “exceeds the authority Congress provided to USPS in its governing 
+statutes” and is not salvaged by the EO, which is unconstitutional.  Id. at 1, 4–6.  It also 
+explained that the collection of voter registration and mail ballot data violates the Privacy Act’s 
+prohibition on maintaining records of First Amendment activity.  Id. at 7–9.  The letter further 
+noted that the contemplated disclosure of this data to law enforcement did not satisfy the Privacy 
+Act’s “narrowly defined conditions of disclosure,” and that the USPS’s procedures for 
+individuals to request corrections to records regarding them are inadequate.  Id. at 9–15.   
+118. On August 21, 2026, Defendants filed the Rule for public inspection with the 
+Federal Register.26  Although the Rule in its public inspection format stated it would be 
+published on August 26, 2026, the Rule stated that its effective date is August 21, 2026, thus 
+requiring retroactive compliance with the Rule during a period that it was enjoined. 
+119. On August 26, 2026, pursuant to the terms of the Rule’s public inspection 
+document, the Rule was published in the Federal Register.  91 Fed. Reg. 54,966. 
+120. The Rule tracks the NPRM.  It adopted only five technical revisions that clarify 
+how USPS’s mail ballot verification and review scheme would be implemented and underscore 
+the severe burden it imposes on Plaintiff States.   
+121. First, USPS confirmed that the “verification process” in DMM 705.24.5 (i.e., the 
+process by which USPS rejects mail ballots it deems noncompliant with its regime) only applies 
+ 
+26 USPS submitted the Rule for public inspection (required before publication) despite being 
+“enjoined from implementing, giving effect to, or enforcing . . . or otherwise initiating or 
+completing rulemaking to promulgate the specific regulations outline in Section 3(b)(i)–(v) or (d) 
+of the EO” as to Plaintiff States for the November 3, 2026 or any earlier election.  California v. 
+Trump, No. 1:26-cv-11581-IT (July 7, 2026), Doc. No. 207 at 3–4; League of Women Voters of 
+Massachusetts v. Trump, No. 1:26-cv-11549-IT, 2026 WL 2322705, at *13 (D. Mass. Aug. 11, 
+2026) (same but nationwide). 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 28 of 53
+ 
+29 
+to outbound ballot mail but not return ballot mail.  91 Fed. Reg. 54,966, 54,989; DMM 
+705.24.5.4.  This was already apparent by the terms of the NPRM.  The Rule also clarified that if 
+a voter loses, misplaces, or is not provided with their return ballot mail envelope, the voter must 
+request a compliant replacement from state or local elections officials.  91 Fed. Reg. 54,966, 
+54,989. 
+122. Second, USPS clarified that “Federal Ballot Mail Portal Users” (defined as the 
+chief elections officer or local elections officials) cannot upload voter data to USPS until 
+certifying that their ballot envelope design has been submitted for review to USPS and that 
+USPS has provided feedback.  91 Fed. Reg. 54,966, 54,989; DMM 705.24.3.1, 705.24.3.2, 
+705.24.4.2.f.  Without such certification, voter information cannot be uploaded to the Portal.  
+DMM 705.24.4.2.f. 
+123. Third, USPS clarified that state and local elections officials are responsible for 
+creating IMbs on outbound and return mail ballots.  91 Fed. Reg. 54,966, 54,990 (amending 
+DMM 705.24.3.1.c and 705.23.3.2.c).  Relatedly, USPS also clarified that the unique IMb 
+submitted to the Portal for an individual voter is the same IMb printed on outboard and return 
+mail ballot envelopes.  91 Fed. Reg. 54,966, 54,990 (amending DMM 705.24.4.2.b.3 and 
+705.24.4.2.b.4). 
+124. Fourth, USPS clarified that only commercial mailings are subject to commercial 
+mailing standards and regulations.  91 Fed. Reg. 54,966, 54,990 (amending DMM 705.24.5.2). 
+125. Fifth, USPS changed the defined term of “Ballot Portal User” to “Federal Ballot 
+Mail Portal User.”  91 Fed. Reg. 54,966, 54,990; DMM 705.24.1.b. 
+126. Beyond these technical revisions, USPS provided an “explanation of how the final 
+rule is intended to be implemented” because a “substantial volume of comments” highlighted a 
+lack of clarity on how this last-minute ballot verification and review regime was to be 
+implemented.  91 Fed. Reg. 54,966, 54,977–54,982.  As discussed in the next section, this 
+clarification only confirms and expands upon the harms to Plaintiff States.   
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 29 of 53
+ 
+30 
+III. Harm to Plaintiff States 
+127. USPS’s Rule irreparably harms Plaintiff States in several ways.  
+128. First, the Rule inflicts sovereign injury by usurping Plaintiff States’ constitutional 
+power to prescribe the times, places, and manner of federal elections.  Moreover, because ballots 
+covered by the Rule also include state and local races, the Rule also harms States’ sovereign 
+interests in regulating and carrying out state and local elections.  The Rule imposes new 
+procedures on a common method of voting and threatens States’ ability to guarantee the fair and 
+lawful administration of their mail voting programs.  The Rule thus harms Plaintiff States’ 
+authority to administer elections and secure the voting rights of their citizens.  This invasion of 
+States’ constitutional power amounts to concrete constitutional injury, abrogating Plaintiff 
+States’ sovereign interests in conducting elections in accordance with duly enacted state and 
+federal law. 
+129. Second, the Rule introduces chaos as the 2026 midterm elections approach, 
+imposing significant financial and administrative burdens on Plaintiff States’ electoral systems.  
+“When an election is close at hand, the rules of the road should be clear and settled.  That is 
+because running a statewide election is a complicated endeavor.”  Democratic Nat’l Comm. v. 
+Wis. State Legislature, 141 S. Ct. 28, 31 (2020) (Kavanaugh, J., concurring in denial of 
+application to vacate stay).  
+130. Americans vote by mail in significant numbers; approximately 30 percent of 
+voters voted by mail in the November 2024 election, and that number is substantially higher in 
+certain Plaintiff States that choose to offer their voters no-excuse mail voting.  For some States, 
+nearly 100 percent of ballots are delivered to voters by mail.  USPS serves a critical role in 
+delivering election mail, processing nearly 100 million ballots in the 2024 general election 
+alone.27 
+ 
+ 
+27 United States Postal Service, Delivering the Nation’s Election Mail Securely and Effectively: 
+2024 Post-Election Analysis Report (Dec. 2, 2024), https://perma.cc/Z8FL-PTE6. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 30 of 53
+ 
+31 
+131. The scale of mail voting underscores the challenges of complying with the Rule.  
+Preparing and mailing nearly 100 million mail ballots is already a complicated endeavor.  The 
+additional burdens of creating unique IMbs for each ballot envelope and uploading and updating 
+information about those nearly 100 million corresponding voters are enormous.  These 
+challenges are exacerbated by the reality that voter and mail ballot registration continue in the 
+weeks leading up to an election, meaning States will need to provide frequent amendments and 
+additions through the USPS Ballot Portal.  Yet the design of the Rule provides no realistic 
+opportunity for States to ensure that the USPS Mail Ballot Lists are correct.  See DMM 
+705.24.4.3 (providing that USPS will distribute its USPS Mail Ballot Lists to state election 
+officials “on or about the date of the federal election”).  The scale of these challenges is 
+magnified in Plaintiff States in which most voters vote by mail, and which automatically send 
+mail ballots to all registered voters.  See, e.g., Cal. Elec. Code § 3000.5(a).   
+132. Plaintiff States have each relied on universally available, neutral, and timely 
+postal service from USPS in adopting state laws providing for mail voting and administering 
+mail voting programs for both federal and state elections.  Plaintiff States and their localities 
+have also relied on previous USPS guidance to design mail ballot envelopes, including for 
+envelopes that they intend to use for the November 2026 general election.  The Rule’s imposition 
+of burdensome new requirements and threats to intercept ballot mail harm Plaintiff States’ 
+significant reliance interests.   
+133. If the Rule goes into effect, state and local elections officials will have to devote 
+significant time, personnel, and money to implement and simultaneously manage and mitigate 
+the harms associated with these dramatic changes, including by erecting new mail voting 
+infrastructure.  See Doe v. Trump, 157 F.4th 36, 79 (1st Cir. 2025), petition for cert. denied, No. 
+25-899 (U.S. Jan. 30, 2026).  Among other things, many state and local election officials will 
+have to: purchase new equipment that is capable of applying IMb to ballot envelopes; order new 
+ballot envelopes that meet the eleventh-hour ballot design requirements dictated by the Rule; 
+submit outbound and return envelopes to USPS for review and feedback; become authorized 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 31 of 53
+ 
+32 
+users of USPS’s Federal Ballot Mail Portal after certifying USPS’s approval of mail ballot 
+envelopes; enroll all mail voters in the state into USPS’s Federal Ballot Mail Portal; pay for 
+additional staff training to mitigate the risk of errors that would prevent voters from receiving 
+ballots; and repeatedly ensure that changes in a voter’s registration are reflected in USPS’s 
+Federal Ballot Mail.  Because of the late date of the Rule’s issuance, many Plaintiff States or 
+their localities have already purchased ballot envelopes for the upcoming election.  Affected 
+election offices will now need to order a new set, resulting in twice as much spending on ballot 
+envelopes as budgeted.  The Rule would impose those significant monetary costs on Plaintiff 
+States as they are administering the midterm elections and without providing any funding to 
+fulfill those requirements.   
+134. The harm to how Plaintiff States administer elections is extensive.  The 
+explanation offered by USPS on how it intends to implement the Rule reveals even greater harm 
+to Plaintiff States and a shocking misunderstanding of election administration.  91 Fed. Reg. 
+54,966, 54,977–54,982.  For example, USPS expects the chief elections official of each state to 
+“maintain ultimate control over access to the Portal,” 91 Fed. Reg. 54,966, 54,979, but fails to 
+consider that States with decentralized election administration systems are not run from the top 
+down.  USPS also requires Plaintiff States to segregate all outbound federal ballot mail “from 
+other types of ballot mail, such as primary ballots, UOCAVA ballots, or ballots for state or local 
+elections only,” 91 Fed. Reg. 54,966, 54,981; DMM 705.24.1.f, when such election mail is 
+frequently combined into a single mailing.  And USPS aims to provide feedback on envelope 
+design within two business days but fails to account for the fact that there are more than 10,000 
+elections jurisdictions in the United States, each frequently in charge of their own ballot 
+envelopes.  91 Fed. Reg. 54,966, 54,979.  Any delay in approving envelopes will harm Plaintiff 
+States because USPS certification is required before any voter can be enrolled in the Portal by 
+elections officials.  DMM 705.24.4.2.f.  USPS further estimates that the verification process for 
+outbound mail ballots would take “less than a minute per mailpiece” and “should take no more 
+than a few hours for larger mailings.”  91 Fed. Reg. 54,966, 54,981.  For California alone, that 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 32 of 53
+ 
+33 
+would amount up to 23 million minutes (approximate number of registered voters receiving a 
+ballot), or more than 43 years.  Meanwhile, USPS requires that elections officials must remain at 
+the USPS dropoff location during that verification process, assuming that there is no other delay 
+at the USPS retail counter or Business Mail Entry Unit.  In short, implementation of the Rule as 
+USPS intends effectively eliminates mail voting through its onerous administration requirements, 
+thereby harming Plaintiff States. 
+135. Third, the Rule will also confuse States’ voters over the state of the law—whether 
+they will receive their ballot through the mail, whether USPS will accept their ballots, whether 
+their names are being compiled on a federal list, and whether their State may administer an 
+election pursuant to state law.  As a first point of contact for voters and the designated 
+administrators of elections, it will be up to Plaintiff States (directly and through their political 
+subdivisions) to bear the burden of this confusion.  Plaintiff States will need to implement 
+widespread voter education campaigns to inform voters about the Rule’s significant changes, 
+develop resources for staff to answer related questions, and divert staff to interface with the 
+public.  Beyond merely educating voters, Plaintiff States will need to prepare for the cascading 
+effects from confused voters or uncertain availability of mail voting.  Plaintiff States will need to 
+make accommodations for an influx of in-person voters by opening more polling locations and 
+ensuring that those locations are adequately staffed and have enough ballots.   
+136. Fourth, the public’s inevitable confusion about the Rule’s new regime and mail 
+voting rules will damage the public’s trust in States to administer elections fairly and in 
+accordance with state law.  Disenfranchisement of voters due to errors and flaws in the new 
+processes will compound the harm to States’ reputations as stewards of elections. 
+137. No adequate remedy at law is available to redress these irreparable harms.  
+FIRST CAUSE OF ACTION 
+Separation of Powers / Elections and Electors Clauses / Commandeering / Ultra Vires & 
+Unlawful Interference with States’ Mail Voting Programs 
+(Against All Defendants) 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 33 of 53
+ 
+34 
+138. Plaintiff States restate and reallege the allegations in the preceding paragraphs as 
+if fully set forth herein.  
+139. Plaintiff States have an equitable, non-statutory right of action for claims seeking 
+to enjoin and declare unlawful official action that is ultra vires and for which there is no other 
+remedy at law. 
+140. The U.S. Constitution affords States legislative power to prescribe “[t]he Times, 
+Places and Manner of holding Elections for Senators and Representatives,” subject to preemption 
+by Congress, U.S. Const. art. I, § 4, cl. 1, and to “direct” the “Manner” of appointment of 
+presidential electors, id. art. II, § 1, cl. 2.  This constitutional power encompasses the authority to 
+create and administer a mail voting program.  See Smiley, 285 U.S. at 366. 
+141. Plaintiff States allow for mail voting under legislative schemes adopted in each 
+State.  Some Plaintiff States, including California, Colorado, the District of Columbia, Hawai‘i, 
+Nevada, Oregon, and Washington, send mail ballots to all active, registered voters.  Other 
+Plaintiff States, including Arizona, Illinois, Massachusetts, Michigan, Minnesota, New Jersey, 
+New Mexico, New York, North Carolina, Rhode Island, Virginia, and Wisconsin, allow voters to 
+request mail ballots through specified procedures.  Still others, like Vermont, maintain some 
+combination of both systems. 
+142. USPS promulgated a regulation adopting a comprehensive program to monitor 
+and screen mail ballots.  The Rule asserts federal authority to refuse to deliver ballots for 
+noncompliance with the Rule, and conscripts States’ resources to create a federally-approved list 
+of mail voters and implement federal ballot envelope requirements. 
+143. USPS lacks the constitutional or statutory authority to enact a program to monitor 
+and control States’ mail ballot programs.  The Rule intrudes upon the powers reserved by the 
+Constitution to the States and Congress in multiple ways, improperly attempting to seize them 
+for USPS and the Executive. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 34 of 53
+ 
+35 
+144. First, the Executive Branch has no power to unilaterally dictate election rules 
+through agency rulemaking.  By purporting to do so, the Rule unconstitutionally exceeds the 
+Executive Branch’s power.  See California v. Trump, 786 F. Supp. 3d 359, 373 (D. Mass. 2025). 
+145. Second, the Rule violates the States’ constitutional rights to administer elections 
+in accordance with their own laws.  State election laws and regulations determine who can cast a 
+mail ballot and under what circumstances.  The Rule, however, purports to establish additional 
+eligibility requirements for mail voting subject to federal control, and will prevent voters entitled 
+to cast a mail ballot under state law from doing so.  And because States place federal, state, and 
+local races on the same ballots, the Rule exerts control over non-federal elections in precisely the 
+same way.  This intrusion into States’ constitutional powers and nullification of States’ choices 
+regarding election administration is unconstitutional under the Elections and Electors Clauses of 
+the Constitution.  
+146. Third, the Rule unconstitutionally commandeers States’ resources.  Refusing 
+States access to essential and statutorily guaranteed postal services for elections purposes unless 
+they enact (with their own resources) a presidentially ordered federal elections program amounts 
+to unlawfully seizing the States’ personnel resources and power over elections.  See California, 
+786 F. Supp. 3d at 373; Printz v. United States, 521 U.S. 898, 935 (1997). 
+147. Fourth, the Rule unconstitutionally invades Congress’s power to “make or alter” 
+election regulations under the Elections Clause.  See U.S. Const. art. I, § 4.  Pursuant to that 
+power, Congress has enacted several statutes governing mail voting and voter registration.  The 
+Rule unconstitutionally seizes for USPS the power to regulate elections inconsistent with these 
+statutes, violating the separation of powers.  While Congress is expected to “clearly” authorize 
+momentous regulations, it has never done so for the Rule.  Util. Air Regul. Grp. v. EPA, 573 U.S. 
+302, 324 (2014).   
+148. Fifth, the Rule unconstitutionally invades Congress’s plenary power over USPS 
+by arrogating to USPS and the Executive Branch new authority which Congress has withheld.  
+See U.S. Const., art. I, § 8, cl. 7. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 35 of 53
+ 
+36 
+149. Plaintiff States have been and will be harmed by the Rule’s interference with their 
+mail voting programs, including harm to their sovereignty, significant costs and administrative 
+burdens, and harm to their reputations as trustworthy stewards of elections. 
+150. Pursuant to 28 U.S.C. § 2201, Plaintiff States are entitled to a declaration that the 
+Rule violates the separation of powers and impermissibly arrogates to USPS and the Executive 
+Branch power that is reserved to the States and Congress.  Plaintiff States are further entitled to a 
+preliminary and permanent injunction preventing all Defendants from implementing or enforcing 
+the Rule. 
+SECOND CAUSE OF ACTION 
+Administrative Procedure Act – Contrary to Statute and Arbitrary and Capricious – 
+Treatment of Mail Ballots as Non-Mailable Matter / Violation of USPS’s Universal Mail 
+Service Obligation – 5 U.S.C. § 706(2)(A), (C) & 39 U.S.C. §§ 101(a), 101(e), 403(a), 
+403(b)(1), 404(a)(1), 3001(m), 3001–3018 
+ 
+(Against All Defendants) 
+151. Plaintiff States restate and reallege the allegations in the preceding paragraphs as 
+if fully set forth herein.  
+152. Regulatory proceedings related to mailability are required to be conducted in 
+accordance with the Administrative Procedure Act (“APA”).  39 U.S.C. § 3001(m); DSCC v. 
+Trump, 2026 WL 2168617, at *2 (D.C. Cir. July 28, 2026).  Defendants’ publication of the Rule 
+is an “agency action” within the meaning of the APA.  5 U.S.C. § 551(13).   
+153. Plaintiff States have a cause of action under the APA to challenge the Rule’s 
+violation of statutory limits on treatment of items as non-mailable matter.  5 U.S.C. §§ 701–706; 
+39 U.S.C. § 3001(m).  No other adequate remedy in court exists.   
+154. Under the APA, a court must hold unlawful and set aside final agency action that 
+is “in excess of statutory jurisdiction, authority, or limitations, or short of statutory right.”  5 
+U.S.C. § 706(2)(C).  
+155.  By statute, USPS must provide nationwide mail service.  It is obligated to accept, 
+transport, and deliver all lawful, properly posted mailable matter tendered to it, without regard to 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 36 of 53
+ 
+37 
+the sender, recipient, content, or purpose of the mail piece.  39 U.S.C. §§ 101(a) & (e), 403(a) & 
+(b)(1), and 404(a)(1).   
+156. USPS’s authority to reject certain mail is strictly limited by statute.  Congress has 
+carefully defined categories of “nonmailable matter,” which “shall be disposed of as [USPS] 
+shall direct.”  39 U.S.C. § 3001(b); see id. §§ 3001–3018 (enumerating specific and narrow 
+categories of “nonmailable mater” and prescribing detail procedures regarding same).  Mail 
+ballots transmitted between elections officials and voters are not, and never have been, 
+nonmailable matter under 39 U.S.C. §§ 3001–3018 or any other provision of law. 
+157. The Rule unlawfully creates a new category of nonmailable matter by 
+conditioning the delivery of lawful, mailable matter—ballot ma il—on compliance wi th its voter 
+enrollment and ballot envelope design and review requirements.  No statutory authority supports 
+these novel requirements.  See Hannegan v. Esquire, Inc., 327 U.S. 146, 155–156 (1946) 
+(finding Postmaster General may not impose conditions on mail privileges that Congress has not 
+prescribed). 
+158. By adopting and implementing the Rule, USPS has acted, and unless enjoined 
+will continue to act, in excess of its statutory authority and contrary to its statutory obligations 
+under 39 U.S.C. §§ 101(a), 101(e), 403(a), 403(b)(1), and 404(a)(1), and in derogation of the 
+exclusive non-mailability scheme Congress enacted in 39 U.S.C. §§ 3001–3018. 
+159.     Under the APA, a court must hold unlawful and set aside final agency action that 
+is arbitrary, capricious, or an abuse of discretion.  5 U.S.C. § 706(2)(A).  An agency action is 
+“arbitrary and capricious if the agency has relied on factors which Congress has not intended it to 
+consider, entirely failed to consider an important aspect of the problem, offered an explanation 
+for its decision that runs counter to the evidence before the agency, or is so implausible that it 
+could not be ascribed to a difference in view or the product of agency expertise.”  Motor Vehicle 
+Manufacturers Ass’n of the United States, Inc. v. State Farm Mut. Auto. Ins. Co., 463 U.S. 29, 43 
+(1983).  An agency acts arbitrarily and capriciously if it fails “to assess whether there were 
+reliance interests [at stake], determine whether they were significant, and weigh any such 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 37 of 53
+ 
+38 
+interests against competing policy considerations.”  Dep’t of Homeland Sec. v. Regents of the 
+Univ. of California, 591 U.S. 1, 33 (2020). 
+160. USPS acted arbitrarily and capriciously by failing “to address whether there was 
+‘legitimate reliance’ on” the existing framework governing mail ballots.  See Regents, 591 U.S. 
+at 30.  USPS ignored the reality of the States’ election administration processes that relied on 
+existing USPS mail guidance and decades of practice and included the purchase of USPS-
+approved mail ballots for the November election, and instead abused its discretion in issuing the 
+Rule with an immediate effective date for implementation for the November 2026 midterm 
+elections.  USPS simply dismisses the concern with no real explanation: “[D]espite any logistical 
+or financial difficulties states may face complying with the rule, including some claims that 
+immediate implementation would prove impossible, the visibility and law-enforcement benefits 
+of the rule, including for this election cycle, are such that there is no compelling reason for any 
+delay.”  91 Fed. Reg. 54,966, 54,985.  USPS is offering no actual explanation for how a rule 
+finalized on August 26, 2026, which requires (1) a redesign of ballots, (2) that must be approved 
+by USPS (perhaps within 2 business days, though this is not a commitment), (3) the reordering 
+and reprinting of potentially millions of ballots, (4) the entry of millions of pieces of data by 
+election officials, and (5) increased time in processing ballots at a mail facility, can allow States 
+to begin mailing out ballots by September  4, 2026.  See, e.g., N.C. Gen. Stat. § 163-
+227.10(a).  USPS failed to give adequate weight to States’ weighty reliance interests reflected in 
+their state laws allowing mail voting. 
+161. USPS also acted arbitrarily and capriciously in failing to consider important 
+aspects of the problem or offer explanations in line with evidence.  See State Farm Mut. Auto. 
+Ins. Co., 463 U.S. at 43.  USPS points to no evidence of widespread fraud in mail balloting that 
+justifies this enormous imposition, pointing instead to only potential increased transparency that 
+may lead to “potential issues” being more easily identified.  91 Fed. Reg. 54,966, 54,969.  But 
+the vast majority of studies of the issue have demonstrated that voter fraud and non-citizen 
+voting are extremely rare and USPS pointed to no serious issues arising from the ways that States 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 38 of 53
+ 
+39 
+currently undertake mail balloting and prevent fraud.  Instead, it simply asserted that 
+“[c]oncerning the proposed rule’s factual predicate (or alleged lack thereof), claims regarding the 
+empirical evidence of voter fraud do not, as explained above [reiterating only increased 
+transparency for law enforcement], affect the Postal Service’s authority to adopt these 
+regulations.”  91 Fed. Reg. 54,966, 54,972.  This is incorrect because it is arbitrary and 
+capricious for USPS to rely on a factual premise for which there is no persuasive evidence—that 
+existing federal and state laws do not already protect federal elections against fraud or 
+diminished integrity—to justify a massive  new federal surveillance regime.  Ctr. for Auto Safety 
+v. Fed. Highway Admin., 956 F.2d 309, 314 (D.C. Cir. 1992). 
+162. USPS also acted arbitrarily and capriciously in disregarding the statutory mandate 
+that that the “most expeditious collection, transportation, and delivery of important letter mail” is 
+to be USPS’s “highest consideration” in determining its policies.  39 U.S.C. § 101(e).  The Rule 
+prioritizes other presidentially-mandated objectives related to elections at the cost of 
+undermining the expeditious transmission of ballot mail.   
+163. USPS has also violated 5 U.S.C. § 553(d) by failing to set an effective date at 
+least 30 days after publication, without good cause or any other qualifying exception.  
+164. Plaintiff States have been and will be harmed by the Rule’s violation of these 
+statutory requirements, including harm to their sovereignty, significant costs and administrative 
+burdens, and harm to their reputations as trustworthy stewards of elections. 
+165. For these reasons, the Rule is “in excess of statutory jurisdiction, authority, or 
+limitations, or short of statutory right,” and is arbitrary, capricious, and an abuse of discretion.  5 
+U.S.C. § 706(2)(A), (C). 
+166. Under 28 U.S.C. § 2201, Plaintiff States are entitled to a declaration that the Rule 
+is ultra vires, contrary to law, and void for violation of these statutory requirements. 
+167. Under 5 U.S.C. § 706(2)(C), Plaintiff States are entitled to an order vacating the 
+Rule, holding that the Rule is unlawful, and setting the Rule aside. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 39 of 53
+ 
+40 
+168. Plaintiff States are entitled to a stay under 5 U.S.C. § 705 and preliminary and 
+permanent injunctive relief prohibiting Defendants from implementing or enforcing the Rule. 
+THIRD CAUSE OF ACTION 
+Ultra Vires – USPS Implementation of Non-Postal Services – 39 U.S.C. § 404(e) 
+ 
+(Against All Defendants) 
+169. Plaintiff States restate and reallege the preceding paragraphs as if fully set forth 
+herein.  
+170. Plaintiff States have an equitable, non-statutory right of action for claims seeking 
+to enjoin and declare unlawful USPS action that exceeds USPS statutory authority.  No other 
+statutory remedy is available to provide adequate and meaningful review.  See 39 U.S.C. 
+§ 401(1).    
+171. 39 U.S.C. § 404(e) limits USPS’s authority to provide non-postal services, or 
+anything beyond the “the delivery of letters, printed matter, or mailable packages, including 
+acceptance, collection, sorting, transportation, or other functions ancillary thereto.”  Id. 
+§§ 102(5), 404(e)(1).  USPS may only provide non-postal services if (1) it provided those 
+services prior to January 1, 2006 and their continuation was timely approved by the Postal 
+Regulatory Commission, or (2) the non-postal services are provided pursuant to a qualifying 
+agreement with a government agency under Title 39, Chapter 37 of the U.S. Code.  Id. 
+§ 404(e)(2)–(4). 
+172. The Rule requires USPS to create a new non-postal service to manage and 
+oversee mail voting, including by erecting a novel multi-pronged scheme to enroll voters as mail 
+ballot recipients, monitor ballot mail, and intercept non-conforming ballots. 
+173. Upon information and belief, USPS has not entered into any qualifying agreement 
+to provide non-postal services to a government agency pursuant to Title 39, Chapter 37 of the 
+U.S. Code.   
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 40 of 53
+ 
+41 
+174. Defendants’ adoption and implementation of the Rule, which requires USPS to 
+provide new non-postal services, is contrary to law and in excess of its statutory authority and 
+thus constitutes ultra vires agency action.  
+175. Plaintiff States have been and will be harmed by the Rule’s violation of this 
+statutory requirement, including harm to their sovereignty, significant costs and administrative 
+burdens, and harm to their reputations as trustworthy stewards of elections. 
+176. Under 28 U.S.C. § 2201, Plaintiff States are entitled to a declaration that the Rule 
+is ultra vires, contrary to law, and void for violation of this statutory requirement.  Plaintiff States 
+are further entitled to preliminary and permanent injunctive relief prohibiting Defendants from 
+implementing or enforcing the Rule. 
+FOURTH CAUSE OF ACTION 
+Ultra Vires – Failure to Seek Advisory Opinion from the Postal Regulatory Commission, 39 
+U.S.C. § 3661(b) 
+(Against All Defendants) 
+177. Plaintiff States restate and reallege the preceding paragraphs as if fully set forth 
+herein.  
+178. Plaintiff States have an equitable, non-statutory right of action for claims seeking 
+to enjoin and declare unlawful USPS action that exceeds USPS statutory authority.  No other 
+statutory remedy is available to provide adequate and meaningful review.  See 39 U.S.C. 
+§§ 401(1), 3662. 
+179. The Rule effects “a change in the nature of postal services which will generally 
+affect service on a nationwide or substantially nationwide basis.”  Id. § 3661(b).  Accordingly, 
+USPS was required to “submit a proposal, within a reasonable time prior to the effective date of 
+such proposal, to the PRC requesting an advisory opinion on the change.”  Id. § 3661(b). 
+180. Before this Rule, USPS had accepted and delivered all lawfully posted mail 
+ballots without condition, and had even publicly committed to prioritizing the timely delivery of 
+election mail.  But the Rule institutes a nationwide mail ballot administration program that puts 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 41 of 53
+ 
+42 
+USPS in charge of State-by-State rosters of every voter enrolled to vote by mail, along with a 
+barcode associated with each voter.  The Rule gives USPS the power to reject and return ballots 
+associated with voters not appearing on its lists, even if that voter is eligible and validly 
+registered to vote in their own State.  The Rule applies to mail ballots in every State and the 
+District of Columbia in connection with every federal general election, and thus affects millions 
+of mail pieces and mail users in each election cycle. 
+181. USPS adopted the Rule with an immediate effective date without first seeking an 
+advisory opinion from the PRC, as required by 39 U.S.C. § 3661(b).   
+182. Defendants’ failure to request an advisory opinion deprived the PRC, the public’s 
+representative, mail users, and Plaintiff States of the statutorily guaranteed opportunity to be 
+heard on the record by the PRC before USPS implements a nationwide change in postal services 
+is implemented.   
+183. Defendants’ adoption and implementation of the Rule without complying with 39 
+U.S.C. § 3661 is contrary to law, in excess of its statutory authority, and constitutes ultra vires 
+agency action.  See California, 2026 WL 1826490, at *16 (finding “the EO’s directive that USPS 
+require all States to use a specific mail-in ballot is inconsistent with USPS rulemaking 
+procedure” (citing 39 U.S.C. § 3661(b))).   
+184. Plaintiff States have been and will be harmed by the Rule’s violation of this 
+statutory requirement, including harm to their sovereignty, significant costs and administrative 
+burdens, and harm to their reputations as trustworthy stewards of elections. 
+185. Plaintiff States are entitled to a declaration that in publishing the Rule with an 
+immediate effective date USPS has violated 39 U.S.C. § 3661.  Plaintiff States are further 
+entitled to preliminary and permanent injunctive relief prohibiting Defendants from 
+implementing or enforcing the Rule as to Plaintiff States unless and until USPS complies with 
+the requirements in 39 U.S.C. § 3661, if the Rule is not permanently enjoined on other grounds 
+herein. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 42 of 53
+ 
+43 
+FIFTH CAUSE OF ACTION 
+Ultra Vires – Violation of USPS’s Universal Mail Service Obligation / Undue or 
+Unreasonable Discrimination Against Users of the Mail – 39 U.S.C. §§ 101(a), 101(e), 
+403(a), 403(b)(1), 403(c), 404(a)(1) 
+(Against All Defendants) 
+186. Plaintiff States restate and reallege the preceding paragraphs as if fully set forth 
+herein.  
+187. Plaintiff States have an equitable, non-statutory right of action for claims seeking 
+to enjoin and declare unlawful USPS action that exceeds USPS’s statutory authority.  No other 
+statutory remedy is available to provide adequate and meaningful review.  See 39 U.S.C. 
+§ 401(1), 3662. 
+188. USPS operates under a binding universal mail service mandate which obligates it 
+to accept, transport, and deliver all lawful, properly posted mailable matter tendered to it, without 
+regard to the sender, recipient, content, or purpose of the mail piece.  39 U.S.C. §§ 101(a) & (e), 
+403(a) & (b)(1), and 404(a)(1).   
+189. Under 39 U.S.C. § 403(c), “[i]n providing services and in establishing 
+classifications, rates, and fees under this title,” USPS “shall not, except as specifically authorized 
+in this title, make any undue or unreasonable discrimination among users of the mails, nor shall it 
+grant any undue or unreasonable preferences to any such user.” 
+190. Election officials in Plaintiff States who transmit ballots to voters, and voters who 
+return completed ballots by mail, are “users of the mails” within the meaning of 39 U.S.C. 
+§ 403(c). 
+191. The Rule discriminates among identically situated users of the mail and USPS has 
+not identified (and cannot identify) any legitimate operational need that justifies this disparity.  
+For example, under the Rule, a ballot mailed by or to a voter in a State that has submitted the 
+required voter list will be accepted and delivered, while a physically identical, lawfully posted 
+mail ballot mailed by or to a voter in a non-compliant State will be rejected and returned—even 
+when the individual is eligible and registered to vote under state law. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 43 of 53
+ 
+44 
+192. No provision of Title 39 “specifically authorize[s]” the Rule’s discrimination.  39 
+U.S.C. § 403(c). 
+193. This discrimination is undue and unreasonable.  The Rule will heavily burden 
+States and voters and is unnecessary for the administration of mail voting.  USPS has long 
+carried election mail without the Rule, and routinely carries other government mail that is 
+important, sensitive, and deadline-driven without any such limitations.   
+194. By adopting and implementing the Rule, USPS has acted, and unless enjoined 
+will continue to act, in excess of its statutory authority and contrary to its statutory obligations 
+under 39 U.S.C. §§ 101(a), 101(e), 403(a), 403(b)(1), and 404(a)(1), and in derogation of the 
+prohibition on discrimination in 39 U.S.C. § 403(c). 
+195. Plaintiff States have been and will be harmed by the Rule’s violation of these 
+statutory requirements, including harm to their sovereignty, significant costs and administrative 
+burdens, and harm to their reputations as trustworthy stewards of elections. 
+196. Under 28 U.S.C. § 2201, Plaintiff States are entitled to a declaration that the Rule 
+is ultra vires, contrary to law, and void for violation of this statutory requirement.  Plaintiff States 
+are further entitled to preliminary and permanent injunctive relief prohibiting Defendants from 
+implementing or enforcing the Rule. 
+SIXTH CAUSE OF ACTION 
+Violation of the Voting Rights Act, 52 U.S.C. §§ 10307(a), 10502 
+(Against All Defendants) 
+197. Plaintiff States restate and reallege the preceding paragraphs as if fully set forth 
+herein.   
+198. Section 11(a) of the Voting Rights Act provides a right of action when any person 
+“acting under color of law” “fail[s] or refuse[s] to permit any person to vote who is entitled to 
+vote under any provision of chapters 103 to 107 of this title or is otherwise qualified to vote.” 52 
+U.S.C. § 10307(a); see League of Women Voters of Massachusetts v. Trump, __ F. Supp. 3d. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 44 of 53
+ 
+45 
+___, 2026 WL 2104006 at *7–10 (D. Mass. July 22, 2026).  Section 11(a) “prohibits public 
+officials from denying any qualified person the right to vote.”  Post, 297 F. Supp. at 50. 
+199. Section 11(a) also provides a cause of action to enforce 52 U.S.C. § 10502, 
+enacted by the Voting Rights Amendments Act of 1970.  52 U.S.C. § 10502(c) protects the right 
+of U.S. citizens to vote absentee in presidential elections so long as they have “complied with the 
+requirements prescribed by the law of such State or political subdivision” concerning absentee 
+ballots.   
+200. In the alternative, should it be determined that Section 11(a) does not provide a 
+right of action, then Plaintiff States have an equitable, non-statutory right of action for claims 
+seeking to enjoin and declare unlawful USPS action that exceeds the agency’s statutory authority 
+and violates the Voting Rights Act.  
+201. USPS’s issuance and implementation of the Rule are actions “under color of law.”  
+202. The Rule directs USPS to refuse to deliver certain mail ballots mailed by state and 
+local election officials, thereby failing or refusing to permit qualified and lawfully registered 
+U.S. citizens to vote by means of those mail ballots.   
+203. For many voters—such as voters in jurisd ictions where elections are conducted 
+exclusively by mail, voters who are temporarily outside of the State, voters who must present 
+their mail ballot in order to vote in person, and voters who face barriers to voting in person—
+USPS interception of their mail ballots will preclude them from voting.   
+204. Plaintiff States are responsible for ensuring the voting rights of their eligible and 
+duly registered voters, including those who register for mail ballots in compliance with state law.  
+USPS’s refusal to transmit mail ballots frustrates and irreparably harms Plaintiff States’ ability to 
+carry out mail and absentee voting programs in accordance with state law.  
+205. Plaintiff States will be harmed by the Rule’s interference with their administration 
+of mail voting, including harm to their sovereignty, significant costs and administrative burdens, 
+and harm to their reputations as trustworthy stewards of elections. 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 45 of 53
+ 
+46 
+206. Pursuant to 28 U.S.C. § 2201, Plaintiff States are entitled to a declaration that the 
+Rule violates 52 U.S.C. §§ 10307 and 10502.  Plaintiff States are further entitled to a preliminary 
+and permanent injunction preventing all Defendants from implementing or enforcing the Rule. 
+SEVENTH CAUSE OF ACTION 
+Ultra Vires – Violation of the Privacy Act, 5 U.S.C. § 552a(e)(1) & (e)(7) 
+(Against All Defendants) 
+207. Plaintiff States restate and reallege the preceding paragraphs as if fully set forth 
+herein.   
+208. Plaintiff States have an equitable, non-statutory right of action for claims seeking 
+to enjoin and declare unlawful USPS action that exceeds USPS’s statutory authority.  No other 
+statutory remedy is available to provide adequate and meaningful review.  See 39 U.S.C. 
+§ 401(1). 
+209. USPS is subject to the requirements and prohibitions in the Privacy Act.  39 
+U.S.C. § 410(b)(1) (incorporating by reference 5 U.S.C. § 552a); NLRB. v. USPS, 841 F.2d 141, 
+144 & n.3 (6th Cir. 1988). 
+210. Under the Privacy Act, an agency may only “maintain in its records such 
+information about an individual as is relevant and necessary to accomplish a purpose of the 
+agency required to be accomplished by statute or by executive order of the President.”  5 U.S.C. 
+§ 552a(e)(1).   
+211. The data that USPS must collect and maintain under the Rule is not “relevant and 
+necessary” to any statutorily authorized purpose.  Nor is it supported by any valid presidential 
+directive, as the EO directing the collection and maintenance of this data is unconstitutional.  
+Accordingly, the Rule’s data collection and maintenance requirements are in direct contravention 
+of the Privacy Act.  Id.; see id. § 552a(a)(3) (defining the term “maintain”).  
+212. The Privacy Act prohibits the federal government from collecting, maintaining, 
+using, or disseminating records “describing how any individual exercises rights guaranteed by 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 46 of 53
+ 
+47 
+the First Amendment,” with very limited exceptions.  Id. § 552a(e)(7); see id. § 552a(a)(3) 
+(defining the term “maintain”). 
+213. Voter registration, mail ballot participation, and voting are forms of First 
+Amendment expression.  See Buckley v. Am. Const. L. Found., Inc., 525 U.S. 182, 195 (1999).    
+214. The Rule requires States to provide voter information to USPS for compilation of 
+the agency’s mail voter eligibility lists, which will reveal citizens’ First Amendment activity 
+regarding their choice to register to vote, and to vote by mail.  The Privacy Act bars USPS from 
+collecting this information.  See Weber, 816 F. Supp. 3d at 1193. 
+215. No statutory exceptions apply and permit USPS to collect this information.  5 
+U.S.C. § 552a(e)(7). 
+216. Plaintiff States have been and will be harmed by the Rule’s violation of this 
+statutory requirement, including harm to their sovereignty, significant costs and administrative 
+burdens, and harm to their reputations as trustworthy stewards of elections. 
+217. Pursuant to 28 U.S.C. § 2201, Plaintiff States are entitled to a declaration that the 
+Rule violates the Privacy Act.  Plaintiff States are further entitled to a preliminary and permanent 
+injunction preventing all Defendants from implementing or enforcing the Rule.   
+PRAYER FOR RELIEF 
+ WHEREFORE, Plaintiff States  pray that this Court: 
+1. Issue a judicial declaration that the USPS Rule is unlawful and ultra vires because 
+it violates the separation of powers, contravenes the States’ sovereignty and authority over 
+elections under the United States Constitution, commandeers States’ election officials to 
+implement a presidential program, is arbitrary and capricious and contrary to statute, and is 
+contrary to Title 39 of the U.S. Code, the Voting Rights Act, and the Privacy Act; 
+2. Temporarily restrain and preliminarily enjoin all Defendants from implementing 
+or enforcing the Rule and stay the effective date of the rule under 5 U.S.C. § 705 pending 
+conclusion of these proceedings;  
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 47 of 53
+ 
+48 
+3. Permanently enjoin all Defendants from implementing or enforcing the Rule and 
+vacate or set aside the rule as unlawful under 5 U.S.C. § 706; 
+4. Award Plaintiff States their reasonable fees, costs, and expenses, including 
+attorneys’ fees; and  
+5. Grant any other relief as this Court may deem just and proper.   
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 48 of 53
+ 
+49 
+August 26, 2026 
+ 
+Respectfully submitted. 
+ROB BONTA 
+Attorney General of California 
+ 
+By:  /s/ Anne P. Bellows   
+Anne P. Bellows*  
+ Deputy Attorney General  
+Thomas S. Patterson*  
+ Senior Assistant Attorney General 
+Seth E. Goldstein* 
+ Supervising Deputy Attorney General 
+Malcolm A. Brudigam* 
+Michael S. Cohen* 
+Lisa C. Ehrlich* 
+Kevin L. Quade* 
+Robert William Setrakian* 
+ Deputy Attorneys General  
+1300 I Street, P.O. Box 944255 
+Sacramento, CA 95814 
+(916) 210-6090 
+anne.bellows@doj.ca.gov 
+ 
+Counsel for the State of California 
+ 
+ANDREA JOY CAMPBELL  
+Attorney General of Massachusetts  
+ 
+By:  /s/ Vanessa A. Arslanian   
+Vanessa A. Arslanian (BBO No. 688099) 
+ State Trial Counsel 
+Gerard J. Cedrone (BBO No. 699674) 
+ Deputy State Solicitor 
+Jared B. Cohen (BBO No. 689217) 
+Julia S. Canney (BBO No. 717328) 
+Phoebe M. Lockhart (BBO No. 709411) 
+ Assistant Attorneys General  
+One Ashburton Place 
+Boston, MA 02108 
+(617) 963-2107 
+vanessa.arslanian@mass.gov 
+ 
+Counsel for the 
+ Commonwealth of Massachusetts 
+ 
+AARON FORD  
+Attorney General of Nevada  
+ 
+By:  /s/ K. Brunetti Ireland   
+K. Brunetti Ireland* 
+ Chief of Special Litigation  
+1 State of Nevada Way, Suite 100 
+Las Vegas, NV 89119 
+(702) 486-9246 
+kireland@ag.nv.gov 
+ 
+Counsel for the State of Nevada 
+NICHOLAS W. BROWN 
+Attorney General of Washington 
+ 
+By:  /s/ Tera M. Heintz    
+Tera M. Heintz* 
+Cristina Sepe* 
+Karl D. Smith* 
+ Deputy Solicitors General 
+1125 Washington Street SE  
+PO Box 40100  
+Olympia, WA 98504-0100  
+(360) 753-6200 
+tera.heintz@atg.wa.gov 
+ 
+Counsel for the State of Washington 
+ 
+ 
+(additional counsel on following page) 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 49 of 53
+ 
+50 
+KRISTIN K. MAYES  
+Attorney General of Arizona 
+ 
+By:  /s/ Kara Karlson     
+Kara Karlson* 
+Karen J. Hartman-Tellez* 
+Syreeta Tyrell* 
+ Assistant Attorneys General 
+2005 North Central Ave. 
+Phoenix, AZ 85004 
+(602) 542-8118 
+ 
+Counsel for the State of Arizona 
+PHILIP J. WEISER 
+Attorney General of Colorado 
+ 
+By:   /s/ Shannon Stevenson   
+Shannon Stevenson* 
+ Solicitor General 
+Peter Baumann* 
+ Senior Assistant Attorney General 
+1300 Broadway 
+Denver, Colorado 80203 
+(720) 508-6400 
+ 
+Counsel for the State of Colorado 
+ 
+WILLIAM TONG  
+Attorney General of Connecticut  
+  
+By:   /s/ Maura Murphy   
+Maura Murphy* 
+ Deputy Associate Attorney General 
+165 Capitol Avenue 
+Hartford, CT 06106 
+(860) 808-5020 
+ 
+Counsel for the State of Connecticut 
+ 
+ 
+ 
+KATHLEEN JENNINGS  
+Attorney General of Delaware 
+ 
+By:  /s/ Ian R. Liston    
+Ian R. Liston* 
+ Director of Impact Litigation 
+Vanessa L. Kassab* 
+ Deputy Attorney General 
+820 N. French Street 
+Wilmington, DE 19801 
+(302) 683-8899 
+ 
+Counsel for the State of Delaware 
+ 
+BRIAN L. SCHWALB 
+Attorney General for the District of Columbia 
+ 
+By:  /s/ Karthik P. Reddy   
+Karthik P. Reddy* 
+ Special Assistant Attorney General 
+Office of the Attorney General 
+for the District of Columbia 
+400 Sixth Street NW 
+Washington, D.C. 20001 
+(202) 741-5221 
+ 
+Counsel for the District of Columbia 
+ 
+ANNE E. LOPEZ 
+Attorney General of Hawaiʻi 
+ 
+By:  /s/ Kalikoʻonālani D. Fernandes  
+Kalikoʻonālani D. Fernandes* 
+ Solicitor General 
+425 Queen Street 
+Honolulu, HI 96813 
+(808) 586-1360 
+ 
+Counsel for the State of Hawaiʻi 
+ 
+ 
+ 
+(additional counsel on following page) 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 50 of 53
+ 
+51 
+KWAME RAOUL 
+Attorney General of Illinois 
+ 
+By:  /s/ Vikas Didwania   
+Vikas Didwania* 
+ Complex Litigation Counsel 
+Alex Hemmer* 
+ Deputy Solicitor General 
+Molly Petchenik* 
+ Assistant Attorney General 
+115 S. LaSalle St. 
+Chicago, IL 60603 
+(312) 814-5526 
+ 
+Counsel for the State of Illinois 
+ 
+AARON M. FREY  
+Attorney General of Maine  
+ 
+By:  /s/ Katherine W. Thompson   
+Katherine W. Thompson* 
+ Special Counsel  
+6 State House Station 
+Augusta, ME 04333-0006 
+(207) 626-8800 
+ 
+Counsel for the State of Maine 
+ 
+ANTHONY G. BROWN 
+Attorney General of Maryland 
+  
+By:  /s/ Virginia A. Williamson  
+Virginia A. Williamson* 
+ Assistant Attorney General 
+200 Saint Paul Place  
+Baltimore, MD 21202 
+(410) 576-6584 
+ 
+Counsel for the State of Maryland 
+ 
+DANA NESSEL 
+Attorney General of Michigan  
+ 
+By:  /s/ Neil Giovanatti   
+Neil Giovanatti* 
+ Assistant Attorney General 
+P.O. Box 30212 
+Lansing, MI 48909 
+(517) 241-1050 
+ 
+Counsel for the State of Michigan 
+KEITH ELLISON 
+Attorney General of Minnesota 
+ 
+By: /s/ Angela Behrens   
+Angela Behrens 
+Allen Cook Barr* 
+ Assistant Attorneys General 
+Lindsey E. Middlecamp* 
+ Special Counsel 
+445 Minnesota Street, Suite 600 
+St. Paul, MN, 55101 
+(651) 300-0711 
+ 
+Counsel for the State of Minnesota 
+JENNIFER DAVENPORT 
+Attorney General of New Jersey 
+ 
+By:  /s/ Meghan K. Musso   
+Meghan K. Musso* 
+Jonathan Mangel*  
+Joshua P. Bohn* 
+ Deputy Attorneys General 
+124 Halsey Street, 5th Floor 
+Newark, NJ 07101 
+(609) 696-5276 
+ 
+Counsel for the State of New Jersey 
+ 
+ 
+(additional counsel on following page) 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 51 of 53
+ 
+52 
+RAÚL TORREZ 
+Attorney General of New Mexico 
+ 
+By:  /s/ James W. Grayson   
+James W. Grayson* 
+ Chief Deputy Attorney General 
+P.O. Drawer 1508 
+Santa Fe, NM 87504-1508 
+(505) 490-4060 
+ 
+Counsel for the State of New Mexico 
+ 
+LETITIA JAMES 
+Attorney General of New York 
+ 
+By:  /s/ Colleen K. Faherty   
+Colleen K. Faherty* 
+ Special Trial Counsel 
+Rabia Muqaddam* 
+ Chief Counsel, Federal Initiatives 
+28 Liberty Street 
+New York, NY 10005 
+(212) 416-6046 
+ 
+Counsel for the State of New York 
+ 
+JEFF JACKSON  
+Attorney General of North Carolina  
+ 
+Laura Howard 
+Chief Deputy Attorney General 
+ 
+By:  /s/ Daniel P. Mosteller    
+Daniel P. Mosteller* 
+ Associate Deputy Attorney General 
+114 W. Edenton Street 
+Raleigh, NC 27603 
+ 
+Counsel for the State of North Carolina 
+ 
+DAN RAYFIELD 
+Attorney General of Oregon  
+ 
+By:  /s/ Thomas H. Castelli    
+Thomas H. Castelli* 
+ Senior Assistant Attorney General 
+100 SW Market Street  
+Portland, OR 97201 
+(971) 673-1880 
+ 
+Counsel for the State of Oregon 
+ 
+ 
+ 
+PETER F. NERONHA 
+Attorney General of Rhode Island  
+ 
+By:  /s/ Megan Rok     
+Megan Rok* 
+ Special Assistant Attorney General 
+150 South Main Street 
+Providence, RI 02903 
+(401) 274-4400 
+ 
+Counsel for the State of Rhode Island 
+CHARITY R. CLARK 
+Attorney General of Vermont 
+  
+By: /s/ Ryan P. Kane    
+Ryan P. Kane* 
+ Deputy Solicitor General 
+109 State Street 
+Montpelier, VT 05609 
+(802) 828-2153 
+ 
+Counsel for the State of Vermont 
+ 
+ 
+(additional counsel on following page) 
+ 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 52 of 53
+ 
+53 
+JAY JONES 
+Attorney General of Virginia 
+  
+By:  /s/ Tillman J. Breckenridge  
+Tillman J. Breckenridge* 
+ Solicitor General 
+202 North Ninth Street 
+Richmond, VA 23219 
+ 
+Counsel for the Commonwealth of Virginia 
+JOSHUA L. KAUL 
+Attorney General of Wisconsin 
+ 
+By:  /s/ Lynn Lodahl    
+Lynn Lodahl* 
+ Assistant Attorney General 
+17 West Main Street 
+Madison, WI 53707-7857 
+(608) 264-6219 
+ 
+Counsel for the State of Wisconsin 
+ 
+JOSH SHAPIRO 
+Governor of the Commonwealth 
+of Pennsylvania 
+ 
+By:  /s/ Michael J. Fischer   
+Michael J. Fischer* 
+Charlotte Gibson* 
+ Executive Deputy General Counsel 
+Jacob B. Boyer* 
+ Deputy General Counsel 
+30 North Third Street, Suite 200 
+Harrisburg, PA 17101 
+(717) 831-2847 
+ 
+Counsel for the Governor of the 
+ Commonwealth of Pennsylvania 
+ 
+ 
+ 
+*Admitted pro hac vice or pro hac vice applications forthcoming 
+ 
+Case 1:26-cv-13917     Document 1     Filed 08/26/26     Page 53 of 53
