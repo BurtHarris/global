@@ -1,6 +1,6 @@
 # Draft Executive Ethics Board complaints — Governor, Attorney General, and Secretary of State of Washington
 
-Status: **Draft v1** — prepared as background material for attorney review.
+Status: **Draft v2** — prepared as background material for attorney review.
 **This document is NOT a filed complaint and does not assert that any
 violation has been proven.** It organizes the research accumulated in
 [`civil-rico-and-qui-tam-2026-postal-litigation.md`](./civil-rico-and-qui-tam-2026-postal-litigation.md)
@@ -74,9 +74,57 @@ evaluate whether, and how, to proceed.
 
 ---
 
+## New evidence found: Cascade PBS "The Newsfeed" 5-part voting series (Aug. 2026)
+
+A targeted search of Cascade PBS's YouTube channel (`@CascadePBS` — the
+successor to KCTS 9, Seattle's PBS member station, confirmed as the
+channel's own YouTube handle[^cpbs-0]) located a five-part explainer
+series on threats to Washington's elections, published August 24–28,
+2026, featuring on-the-record segments with AG Brown and SOS Hobbs.
+**Each video below is confirmed authentic via YouTube's oEmbed metadata
+and the watch page's own publish-date/description metadata; the spoken
+content of each video has not been transcribed or reviewed by any tool
+available to this research — only Cascade PBS's own written
+title/description text is quoted or summarized below.**[^cpbs-1][^cpbs-2][^cpbs-3][^cpbs-4]
+
+| Video | Published | Official featured | Cascade PBS's own description (verbatim) |
+|---|---|---|---|
+| "WA Secretary of State debunks confusion of state's vote-by-mail system" | Aug. 24, 2026 | Steve Hobbs | "Washington State Secretary of State Steve Hobbs updates important election reminders ahead of the November midterms. Hobbs is in the midst of fighting to protect the state's decades-long vote-by-mail system as it is under attack by the federal government." |
+| "Washington AG's suit takes on nationwide voter registry list, USPS interference" ("part two of our voting series") | Aug. 25, 2026 | Nick Brown | "On Monday, the Supreme Court cleared the way for President Trump to possibly carry out a controversial executive order. Washington Attorney General Nick Brown has been fighting it in the courts. Brown explains what's at stake for voters if the President gets his way." |
+| "Top WA election official pushes back on Trump's July election security address" ("part 3 of our 5-part voting series") | Aug. 26, 2026 | Steve Hobbs | "Washington Secretary of State Steve Hobbs speculates on what could be behind the President's attack on America's electoral system... Hobbs debunks President Trump's mid-July national address on election security, where he continued to assert voter fraud in the 2020 election — which has been disproven — and finally acknowledged that there has been foreign interference in U.S. elections." |
+| "Election system in WA, other states under intense pressure from feds" (described as "the final installment of our voting series") | Aug. 28, 2026 | General/unspecified | "Voting is a pillar of American democracy... Now, attacks on those rights are coming from the highest level of government. In the final installment of our voting series, we examine the efforts to weaken our elections to understand what is being undercut ahead of the midterms." |
+
+**No video in this series, or located anywhere else in this research
+pass, features Governor Ferguson specifically on this subject.** A
+"part 1" and/or "part 4" of this same series may exist but were not
+located by the searches run in this pass; if Mr. Kirk wants the complete
+series, Cascade PBS's "The Newsfeed" playlist should be reviewed
+directly: `https://www.youtube.com/playlist?list=PL18y1vgsGPLamDJ0Gd3O8Vy63-TDbLZHR`.
+
+**Important, candid assessment — this evidence, as described, cuts
+against the theory, not for it.** Read at face value, Cascade PBS's own
+descriptions characterize both AG Brown and SOS Hobbs as *defending* the
+state's existing, long-standing vote-by-mail system against a federal
+executive order and DOJ demands — i.e., performing the ordinary
+statutory duties of their offices (the AG litigating on the state's
+behalf; the Secretary of State administering and explaining the state's
+election system) — not as personally profiting from, or diverting public
+resources to, a partisan campaign of their own. **Before relying on these
+videos to support Complaints 1–3 above, Mr. Kirk should be squarely aware
+that, on their face, they support the opposite inference:** that these
+officials' conduct here is standard official conduct responding to a
+federal action, not "use of office for personal gain" under RCW
+42.52.020 or "use of public resources for political campaigns" under RCW
+42.52.180. If a different, more specific act is what Plaintiff actually
+has in mind, it has not yet been identified, and these particular videos
+do not appear to supply it.
+
+---
+
 ## Complaint 1 of 3 — Governor Bob Ferguson
 
 Following the EEB form's own fields and numbered questions:[^eeb-2]
+
 
 **Subject:** Bob Ferguson, Governor of Washington, Office of the Governor,
 Olympia, WA.
@@ -207,9 +255,9 @@ Not yet supplied.
 
 | Complaint | Specific act identified? | Documentation | Overall readiness to file |
 |---|---|---|---|
-| Gov. Ferguson | No — only an un-transcribed press conference | Video only | **Not ready** |
-| AG Brown | No — same press conference; litigation-defense theory faces a doctrinal difficulty | Video + Senate letter | **Not ready** |
-| SOS Hobbs | No — no act, statement, or document identified at all | None | **Not ready; weakest of the three** |
+| Gov. Ferguson | No — only an un-transcribed press conference; no video located featuring him in the Aug. 2026 voting series | Video only | **Not ready** |
+| AG Brown | No — the Aug. 25, 2026 Newsfeed segment and the Jan. 26 press conference both describe him *defending* the state's election system/litigating against a federal order, which cuts against, not for, a personal-gain theory | Video + Senate letter + Cascade PBS segment | **Not ready; available evidence currently undercuts the theory** |
+| SOS Hobbs | No — the three Aug. 2026 Newsfeed segments describe him administering/explaining the state's existing vote-by-mail system and rebutting a presidential address, which likewise cuts against a personal-gain theory | Three Cascade PBS segments | **Not ready; available evidence currently undercuts the theory** |
 
 Consistent with the Background Report's own recurring caveat: **the legal
 theory and the jurisdictional fit are now reasonably well understood, but
@@ -231,3 +279,8 @@ responsibly be finalized and mailed to the EEB.
 [^eeb-1]: Washington Executive Ethics Board, "File a Complaint," https://ethics.wa.gov/enforcement/file-complaint (last visited Oct. 1, 2026) (describing EEB jurisdiction over "statewide elected officers and all other officers and employees in the executive branch, boards and commissions, and institutions of higher education," and whistleblower-retaliation protections under RCW 42.52.410).
 [^eeb-2]: Washington Executive Ethics Board, *Ethics Complaint Form* (2015), *available at* https://ethics.wa.gov/sites/default/files/public/documents/2015%20Complaint%20Form.pdf, saved locally at [`sources/eeb-complaint-form.pdf`](./sources/eeb-complaint-form.pdf) (text extracted with `pypdf`) (confirming: a separate form must be filed for each individual subject officer; a five-year limitations period from the date of the alleged violation; mail/email filing to the EEB at PO Box 40149, Olympia, WA 98504-0149 or ethics@atg.wa.gov; optional complainant anonymity with a tradeoff against being kept informed; and the violation-type checkboxes quoted above).
 [^hobbs]: Docket, *Wash. State All. for Retired Ams. v. Hobbs*, No. 3:23-cv-06014 (W.D. Wash. filed Nov. 7, 2023, terminated Mar. 15, 2024), *available at* https://www.courtlistener.com/docket/67986976/washington-state-alliance-for-retired-americans-v-hobbs/ (last visited Oct. 1, 2026) (official-capacity case caption naming Steve Hobbs, consistent with his holding the office of Secretary of State; not independently cross-checked against the Secretary of State's own website in this pass).
+[^cpbs-0]: Cascade PBS, YouTube channel `@CascadePBS`, channel ID `UCGTluZeop66lDGa2rOHY8aA`, `https://www.youtube.com/@CascadePBS` (last visited Oct. 1, 2026); confirmed via YouTube's public channel-page metadata and oEmbed responses for each video cited below. Cascade PBS is the successor brand of KCTS 9, the Seattle PBS member station, following its merger with Crosscut/Cascade Public Media.
+[^cpbs-1]: Cascade PBS, *WA Secretary of State Debunks Confusion of State's Vote-by-Mail System* (YouTube Aug. 24, 2026), https://www.youtube.com/watch?v=oasNLaTAVyc (last visited Oct. 1, 2026). Confirmed via YouTube oEmbed (`author_name`: "Cascade PBS") and the watch page's own `publishDate`/`uploadDate` metadata (2026-08-24T07:45:31-07:00). Spoken content not transcribed; only the uploader's own written description was reviewed.
+[^cpbs-2]: Cascade PBS, *Washington AG's Suit Takes on Nationwide Voter Registry List, USPS Interference* (YouTube Aug. 25, 2026), https://www.youtube.com/watch?v=zUcOx9YCe-8 (last visited Oct. 1, 2026). Confirmed via YouTube oEmbed and watch-page metadata (`publishDate` 2026-08-25T07:45:28-07:00); described by the uploader as "part two of our voting series." Spoken content not transcribed.
+[^cpbs-3]: Cascade PBS, *Top WA Election Official Pushes Back on Trump's July Election Security Address* (YouTube Aug. 26, 2026), https://www.youtube.com/watch?v=3UFq6JyaU1M (last visited Oct. 1, 2026). Confirmed via YouTube oEmbed and watch-page metadata (`publishDate` 2026-08-26T07:45:22-07:00); described by the uploader as "part 3 of our 5-part voting series." Spoken content not transcribed.
+[^cpbs-4]: Cascade PBS, *Election System in WA, Other States Under Intense Pressure from Feds* (YouTube Aug. 28, 2026), https://www.youtube.com/watch?v=-lBzu-4Cl8M (last visited Oct. 1, 2026). Confirmed via YouTube oEmbed and watch-page metadata (`publishDate` 2026-08-28T07:45:07-07:00); described by the uploader as "the final installment of our voting series." Spoken content not transcribed.
