@@ -1,6 +1,6 @@
 # 2026 USPS election-mail litigation
 
-Status: **Draft v15** — prepared as background material for attorney review.
+Status: **Draft v16** — prepared as background material for attorney review.
 **This document is NOT legal advice and does not assert that any specific
 countersuit is viable.** It summarizes public-record research only; whether
 any of it supports an actual claim is a legal judgment for counsel to make.
@@ -209,22 +209,28 @@ original question).[^10]
 
 ## Part 3 — The 2026 USPS election-mail litigation
 
-### Case status update (reported, not yet independently confirmed via docket)
+### Case status update (confirmed via docket)
 
 A Sept. 10, 2026 local news report quotes King County (WA) Elections'
 communications manager stating that, "[m]ost recently, on Sept. 4, a
 federal judge handed down a preliminary injunction to the U.S. Postal
 Service, preventing it from enacting new rules that would tighten mail-in
-voting requirements across the country."[^21] **This is reported via a news
-source quoting a county election official, not yet independently confirmed
-against the docket's actual order** (CourtListener's search API did not
-surface the specific order text in this pass; the docket's `dateTerminated`
-field is still `null`, consistent with the case remaining active rather
-than fully resolved, which a preliminary injunction — as opposed to a final
-judgment — would be). If accurate, this means the rule discussed throughout
+voting requirements across the country."[^21] **This is now independently
+confirmed against the docket's own order entry**: docket entry #156 in the
+consolidated cases, filed Sept. 4, 2026 at 5:34 p.m. EDT, reads "Judge
+Indira Talwani: MEMORANDUM AND ORDER GRANTING PLAINTIFFS' MOTIONS FOR A
+PRELIMINARY INJUNCTION."[^23] The docket also shows USPS itself filing a
+"NOTICE... of Compliance with Preliminary Injunction" four days later
+(Sept. 8, 2026), independent corroboration from the opposing party that the
+injunction issued and bound USPS. This means the rule discussed throughout
 this Part and Part 4 was preliminarily enjoined roughly two weeks after
 this report's Part 3 research pass, before final resolution on the merits.
-This should be confirmed directly against the docket before relying on it.
+**Remaining gap:** the order's exact text/scope (entry #156 itself) was not
+independently retrieved and read in this pass, so Watkins's paraphrase of
+*which* USPS rule provisions are covered is not yet verified word-for-word
+against the order — only that *a* preliminary injunction issued on the
+stated date in the stated cases. See the full claim-by-claim review at
+[`reviews/seattle-weekly-usps-injunction-claim.md`](./reviews/seattle-weekly-usps-injunction-claim.md).
 
 ### Case identity (confirmed)
 
@@ -842,5 +848,6 @@ below).
 [^18]: Letter from Sens. Alex Padilla, Richard J. Durbin, and 22 other U.S. Senators, to Att'y Gen. Pamela Bondi (Jan. 29, 2026), *available at* https://www.padilla.senate.gov/wp-content/uploads/26.01.29-Follow-Up-Letter-to-DOJ-re-Voter-Rolls-Requests-FINAL.pdf, and saved locally at [`sources/senate-letter-2026-01-29-doj-voter-rolls.pdf`](./sources/senate-letter-2026-01-29-doj-voter-rolls.pdf) (listing, per the Brennan Center's tracker, twenty-four states and the District of Columbia sued by the Department of Justice as of Jan. 28, 2026 — Arizona, California, Colorado, Connecticut, Delaware, Georgia, Hawai'i, Illinois, Maine, Maryland, Massachusetts, Michigan, Minnesota, Nevada, New Hampshire, New Mexico, New York, Oregon, Pennsylvania, Rhode Island, Vermont, Virginia, Wisconsin, and **Washington** — and identifying Arkansas, Indiana, Kansas, Louisiana, Mississippi, Tennessee, Texas, and Wyoming as having handed over complete voter lists as of that date).
 [^19]: Press Release, Office of the Minn. Sec'y of State, *Statement from Secretary Simon* (Jan. 25, 2026), https://sos.mn.gov/about-the-office/news-room/statement-from-secretary-simon/ (last visited Sept. 30, 2026) (describing and characterizing as an "apparent ransom" Att'y Gen. Bondi's Jan. 24, 2026 letter to Gov. Tim Walz, *available at* https://sos.mn.gov/media/wihf4a05/ag-bondi-gov-walz-letter-012426.pdf and saved locally at [`sources/bondi-letter-2026-01-24-walz-voter-rolls.pdf`](./sources/bondi-letter-2026-01-24-walz-voter-rolls.pdf) (an image-based PDF with no extractable text layer in the copy retrieved)); *accord* Senate letter, *supra* note 18 (independently corroborating the same letter, date, and characterization).
 [^20]: Docket, *United States v. Weber*, No. 2:25-cv-09149 (C.D. Cal. filed Sept. 25, 2025, terminated Jan. 15, 2026) (Carter, J.) (cause of action "42:1981 Civil Rights"; jurisdiction type "U.S. Government Plaintiff"; parties including Shirley Weber, the State of California, Nevada and Maryland as amici, the American Civil Liberties Union, the NAACP, the League of Women Voters of California, America First Legal, and the **Democratic National Committee**). The characterization of the court's reasoning ("voter roll maintenance enforcement and compliance," contradicted by DOJ officials' other statements) is drawn from the Senate letter, *supra* note 18, quoting Order Granting Def.'s Mot. to Dismiss at 16, 19; the underlying order was not independently retrieved in this pass.
-[^21]: Seattle Weekly, *Concerned About Mail-In Ballots? Here Are King County's Alternatives* (Sept. 10, 2026), https://www.seattleweekly.com/2026/09/10/concerned-about-mail-in-ballots-here-are-king-countys-alternatives/ (last visited Sept. 30, 2026) (quoting King County Elections Communications Manager Halei Watkins describing a reported Sept. 4, 2026 federal preliminary injunction against USPS's rule, and reporting an unidentified whistleblower's claims about the verification portal's design). Not cross-checked against the docket's actual order text in this pass.
+[^21]: Seattle Weekly, *Concerned About Mail-In Ballots? Here Are King County's Alternatives* (Sept. 10, 2026), https://www.seattleweekly.com/2026/09/10/concerned-about-mail-in-ballots-here-are-king-countys-alternatives/ (last visited Sept. 30, 2026) (quoting King County Elections Communications Manager Halei Watkins describing a reported Sept. 4, 2026 federal preliminary injunction against USPS's rule, and reporting an unidentified whistleblower's claims about the verification portal's design). The preliminary-injunction claim is independently confirmed against the docket, *see infra* note 23; Watkins's additional whistleblower claims about the verification portal were not independently checked in this pass.
 [^22]: Company websites for K&H Printers, https://www.khprint.com/election-services/; Mail King USA, https://mailkingusa.com/direct-mail-services/seattle-wa/; and Lithtex Northwest, https://www.lithtexnw.com/servicecenter/directmail-services.html (all last visited Sept. 30, 2026) (confirming each as a real, currently operating commercial printing/direct-mail business offering the described service lines). Proforma, Midwest Direct, and Runbeck Election Services were named in the user's supplied summary but not independently re-verified in this pass. The distinction between official ballot-processing vendors and political-campaign direct-mail vendors, and the statement that King County's actual ballot distribution is handled directly with USPS rather than through commercial marketing entities, is drawn from the same user-supplied summary, which cited the Washington Secretary of State's website, https://www.sos.wa.gov/usps-and-election-mail-resources, and the Seattle Weekly article, *supra* note 21.
+[^23]: Docket, *State of California v. U.S. Postal Serv.* / *League of Women Voters of Mass. v. Trump* (consolidated), Nos. 1:26-cv-13917-IT & 1:26-cv-11549-IT (D. Mass.), docket entry #156 (filed Sept. 4, 2026, 5:34 p.m. EDT) ("Judge Indira Talwani: MEMORANDUM AND ORDER GRANTING PLAINTIFFS' MOTIONS FOR A PRELIMINARY INJUNCTION"), *available at* https://www.courtlistener.com/docket/74701505/state-of-california-v-united-states-postal-service/?page=2#entry-156 (last visited Oct. 1, 2026); *see also id.* docket entry (filed Sept. 8, 2026) ("NOTICE... of Compliance with Preliminary Injunction," filed by USPS officials) (USPS's own compliance notice, independently corroborating that the injunction issued and bound the agency). The order's full text (entry #156 itself) was not independently retrieved and read in this pass; only the docket's one-line description of the ruling is confirmed. Produced by the `skeptical-review` skill; full claim-by-claim review at [`reviews/seattle-weekly-usps-injunction-claim.md`](./reviews/seattle-weekly-usps-injunction-claim.md).
