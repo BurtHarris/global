@@ -1,0 +1,5 @@
+interface:
+  display_name: "Skeptical Review"
+  short_description: "Fact-check claims against primary sources"
+policy:
+  allow_implicit_invocation: false
