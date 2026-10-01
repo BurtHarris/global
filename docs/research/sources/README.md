@@ -16,6 +16,7 @@ and are unmodified except for text extraction noted below.
 | `senate-letter-2026-01-29-doj-voter-rolls.pdf` | Letter from Sens. Padilla, Durbin, and 22 others to AG Bondi, Jan. 29, 2026, re: DOJ's campaign to obtain state voter rolls (24 states sued, including Washington; documents the Jan. 24, 2026 Bondi-to-Walz letter). | padilla.senate.gov |
 | `senate-letter-2026-01-29-doj-voter-rolls.txt` | Plaintext extraction of the above (via `pypdf`). | Derived locally |
 | `bondi-letter-2026-01-24-walz-voter-rolls.pdf` | AG Bondi's Jan. 24, 2026 letter to MN Gov. Tim Walz, conditioning an end to federal immigration enforcement in Minnesota partly on DOJ access to the state's voter rolls. Image-based PDF; no extractable text layer. | sos.mn.gov (Minnesota Secretary of State) |
+| `eeb-complaint-form.pdf` | Washington Executive Ethics Board's official ethics complaint form (2015 version) — confirms EEB jurisdiction over statewide elected officers, the 5-year limitations period, the requirement to file a separate form per subject officer, and the violation-type checkboxes used in [`../ethics-complaint-wa-officials.md`](../ethics-complaint-wa-officials.md). | ethics.wa.gov |
 
 ## Not yet obtained
 
